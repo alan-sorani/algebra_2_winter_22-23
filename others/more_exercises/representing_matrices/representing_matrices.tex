@@ -1,0 +1,270 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' (104168)  \\
+תרגילים על מטריצות מייצגות
+}
+
+\author{אלן סורני}
+
+\begin{document}
+\maketitle
+
+\begin{notation}
+עבור מרחבים וקטוריים
+$V,W$
+מעל אותו שדה
+$\mbb{F}$
+נסמן ב־%
+$\Hom_{\mbb{F}}\prs{V,W}$
+את אוסף ההעתקות הלינאריות
+$V \to W$,
+ונסמן
+$\End_{\mbb{F}}\prs{V} \coloneqq \Hom_{\mbb{F}}\prs{V,V}$.
+לעתים נשמיט את כתיבת השדה
+$\mbb{F}$
+מהסימון, כשהוא ידוע או לא חשוב בקונטקסט.
+\end{notation}
+
+\begin{notation}
+יהיו
+$V,W$
+מרחבים וקטוריים סוף־מימדיים מעל אותו שדה
+$\mbb{F}$
+עם בסיסים
+$B,C$
+בהתאמה
+ותהי
+$T \in \Hom_{\mbb{F}}\prs{V,W}$.
+אם
+$B = \prs{v_1, \ldots, v_n}$,
+נגדיר
+\[\text{.} \brs{T}^B_C = \pmat{\vert & & \vert \\ \brs{T\prs{v_1}}_C & \cdots & \brs{T\prs{v_n}}_C \\ \vert & & \vert}\]
+\end{notation}
+
+\begin{exercise}
+עבור ההעתקות והבסיסים הבאים, כיתבו את המטיצה המייצגת
+$\brs{T}^B_C$.
+
+\begin{enumerate}
+\item
+\begin{align*}
+T \colon \mbb{R}^3 &\mapsto \mbb{R}^3 \\
+\pmat{x\\y\\z} &\mapsto \pmat{2x+z\\5x-3y\\2y+3z}
+\end{align*}
+והבסיסים
+\begin{align*}
+B &= \prs{e_1, e_2, e_3} \coloneqq \prs{\pmat{1 \\ 0 \\ 0}, \pmat{0 \\ 1 \\ 0}, \pmat{0 \\ 0 \\ 1}} \\
+C &= \prs{e_1+e_2, e_2 + e_3, e_3}
+\end{align*}
+
+\item \begin{align*}
+T \colon \mbb{R}_3\brs{x} &\to \mbb{R}_3\brs{x} \\
+p\prs{x} &\mapsto p'\prs{x}
+\end{align*}
+והבסיסים
+\begin{align*}
+B &= \prs{1,x,x^2,x^3} \\
+C &= \prs{1+x,x+x^2,x^2+x^3,x^3}
+\end{align*}
+כאשר
+$\mbb{R}_3\brs{x}$
+מרחב הפולינום הממשיים ממעלה לכל היותר
+$3$.
+
+\item
+\begin{align*}
+T \colon \Mat_{2,2}\prs{\mbb{C}} &\to \Mat_{2,2}\prs{\mbb{C}} \\
+A &\mapsto A^t
+\end{align*}
+והבסיסים
+\begin{align*}
+B = \prs{E_{1,1}, E_{1,2}, E_{2,1}, E_{2,2}} &\coloneqq \prs{\pmat{1 & 0 \\ 0 & 0}, \pmat{0 & 1 \\ 0 & 0}, \pmat{0&0\\1&0}, \pmat{0&0\\0&1}} \\
+\text{.} C &= \prs{\pmat{0&1\\1&1},\pmat{1&0\\1&1},\pmat{1&1\\0&1},\pmat{1&1\\1&0}}
+\end{align*}
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+תהי
+\begin{align*}
+\text{.} A &= \pmat{0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 1 & 0 & 0 \\ 1 & 0 & 0 & 0} \in \Mat_{4,4}\prs{\mbb{C}}
+\end{align*}
+מיצאו בכל אחד מהמקרים הבאים בסיס
+$C$
+של
+$V$
+עבורו יתקיים
+$\brs{\id_V}^B_C = A$.
+
+\begin{enumerate}
+\item $V = \mbb{R}_3\brs{x}$
+וגם
+$B = \pmat{1,x,x^2,x^3}$.
+
+\item $V = \Mat_{2,2}\prs{\mbb{C}}$
+וגם
+$B = \prs{E_{1,1}, E_{2,2}, E_{1,2}, E_{2,1}}$.
+
+\item $V = \mbb{C}^4$
+וגם
+$B = \prs{e_1 + 3e_3, e_2+3e_4, e_3+3e_1, e_4+3e_2}$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+תהי
+\[\text{.} A = \pmat{1 & 0 & 1 & 0 \\ 0 & 2 & 0 & 1 \\ 0 & 1 & 0 & 4 \\ 1 & 0 & 0 & 0}\]
+מיצאו בכל אחד מהמקרים הבאים בסיס
+$B$
+של
+$V$
+עבורו יתקיים
+$\brs{\id_V}^B_C = A$.
+
+\begin{enumerate}
+\item $V = \mbb{R}_3\brs{x}$
+וגם
+$B = \pmat{1,x,x^2,x^3}$.
+
+\item $V = \Mat_{2,2}\prs{\mbb{C}}$
+וגם
+$B = \prs{E_{1,1}, E_{2,2}, E_{1,2}, E_{2,1}}$.
+
+\item $V = \mbb{C}^4$
+וגם
+$B = \prs{e_1 + 3e_3, e_2+3e_4, e_3+3e_1, e_4+3e_2}$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+בכל אחד מהמקרים הבאים, מיצאו בסיס
+$B$
+של
+$V$
+עבורו
+$\brs{T}^B_C = I$
+מטריצת היחידה.
+
+\begin{enumerate}
+\item $V = \mbb{C}^4$
+עם
+$B = \prs{e_1, e_2, e_3, e_4}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \pmat{w\\x\\y\\z} &\mapsto \pmat{x\\y\\z\\w}
+\end{align*}
+
+\item $V = \mbb{C}_3\brs{x}$
+עם
+$B = \prs{1,x^2,x,x^3}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \prs{T\prs{p}}\prs{x} &= p\prs{x+1}
+\end{align*}
+
+\item $V = \Mat_{2,2}\prs{\mbb{C}}$
+עם
+$B = \prs{E_{1,1}, E_{2,2}, E_{1,2}, E_{2,1}}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} A &\mapsto -A^t
+\end{align*}
+\end{enumerate}
+\end{exercise}
+
+\pagebreak
+
+\begin{exercise}
+בכל אחד מהמקרים הבאים, מיצאו בסיס
+$C$
+של
+$V$
+עבורו
+$\brs{T}^B_C = I$
+מטריצת היחידה.
+
+\begin{enumerate}
+\item $V = \mbb{C}^4$
+עם
+$C = \prs{e_1, e_2, e_3, e_4}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \pmat{w\\x\\y\\z} &\mapsto \pmat{x\\y\\z\\w}
+\end{align*}
+
+\item $V = \mbb{C}_3\brs{x}$
+עם
+$C = \prs{1,x^2,x,x^3}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \prs{T\prs{p}}\prs{x} &= p\prs{x+1}
+\end{align*}
+
+\item $V = \Mat_{2,2}\prs{\mbb{C}}$
+עם
+$C = \prs{E_{1,1}, E_{2,2}, E_{1,2}, E_{2,1}}$
+וגם
+\begin{align*}
+T \colon V &\to V \\
+\text{.} A &\mapsto -A^t
+\end{align*}
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+בכל אחד מהמקרים הבאים, מצאו אופרטור
+$T \in \End_{\mbb{F}}\prs{V}$
+עבורו
+$\brs{T}_B = A$.
+
+\begin{enumerate}
+\item $V = \mbb{C}^4$
+עם
+$B = \prs{e_1+e_2,e_2+e_4,e_3,e_3+e_4}$
+וגם
+$A = \pmat{0 & 1 & 0 & 0 \\ 0 & 0 & 1 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0}$.
+
+\item $V = \mbb{C}_2\brs{x}$
+עם
+$B = \prs{1,x^2,x+x^2}$
+וגם
+$A = \pmat{2 & 0 & 2 \\ 0 & 2 & 0 \\ 2 & 0 & 2}$.
+
+\item $V = \Mat_{2,2}\prs{\mbb{R}}$
+עם
+$B = \prs{\pmat{0&1\\1&1},\pmat{1&0\\1&1},\pmat{1&1\\0&1},\pmat{1&1\\1&0}}$
+וגם
+$A = \pmat{1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & \\ 1 & 1 & 1 & 1}$.
+\end{enumerate}
+\end{exercise}
+
+\end{document}
