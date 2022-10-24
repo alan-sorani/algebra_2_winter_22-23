@@ -521,10 +521,18 @@ $T$
 $\brs{T}^B_B$
 הפיכה, ולכן נרצה
 $M^B_C = A \prs{\brs{T}^B_B}^{-1}$.
+כעת, אם
+$C = \prs{v_1, \ldots, v_n}$
+נקבל כי
+$M^B_C = M^E_{\hat{C}}$
+כאשר
+$\hat{C} = \prs{\brs{v_1}_B, \ldots, \brs{v_n}_B}$
 לפי הסעיף הקודם, נרצה
-$C = \prs{u_1, \ldots, u_n}$
+$\hat{C} = \prs{u_1, \ldots, u_n}$
 עבור
 \[\text{.} u_i = \prs{A \brs{T}_B^{-1}}^{-1} e_i = \brs{T}_B A^{-1} e_i\]
+לכן
+\[\text{.} v_i = \rho_B^{-1} \prs{\brs{T}_B A^{-1} e_i}\]
 \end{enumerate}
 \end{solution}
 
@@ -550,8 +558,8 @@ $A = \brs{T}^E_C$.
 \end{exercise}
 
 \begin{solution}
-לפי התרגיל הקודם, נרצה
-$C = \prs{u_1, \ldots, u_4}$
+לפי התרגיל הקודם, נרצה קודם
+$\hat{C} = \prs{u_1, \ldots, u_4}$
 כאשר
 $u_i = \brs{T}_E A^{-1} e_i$.
 חישבנו ב־%
@@ -577,8 +585,63 @@ u_3 &= \brs{T}_E A e_3 = \brs{T}_E e_4 = \pmat{0 \\ 0 \\ 0 \\ 1} \\
 \text{,} u_4 &= \brs{T}_E A e_4 = \brs{T}_E e_3 = \pmat{0 \\ 0 \\ 1 \\ 3}
 \end{align*}
 כלומר
-$C = \prs{\pmat{0 \\ 1 \\ 2 \\ 3}, \pmat{1 \\ 1 \\ 1 \\ 1}, \pmat{0 \\ 0 \\ 0 \\ 1}, \pmat{0 \\ 0 \\ 1 \\ 3}}$.
+\[\text{,} \hat{C} = \prs{\pmat{0 \\ 1 \\ 2 \\ 3}, \pmat{1 \\ 1 \\ 1 \\ 1}, \pmat{0 \\ 0 \\ 0 \\ 1}, \pmat{0 \\ 0 \\ 1 \\ 3}}\]
+ולבסוף
+\[\text{.} C = \prs{\rho_E^{-1}\prs{u_1}, \ldots, \rho_E^{-1}\prs{u_4}} = \prs{x+2x^3+3x^3, 1+x+x^2+x^3, x^3, x^2+3x^3}\]
 \end{solution}
+
+\section{גרעין ותמונה}
+
+\begin{definition}[גרעין של העתקה לינארית]
+יהיו
+$V,W$
+מרחבים וקטורים מעל אותו שדה ותהי
+$T \in \Hom\prs{V,W}$.
+\emph{הגרעין של
+$T$}
+הוא
+\[\text{.} \ker\prs{T} \coloneqq \set{v \in V}{T\prs{v} = 0}\]
+\end{definition}
+
+\begin{definition}[תמונה של העתקה לינארית]
+יהיו
+$V,W$
+מרחבים וקטורים מעל אותו שדה ותהי
+$T \in \Hom\prs{V,W}$.
+\emph{התמונה של
+$T$}
+היא
+\[\text{.} \im\prs{T} \coloneqq \set{T\prs{v}}{v \in V}\]
+\end{definition}
+
+\begin{definition}[דרגה של אופרטור לינארי]
+יהיו
+$V,W$
+מרחבים וקטורים מעל אותו שדה ותהי
+$T \in \Hom\prs{V,W}$.
+\emph{הדרגה של
+$T$}
+היא
+\[\text{.} \rank\prs{T} \coloneqq \dim \prs{\im\prs{T}}\]
+\end{definition}
+
+\begin{remark}
+אם
+$V,W$
+סוף־מימדיים עם בסיסים
+$B,C$
+בהתאמה, אז
+\[\text{.} \rank\prs{T} = \rank\prs{\brs{T}^B_C}\]
+\end{remark}
+
+\begin{theorem}[משפט המימדים]
+יהי
+$V$
+מרחב וקטורי סוף־מימדי ויהי
+$T \in \End\prs{V}$.
+אז
+\[\text{.} \dim V = \dim \im\prs{T} + \dim \ker\prs{T}\]
+\end{theorem}
 
 \begin{exercise}
 יהי
@@ -597,7 +660,7 @@ $\brs{v}_B = \pmat{1 \\ \vdots \\ 1}$.
 נשלים את
 $\prs{v}$
 לבסיס
-$\tilde{B} = \prs{v_1, \ldots, v_n}$
+$B_0 = \prs{v_1, \ldots, v_n}$
 של
 $V$
 כאשר
@@ -626,12 +689,177 @@ $M^{B_0}_B = A$.
 \\ \text{.} \hphantom{\brs{v}_B} &= \pmat{1 \\ \vdots \\ 1}
 \end{align*}
 מפורשות, ראינו כי ניתן לקחת
-$u_i = A^{-1} v_i$.
+$u_i = \rho_{B_0}^{-1}\prs{A^{-1} e_i}$.
 \end{solution}
 
-\section{גרעין ותמונה}
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה
+$\mbb{F}$,
+ותהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+הראו כי
+$\rank T = 1$
+אם ורק אם יש בסיסים
+$B,C$
+ל־%
+$V$
+כך שכל מקדמי
+$\brs{T}^B_C$
+הם
+$1$.
+\end{exercise}
 
-%TODO
+\begin{solution}
+נניח כי יש בסיסים
+$B,C$
+כמתואר. אז
+$\rank T = \rank \brs{T}^B_C = 1$.
+
+בכיוון השני, נניח כי
+$\rank T = 1$.
+כלומר,
+$\dim \im T = 1$.
+ממשפט המימדים מתקיים
+$\dim V = \dim \ker T + \dim \im T$,
+לכן
+\[\text{.} \dim \ker T = \dim V - \dim \im T = \dim V - 1\]
+יהי
+$n \ceq \dim V$
+ויהי
+\[\tilde{B} \ceq \prs{u_1, \ldots, u_{n-1}}\]
+בסיס של
+$\ker T$.
+
+יהי
+$w$
+וקטור פורש של
+$\im T$
+ויהי
+$C$
+בסיס של
+$V$
+כך שמתקיים
+$\brs{w}_C = \pmat{1 \\ \vdots \\ 1}$,
+שקיים לפי התרגיל הקודם.
+יהי
+$v \ceq T^{-1}\prs{w}$,
+ואז
+$\prs{v, u_1, \ldots, u_{n-1}}$
+בלתי־תלויים לינארית, כי
+$v \notin \ker T$.
+לכן זה בסיס של
+$V$.
+אז גם
+$B \ceq \prs{v, v + u_1, \ldots, v + u_{n-1}}$
+בסיס של
+$V$
+כי
+המטריצה
+\[\pmat{\vert & & \vert \\ \brs{v}_{\tilde{B}} & \cdots & \brs{v + u_{n-1}}_{\tilde{B}} \\ \vert & & \vert} = \pmat{1 & 1 & \cdots & 1 & 1 \\ 0 & 1 & & 0 & 0 \\ \vdots & & \ddots & & \vdots \\& 0 & & 1 & 0 \\
+0 & & \cdots & 0 & 1}\]
+הפיכה.
+
+נסמן
+$C = \prs{w_1, \ldots, w_m}$.
+מתקיים
+\[T\prs{v} = w = w_1 + \ldots + w_m\]
+ולכל
+$i \in [n-1]$
+מתקיים
+\begin{align*}
+T \prs{v + u_i} &= T\prs{v} + T\prs{u_i}
+\\&= T\prs{v} + 0
+\\&= T\prs{v}
+\\&= w_1 + \ldots + w_m
+\end{align*}
+לכן
+$
+\brs{T}^B_C
+$
+מטריצה שכל מקדמיה הם
+$1$.
+\end{solution}
+
+\begin{exercise}
+תהי
+\begin{align*}
+T \colon \mbb{R}_3\brs{x} &\to \mbb{R}_3\brs{x} \\
+\text{.} p\prs{x} &\mapsto p\prs{-1}
+\end{align*}
+מיצאו בסיסים
+$B,C$
+של
+$\mbb{R}_3\brs{x}$
+עבורם
+\[\text{.} \brs{T}^B_C = A \coloneqq \pmat{1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1}\]
+\end{exercise}
+
+\begin{solution}
+ניקח בסיס
+$\tilde{B} = \prs{b_1, b_2, b_3} \coloneqq \prs{x + 1, x^2 - 1, x^3 + 1}$
+של
+$\ker\prs{T}$,
+כאשר זהו בסיס כי זאת קבוצה בלתי־תלוייה לינארית מגודל מקסימלי (הגרעין לכל היותר $3$ מימדי כי
+$T \neq 0$).
+מתקיים
+$w \coloneqq -1 = T\prs{x}$
+ואז
+$\im\prs{T} = \Span_{\mbb{R}}\prs{w}$.
+נחשב בסיס
+$C$
+עבורו
+$\brs{w}_C = \pmat{1 \\ 1 \\ 1 \\ 1}$.
+נשלים את
+$\prs{v}$
+לבסיס
+\[\text{.} C_0 = \prs{v_1,v_2,v_3,v_4} \coloneqq \prs{-1,x,x^2,x^3}\]
+המטריצה
+\[X = \pmat{1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 0 & 1 & 0 \\ 1 & 0 & 0 & 1}\]
+הפיכה ולכן קיים בסיס
+$C = \prs{u_1, u_2, u_3, u_4}$
+עבורו
+$M^{C_0}_C = X$,
+כשראינו שאז
+$\brs{w}_C = \pmat{1\\1\\1\\1}$.
+כפי שראינו, ניתן לחשב את
+$C$
+לפי
+$u_i = \rho_{C_0}^{-1}\prs{X^{-1} e_i}$.
+מתקיים
+\[X^{-1} = \pmat{1 & 0 & 0 & 0 \\ -1 & 1 & 0 & 0 \\ -1 & 0 & 1 & 0 \\ -1 & 0 & 0 & 1}\]
+ולכן
+\begin{align*}
+u_1 &= \rho_{C_0}^{-1} \prs{\pmat{1 \\ -1 \\ -1 \\ -1}} = -1 -x - x^2 - x^3 \\
+u_2 &= \rho_{C_0}^{-1} \prs{\pmat{0\\1\\0\\0}} = x \\
+u_3 &= \rho_{C_0}^{-1} \prs{\pmat{0\\0\\1\\0}} = x^2 \\
+\text{.} u_4 &= \rho_{C_0}^{-1} \prs{\pmat{0\\0\\0\\1}} = x^3
+\end{align*}
+כלומר,
+$C = \prs{-1-x-x^2-x^3, x, x^2, x^3}$.
+
+ניקח
+$v = x \in V$
+כך שיתקיים
+$T\prs{v} = -1 = w$
+ואז
+\[B = \prs{v, v+b_1, v+b_2, v+b_3} = \prs{x, 2x+1, x^2+x-1, x^3 + x + 1}\]
+כמו בתרגיל הקודם.
+
+אכן, מתקיים
+\begin{align*}
+T\prs{x} &= -1 \\
+T\prs{2x+1} &= -2 + 1 = -1 \\
+T\prs{x^2 + x - 1} &= \prs{-1}^2 -1 - 1 = 1 - 2 = -1 \\
+T\prs{x^3 + x + 1} &= \prs{-1}^3 -1 +1 = -1
+\end{align*}
+וגם
+$\brs{-1}_C = \pmat{1 \\ 1 \\ 1 \\ 1}$,
+לכן
+\[\text{,} \brs{T}^B_C = \pmat{1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1}\]
+כפי שרצינו.
+\end{solution}
 
 %\chapter{דטרמיננטות}
 
