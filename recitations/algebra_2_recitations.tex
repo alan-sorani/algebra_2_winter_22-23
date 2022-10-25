@@ -59,7 +59,7 @@ style=alphabetic,
 
 \chapter{מטריצות מייצגות}
 
-\section{הגדרות}
+\section{הגדרות בסיסיות}
 
 \begin{definition}[וקטור קואורדינטות]
 יהי
@@ -112,10 +112,40 @@ $T \in \Hom_{\mbb{F}}\prs{V,W}$
 \[\text{.} \brs{T}^B_C = \pmat{\vert & & \vert \\ \brs{T\prs{v_1}}_C & \cdots & \brs{T\prs{v_n}}_C \\ \vert & & \vert} \in \Mat_{m \times n}\prs{\mbb{F}}\]
 \end{definition}
 
+\begin{theorem}[כפל מטריצות]
+תהי
+$A \in \Mat_{m \times n}\prs{\mbb{F}}$
+ויהי
+$E = \prs{e_1, \ldots, e_m}$
+הבסיס הסטנדרטי של
+$\mbb{F}^n$.
+אז:
+\begin{enumerate}[label = (\roman*)]
+\item
+לכל
+$i \in [m]$
+מתקיים כי
+$A e_i$
+העמודה ה־%
+$i$
+של
+$A$.
+\item
+לכל
+$B = \pmat{\vert & & \vert \\ b_1 & \cdots & b_\ell \\ \vert & & \vert} \in \Mat_{n \times \ell}\prs{\mbb{F}}$
+אז
+$AB = \pmat{\vert & & \vert \\ A b_1 & \cdots & A b_\ell \\ \vert & & \vert}$.
+\end{enumerate}
+\end{theorem}
+
+\begin{exercise}
+הראו שניתן לשחזר את ההגדרה של כפל מטריצות משתי התכונות במשפט.
+\end{exercise}
+
 \begin{remark}
 ההעתקה
 \begin{align*}
-\eta^B_C \colon \Hom_{\mbb{F}}\prs{V,B} &\to \Mat_{m,n}\prs{\mbb{F}} \\
+\eta^B_C \colon \Hom_{\mbb{F}}\prs{V,B} &\to \Mat_{m \times n}\prs{\mbb{F}} \\
 T &\mapsto \brs{T}^B_C
 \end{align*}
 היא איזומורפיזם לינארי.
@@ -397,6 +427,67 @@ $u \in U$
 \[\text{,} \brs{T}^C_D \brs{S}^B_C = \brs{T \circ S}^B_D\]
 כנדרש.
 \end{proof}
+
+\begin{proposition}
+יהיו
+$V,W$
+מרחבים וקטוריים סוף־מימדיים מעל שדה
+$\mbb{F}$
+ותהי
+$T \in \Hom_{\mbb{F}}\prs{V,W}$
+חד־חד ערכית.
+
+יהיו
+\begin{align*}
+B &= \prs{v_1, \ldots, v_n} \\
+C &= \prs{u_1, \ldots, u_n}
+\end{align*}
+בסיסים של
+$V$
+ויהיו
+\begin{align*}
+B' &= \prs{T\prs{v_1}, \ldots, T\prs{v_n}} \\
+\text{.} C' &= \prs{T\prs{u_1}, \ldots, T\prs{u_n}}
+\end{align*}
+אז
+$B',C'$
+בסיסים של
+$\im\prs{T} = \set{T\prs{v}}{v \in V}$
+וגם
+$M^B_C = M^{B'}_{C'}$.
+\end{proposition}
+
+\begin{solution}
+כיוון ש־%
+$T$
+חד־חד ערכית ועל התמונה, צמצום הטווח נותן איזומורפיזם
+$T \colon V \riso \im\prs{T}$.
+איזומורפיזם שולח בסיס לבסיס, לכן
+$B',C'$
+בסיסים.
+
+כעת, לכל
+$i \in [n]$
+נכתוב
+\begin{align*}
+v_i &= \sum_{j \in \brs{n}} \alpha_{i,j} u_i
+\end{align*}
+ואז
+\begin{align*}
+\text{.} M^B_C e_i = \brs{v_i}_C = \pmat{\alpha_{i,1} \\ \vdots \\ \alpha_{i,n}}
+\end{align*}
+כמו כן,
+\begin{align*}
+T\prs{v_i}
+&=
+T\prs{\sum_{i \in [n]} \alpha_{i,j} u_j}
+\\&=
+\sum_{i \in [n]} \alpha_{i,j} T\prs{u_j}
+\end{align*}
+ולכן גם
+\[\text{.} M^{B'}_{C'} e_i = \brs{T\prs{v_i}}_{C'} = \pmat{\alpha_{i,1} \\ \vdots \\ \alpha_{i,n}}\]
+קיבלנו כי כל עמודות המטריצות שוות, ולכן יש שוויון.
+\end{solution}
 
 \begin{exercise}
 תהי
