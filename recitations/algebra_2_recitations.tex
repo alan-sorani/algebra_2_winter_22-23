@@ -278,7 +278,7 @@ T\prs{x^3} &= \prs{x+1}^3 = 1 + 3x + 3x^2 + x^3
 \end{align*}
 ואז
 \begin{align*}
-\text{.} \brs{T}_B &= \pmat{1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 1 & 3 & 3 & 1}
+\text{.} \brs{T}_B &= \pmat{1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 1}
 \end{align*}
 \end{solution}
 
@@ -298,7 +298,7 @@ $V$}.
 $\brs{T}_E$.
 \end{exercise}
 
-\begin{solution}
+\begin{proof}
 כמו מקודם, נחשב את
 $\brs{T\prs{E_{i,j}}}_E$
 כיוון שאלו עמודות
@@ -319,9 +319,10 @@ T\prs{E_{2,1}} &= \frac{1}{2} \prs{E_{2,1} - E_{1,2}} = \frac{1}{2} E_{2,1} - \f
 \end{align*}
 ואז
 \begin{align*}
-\text{.} \brs{T}_E &= \pmat{0 & 0 & 0 & 0 \\ 0 & \frac{1}{2} & -\frac{1}{2} & 0 \\ 0 & -\frac{1}{2} & \frac{1}{2} & 0 \\ 0 & 0 & 0 & 0}
+\text{,} \brs{T}_E &= \pmat{0 & 0 & 0 & 0 \\ 0 & \frac{1}{2} & -\frac{1}{2} & 0 \\ 0 & -\frac{1}{2} & \frac{1}{2} & 0 \\ 0 & 0 & 0 & 0}
 \end{align*}
-\end{solution}
+כנדרש.
+\end{proof}
 
 \begin{exercise}
 יהי
@@ -580,6 +581,8 @@ $A^{-1}$
 $M^C_E = A^{-1}$
 ולכן
 $M^E_C = \prs{A^{-1}}^{-1} = A$.
+כלומר ניקח,
+$u_i = A^{-1} e_i$.
 
 \item
 מתקיים
@@ -587,7 +590,7 @@ $M^B_C = M^E_C M^B_E$
 לכן נרצה שיתקיים
 $M^E_C M^B_E = A$
 או במילים אחרות
-$M^E_C = \prs{M^B_E}^{-1} A = M^E_B A$.
+$M^E_C = A \prs{M^B_E}^{-1} = A M^E_B$.
 מהסעיף הקודם, נרצה
 $C = \prs{u_1, \ldots, u_n}$
 כאשר
@@ -595,9 +598,9 @@ $u_i$
 העמודה ה־%
 $i$
 של
-$\prs{M^E_B A}^{-1} = A^{-1} M^B_E$,
+$\prs{A M^E_B}^{-1} = M^B_E A^{-1}$,
 כלומר
-\[\text{.} u_i = A^{-1} M^B_E e_i = A^{-1} M^B_E \brs{v_i}_B = A^{-1} v_i\]
+\[\text{.} u_i = M^B_E A^{-1} e_i\]
 
 \item
 עבור כל בסיס
@@ -617,8 +620,12 @@ $C = \prs{v_1, \ldots, v_n}$
 נקבל כי
 $M^B_C = M^E_{\hat{C}}$
 כאשר
-$\hat{C} = \prs{\brs{v_1}_B, \ldots, \brs{v_n}_B}$
-לפי הסעיף הקודם, נרצה
+$\hat{C} = \prs{\brs{v_1}_B, \ldots, \brs{v_n}_B}$.
+כלומר, נחפש
+$\hat{C}$
+עבורו
+$M^E_{\hat{C}} = A \brs{T}_B^{-1}$.
+לפי הסעיף השני, נרצה
 $\hat{C} = \prs{u_1, \ldots, u_n}$
 עבור
 \[\text{.} u_i = \prs{A \brs{T}_B^{-1}}^{-1} e_i = \brs{T}_B A^{-1} e_i\]
@@ -656,7 +663,7 @@ $u_i = \brs{T}_E A^{-1} e_i$.
 חישבנו ב־%
 \ref{ex:p(x+1)}
 כי
-\[\brs{T}_E = \pmat{1 & 0 & 0 & 0 \\ 1 & 1 & 0 & 0 \\ 1 & 2 & 1 & 0 \\ 1 & 3 & 3 & 1}\]
+\[\brs{T}_E = \pmat{1 & 1 & 1 & 1 \\ 0 & 1 & 2 & 3 \\ 0 & 0 & 1 & 3 \\ 0 & 0 & 0 & 1}\]
 וניתן לראות כי
 $A^2 = I$
 כלומר
@@ -670,15 +677,33 @@ A e_4 &= e_3
 \end{align*}
 ואז נקבל
 \begin{align*}
-u_1 &= \brs{T}_E A e_1 = \brs{T}_E e_2 = \pmat{0 \\ 1 \\ 2 \\ 3} \\
-u_2 &= \brs{T}_E A e_2 = \brs{T}_E e_1 = \pmat{1 \\ 1 \\ 1 \\ 1} \\
-u_3 &= \brs{T}_E A e_3 = \brs{T}_E e_4 = \pmat{0 \\ 0 \\ 0 \\ 1} \\
-\text{,} u_4 &= \brs{T}_E A e_4 = \brs{T}_E e_3 = \pmat{0 \\ 0 \\ 1 \\ 3}
+u_1 &= \brs{T}_E A^{-1} e_1 = \brs{T}_E e_2 = \pmat{1 \\ 1 \\ 0 \\ 0} \\
+u_2 &= \brs{T}_E A^{-1} e_2 = \brs{T}_E e_1 = \pmat{1 \\ 0 \\ 0 \\ 0} \\
+u_3 &= \brs{T}_E A^{-1} e_3 = \brs{T}_E e_4 = \pmat{1 \\ 3 \\ 3 \\ 1} \\
+\text{,} u_4 &= \brs{T}_E A^{-1} e_4 = \brs{T}_E e_3 = \pmat{1 \\ 2 \\ 1 \\ 0}
 \end{align*}
 כלומר
-\[\text{,} \hat{C} = \prs{\pmat{0 \\ 1 \\ 2 \\ 3}, \pmat{1 \\ 1 \\ 1 \\ 1}, \pmat{0 \\ 0 \\ 0 \\ 1}, \pmat{0 \\ 0 \\ 1 \\ 3}}\]
+\[\text{,} \hat{C} = \prs{\pmat{1 \\ 1 \\ 0 \\ 0}, \pmat{1 \\ 0 \\ 0 \\ 0}, \pmat{1 \\ 3 \\ 3 \\ 1}, \pmat{1 \\ 2 \\ 1 \\ 0}}\]
 ולבסוף
-\[\text{.} C = \prs{\rho_E^{-1}\prs{u_1}, \ldots, \rho_E^{-1}\prs{u_4}} = \prs{x+2x^3+3x^3, 1+x+x^2+x^3, x^3, x^2+3x^3}\]
+\[\text{.} C = \prs{v_1, v_2, v_3, v_4} \coloneqq \prs{1+x, 1, 1+3x+3x^2+x^3, 1+2x+x^2}\]
+
+ליתר ביטחון, נבדוק שהמטריצה המייצגת היא אכן
+$A$.
+מתקיים
+\begin{align*}
+T\prs{1} &= 1 = v_2 \\
+T\prs{x} &= x+1 = v_1 \\
+T\prs{x^2} &= \prs{x+1}^2 = 1+2x+x^2 = v_4 \\
+T\prs{x^3} &= \prs{x+1}^3 = 1+3x+3x^2+x^3 = v_3
+\end{align*}
+ולכן
+\begin{align*}
+\brs{T}^E_C &= \pmat{\vert & \vert & \vert & \vert \\ \brs{T\prs{1}}_C & \brs{T\prs{x}}_C & \brs{T\prs{x^2}}_C & \brs{T\prs{x^3}}_C \\ \vert & \vert & \vert & \vert}
+\\&= \pmat{\vert & \vert & \vert & \vert \\ \brs{v_2}_C & \brs{v_1}_C & \brs{v_4}_C & \brs{v_3}_C \\ \vert & \vert & \vert & \vert}
+\\&= \pmat{\vert & \vert & \vert & \vert \\ e_2 & e_1 & e_4 & e_3 \\ \vert & \vert & \vert & \vert}
+\\&= A
+\end{align*}
+כנדרש.
 \end{solution}
 
 \section{גרעין ותמונה}
@@ -780,7 +805,7 @@ $M^{B_0}_B = A$.
 \\ \text{.} \hphantom{\brs{v}_B} &= \pmat{1 \\ \vdots \\ 1}
 \end{align*}
 מפורשות, ראינו כי ניתן לקחת
-$u_i = \rho_{B_0}^{-1}\prs{A^{-1} e_i}$.
+\[\text{.} u_i = \rho_{B_0}^{-1}\prs{\brs{\id}_B A^{-1} e_i} = \rho_{B_0}^{-1}\prs{A^{-1}e_i}\]
 \end{solution}
 
 \begin{exercise}
