@@ -977,7 +977,204 @@ $\brs{-1}_C = \pmat{1 \\ 1 \\ 1 \\ 1}$,
 כפי שרצינו.
 \end{solution}
 
-%\chapter{דטרמיננטות}
+\chapter{דטרמיננטות}
+
+הגדרנו בהרצאה הגדרה רקורסיבית עבור הדטרמיננטה.
+לפעמים, במיוחד בהוכחות על טיעונים אבסטרקטיים בנוגע לדטרמיננטה, נוח לעבור עם הגדרה אחרת לפי תמורות.
+
+\begin{definition}[פרמוטציה]
+\emph{פרמוטציה}
+של קבוצה
+$X$
+היא העתקה חד־חד ערכית ועל
+$\sigma \colon X \to X$.
+\end{definition}
+
+\begin{notation}
+לכל
+$n \in \mbb{N}_+$,
+נסמן את הקבוצת הפרמוטציות של
+$\brs{n} = \set{1, \ldots, n}$
+בתור
+$S_n$.
+\end{notation}
+
+\begin{example}
+נוכל להגדיר
+$\sigma \in S_5$
+על ידי
+\begin{align*}
+\sigma\prs{1} &= 2 \\
+\sigma\prs{2} &= 3 \\
+\sigma\prs{3} &= 5 \\
+\sigma\prs{4} &= 4 \\
+\text{.} \sigma\prs{5} &= 1
+\end{align*}
+\end{example}
+
+\begin{definition}[שכלוף]
+תמורה
+$\sigma \in S_n$
+נקראת
+\emph{שכלוף}
+אם יש
+$a,b \in \brs{n}$
+שונים
+עבורם
+$\sigma\prs{a} = b$, $\sigma\prs{b} = a$
+וגם
+$\sigma\prs{c} = c$
+לכל
+$c \in \brs{n} \setminus \set{a,b}$.
+
+נסמן שכלוף זה בתור
+$\prs{a,b}$
+ונשים לב כי
+$\prs{a,b}^{-1} = \prs{a,b}$
+כי
+$\prs{a,b}^2 = \id_{\brs{n}}$.
+\end{definition}
+
+\begin{example}
+התמורה
+$\sigma \in S_5$
+המוגדרת על ידי
+\begin{align*}
+\sigma\prs{1} &= 1 \\
+\sigma\prs{2} &= 5 \\
+\sigma\prs{3} &= 3 \\
+\sigma\prs{4} &= 4 \\
+\sigma\prs{5} &= 2
+\end{align*}
+היא שכלוף.
+\end{example}
+
+\begin{proposition}
+כל
+$\sigma \in S_n$
+יתן לכתוב כהרכבה של שכלופים.
+\end{proposition}
+
+\begin{proof}
+נוכיח את הטענה באינדוקציה.
+אם
+$n = 1$
+הטענה טריוויאלית.
+נניח כי
+$n \geq 2$
+וכי הטענה נכונה לכל
+$m < n$,
+ותהי
+$\sigma \in S_n$.
+אם
+$\sigma\prs{n} = n$
+נקבל כי
+$\left.\sigma\right|_{\brs{n-1}}$
+חד־חד ערכית ועל, ולכן תמורה.
+אז מההנחה ניתן לכתוב אותה כהרכבה של חילופים ב־%
+$S_{n-1}$,
+והרכבת חילופים של אותם מספרים תיתן את
+$\sigma$.
+אחרת, יש
+$\ell \in \brs{n-1}$
+עבורו
+$\sigma\prs{n} = \ell$.
+אז
+\[\prs{\prs{n,\ell} \circ \sigma}\prs{n} = \prs{n,\ell}\prs{\ell} = n\]
+ולכן מהפירוט לעיל ניתן לכתוב
+\[\prs{n, \ell} \circ \sigma = \tau_1 \circ \tau_{2} \circ \ldots \circ \tau_k\]
+עבור שכלופים
+$\tau_1, \ldots, \tau_k$.
+אז
+\[\sigma = \prs{n, \ell} \circ \tau_k \circ \ldots \circ \tau_1\]
+הרכבת שכלופים.
+\end{proof}
+
+\begin{proposition}
+תהי
+$\sigma \in S_n$
+ונכתוב את
+$\sigma$
+כהרכבת שכלופים בשתי דרכים
+\begin{align*}
+\sigma &= \tau_1 \circ \ldots \circ \tau_k \\
+\text{.} \sigma &= \rho_1 \circ \ldots \rho_\ell
+\end{align*}
+אז ל־%
+$k,\ell$
+יש אותה זוגיות (כלומר, שניהם זוגיים או ששניהם אי־זוגיים).
+\end{proposition}
+
+\begin{proof}
+מתקיים
+\[\text{.} \id = \sigma \sigma^{-1} = \tau_k \circ \ldots \tau_k \circ \rho_1 \circ \ldots \circ \rho_\ell\]
+הזוגיות של
+$k,\ell$
+שווה אם ורק אם הסכום שלהם זוגי, ולכן די להוכיח כי אם
+$\id = \sigma_1 \circ \ldots \circ \sigma_m$
+אז
+$m$
+זוגי.
+
+נשים לב כי אם
+$\tau$
+חילוף, יש
+$i,j \in [n]$
+עבורם
+$i < j$
+וגם
+$\tau\prs{i} > \tau\prs{j}$.
+באופן כללי,
+\end{proof}
+
+\begin{exercise}
+נתון כי
+\[\text{.} 17 \mid 20604, 53227, 25755, 20927, 289\]
+הוכיחו כי
+\[\text{.} 17 \mid \det\pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9}\]
+\end{exercise}
+
+\begin{solution}
+ראשית נשים לב שהדטרמיננטה מבוטאת באמצעות סכומים ומכפלות של מקדמי המטריצה, לכן אצלנו היא אכן מספר שלם. כעת, נרצה באמצעות פעולות דירוג שורה
+ועמודה לקבל מטריצה עם עמודה שכל איבריה מתחלקים ב־%
+$17$,
+ולהשתמש בתכונות דטרמיננטה כדי לקבל את הנדרש.
+נדרג
+\begin{align*}
+    \pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9} \xrightarrow{C_5 \mapsto C_5 + 10 C_4 + 100 C_3 + 1000 C_2 + 10000 C_1} \pmat{2 & 0 & 6 & 0 & 20604 \\ 5 & 3 & 2 & 2 & 53227 \\ 2 & 5 & 7 & 5 & 25755 \\ 2 & 0 & 9 & 2 & 20927 \\ 0 & 0 & 2 & 8 & 289}
+\end{align*}
+וכיוון שהוספקת כפולה של עמודה לעמודה אחרת לא משפיעה על הדטרמיננטה וכפולת עמודה בסקלר כופלת את הדטרמיננטה באותו סקלר, נקבל
+\begin{align*}
+    \text{.} \det\pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9} = \det\pmat{2 & 0 & 6 & 0 & 20604 \\ 5 & 3 & 2 & 2 & 53227 \\ 2 & 5 & 7 & 5 & 25755 \\ 2 & 0 & 9 & 2 & 20927 \\ 0 & 0 & 2 & 8 & 289} = 17 \det\pmat{2 & 0 & 6 & 0 & 20604/17 \\ 5 & 3 & 2 & 2 & 53227/17 \\ 2 & 5 & 7 & 5 & 25755/17 \\ 2 & 0 & 9 & 2 & 20927/17 \\ 0 & 0 & 2 & 8 & 289/17}
+\end{align*}
+הדטרמיננטה של המטריצה בצד ימין שלמה, כי כל מקדמי המטריצה שלמים, ולכן נקבל את הנדרש.
+\end{solution}
+
+\begin{exercise}
+הוכיחו כי לכל
+$z,u,w \in \mbb{C}$
+ולכל
+$a,b,c \in \mbb{R}$
+מתקיים
+\[\text{.} \Re\prs{\det\pmat{a & z & \bar{z} \\ b & u & \bar{u} \\ c & w & \bar{w}}} = 0\]
+\end{exercise}
+
+\begin{solution}
+ראשית, נשים לב כי
+$\det\prs{\bar{A}} = \overline{\det\prs{A}}$,
+כי הדטרמיננטה מורכבת מסכומים ומכפלות של המקדמים, וכי צמוד מתחלף עם סכומים ומכפלות.
+מצד שני, נקבל כי
+$\bar{A}$
+היא המטריצה
+$A$
+בהחלפת העמודות השנייה והשלישית. אנו יודעים כי פעולה זאת הופכת את הסימן של הדטרמיננטה, ולכן
+\begin{align*}
+    \text{.} \det\prs{A} = \overline{\det\prs{\bar{A}}} = \overline{-\det\prs{A}} = -\overline{\det\prs{A}}
+\end{align*}
+לכן,
+\[\Re\prs{\det\prs{A}} = \frac{\det\prs{A} + \overline{\det\prs{A}}}{2} = \frac{0}{2} = 0\]
+כנדרש.
+\end{solution}
 
 %\chapter{מרחבים שמורים}
 

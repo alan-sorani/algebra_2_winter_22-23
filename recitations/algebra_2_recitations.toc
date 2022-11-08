@@ -9,3 +9,5 @@
 \contentsline {section}{\numberline {1.1}הגדרות בסיסיות}{2}{section.1.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}גרעין ותמונה}{8}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}דטרמיננטות}{12}{chapter.2}%
