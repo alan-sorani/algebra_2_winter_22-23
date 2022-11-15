@@ -977,15 +977,414 @@ $\brs{-1}_C = \pmat{1 \\ 1 \\ 1 \\ 1}$,
 כפי שרצינו.
 \end{solution}
 
-\chapter{סכומים ישרים}
+\chapter{סכומים ישרים ולכסינות}
+
+\section{סכומים ישרים}
+
+\begin{definition}[סכום ישר]
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל
+$\mbb{F}$
+ויהיו
+$V_1, \ldots, V_k \leq V$
+תת־מרחבים.
+נזכיר כי
+\begin{align*}
+\text{.} V_1 + \ldots + V_k \coloneqq \set{v_1 + \ldots + v_k}{\forall i \in [k] \colon v_i \in V_i}
+\end{align*}
+נגיד שהסכום הזה הוא
+\emph{סכום ישר}
+אם כל
+$v \in V_1 + \ldots + V_k$
+ניתן לכתיבה
+$v = v_1 + \ldots + v_k$
+\emph{בצורה יחידה}
+עבור
+$v_i \in V_i$.
+במקרה זה נסמן את הסכום
+$\bigoplus_{i \in [k]} V_i = V_1 \oplus \ldots \oplus V_k$.
+\end{definition}
+
+\begin{remark}
+באופן שקול, הסכום
+$V_1 + \ldots + V_k$
+ישר אם ורק אם
+$v_1 + \ldots + v_k = 0$
+עבור
+$v_i \in V_i$
+גורר
+$v_i = 0$
+לכל
+$i \in [k]$.
+\end{remark}
+
+\begin{proposition}
+הסכום
+$\sum_{i \in [k]} V_i \coloneqq V_1 + \ldots + V_k$
+ישר אם ורק אם
+\[V_i \cap \prs{\sum_{j \neq i} V_j} = \set{0}\]
+לכל
+$i \in [k]$.
+
+את המקרה
+$k = 2$
+ראינו בהרצאה, והטענה הכללית נובעת באינדוקציה.
+\end{proposition}
+
+\begin{definition}[שרשור קבוצות סדורות]
+תהיינה
+\begin{align*}
+A_1 &= \prs{v_{1,1}, \ldots, v_{1, \ell_1}} \\
+A_2 &= \prs{v_{2,1}, \ldots, v_{2, \ell_2}} \\
+&\vdots \\
+A_k &= \prs{v_{k,1}, \ldots, v_{k, \ell_k}}
+\end{align*}
+קבוצות סדורות.
+נגדיר את
+\emph{השרשור שלהן}
+\begin{align*}
+\text{.} A_1 \cup \ldots \cup A_{\ell} \coloneqq \prs{v_{1,1}, \ldots, v_{1,\ell_1}, v_{2,1}, \ldots, v_{2,\ell_2}, \ldots, v_{k,1}, \ldots, v_{k,\ell_k}}
+\end{align*}
+זאת הקבוצה הסדורה שהיא שרשור איברי הקבוצות הסדורות
+$A_1, \ldots, A_k$
+לפי הסדר.
+\end{definition}
+
+\begin{proposition}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי ויהיו
+$V_1, \ldots, V_k$
+תת־מרחבים של
+$V$.
+התנאים הבאים שקולים.
+\begin{enumerate}
+\item $V = V_1 \oplus \ldots \oplus V_k$.
+\item לכל בחירת בסיסים
+$B_i$
+של
+$V_i$
+הקבוצה הסדורה
+$B_1 \cup \ldots \cup B_k$
+היא בסיס של
+$V$.
+\item קיימים בסיסים
+$B_i$
+של
+$V_i$
+כך שהקבוצה הסדורה
+$B_1 \cup \ldots \cup B_k$
+היא בסיס של
+$V$.
+\item $V = \sum_{i \in [k]} V_i$
+וגם
+\[\text{.} \dim V = \sum_{i \in [k]} \dim\prs{V_i}\]
+\end{enumerate}
+\end{proposition}
+
+\newpage
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה
+$\mbb{F}$,
+ונזכיר כי
+$P \in \End_{\mbb{F}}\prs{V}$
+נקראת
+\emph{הטלה}
+אם
+$P^2 = P$.
+
+\begin{enumerate}
+\item תהי
+$P \in \End_{\mbb{F}}\prs{V}$
+הטלה. הראו כי
+$V = \ker\prs{P} \oplus \im\prs{P}$.
+
+\item הראו כי
+$T \in \End_{\mbb{F}}\prs{V}$
+הטלה אם ורק אם קיים בסיס
+$B$
+של
+$V$
+עבורו
+\[\text{.} \brs{T}_B = \pmat{0 & & & & & \\ & \ddots & & & & \\ & & 0 & & & \\ & & & 1 & & \\ & & & & \ddots & \\ & & & & & 1}\] 
+\end{enumerate}
+\end{exercise}
+
+\begin{solution}
+\begin{enumerate}
+\item יהי
+$v \in V$.
+מתקיים
+$v = \prs{v - P\prs{v}} + P\prs{v}$
+כאשר
+$P\prs{v} \in \im\prs{P}$.
+כמו כן,
+\[P\prs{v - P\prs{v}} = P\prs{v} - P^2\prs{v} = P\prs{v} - P\prs{v} = 0\]
+ולכן
+$v- P\prs{v} \in \ker\prs{P}$
+ונקבל כי
+$V = \ker\prs{P} + \im\prs{P}$.
+
+כעת, אם
+$v \in \ker\prs{P} \cap \im\prs{P}$
+בפרט
+$v \in \im\prs{P}$
+ולכן יש
+$u \in V$
+עבורו
+$P\prs{u} = v$.
+אז
+\[v = P\prs{u} = P^2\prs{u} = P\prs{P\prs{u}} = P\prs{v} = 0\]
+ולכן
+$\ker\prs{P} \cap \im\prs{P} = 0$
+ונקבל כי הסכום ישר.
+
+\item
+נניח כי
+$T$
+הטלה. במקרה זה
+$V = \ker\prs{T} \oplus \im\prs{T}$.
+עבור בסיסים
+\begin{align*}
+C &= \prs{c_1, \ldots, c_m} \\
+D &= \prs{d_{m+1}, \ldots, d_\ell}
+\end{align*}
+של
+$\ker\prs{T}, \im\prs{T}$
+בהתאמה, נקבל כי
+$C \cup D$
+בסיס של
+$V$.
+לכל
+$c_i \in C $
+מתקיים
+$T\prs{c_i} = 0$,
+לכן
+$\dim\prs{\ker\prs{T}}$
+העמודות הראשונות של
+$\brs{T}_{C \cup D}$
+הן עמודות אפסים.
+לכל
+$d_i \in D$
+יש
+$u_i \in V$
+עבורו
+\[\text{,} d_i = T\prs{u_i} = T^2\prs{u_i} = T\prs{T\prs{u_i}} = T\prs{d_i}\]
+לכן
+\[\brs{T\prs{d_i}}_{C \cup D} = \brs{d_i}_{C \cup D} = e_i\]
+ולכן העמודה ה־%
+$i$
+עבור
+$i \geq m$
+היא
+$e_i$,
+ונקבל את הנדרש.
+
+להיפך, נניח שקיים בסיס
+$B = \prs{v_1, \ldots, v_n}$
+כנ"ל. אז
+$\brs{T^2}_B = \brs{T}_B^2 = \brs{T}_B$
+ולכן
+$T^2 = T$
+ונקבל כי
+$T$
+הטלה.
+\end{enumerate}
+\end{solution}
+
+\begin{definition}[משלים ישר]
+יהי
+$V$
+מרחב וקטורי ויהי
+$U \leq V$
+תת־מרחב.
+\emph{משלים ישר}
+$W$
+של
+$U$
+הוא תת־מרחב של
+$V$
+עבורו
+$V = U \oplus W$.
+\end{definition}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה
+$\mbb{F}$
+ויהי
+$U \leq V$
+תת־מרחב עם בסיס
+$B$.
+יהי
+$C$
+בסיס של
+$V$.
+\begin{enumerate}
+\item הראו שניתן להשלים את
+$B$
+לבסיס של
+$V$
+על ידי הוספת וקטורים מ־%
+$C$.
+
+\item הסיקו שקיים משלים ישר
+$W$
+של
+$U$
+עם בסיס של וקטורים מ־%
+$C$.
+\end{enumerate}
+\end{exercise}
+
+\begin{solution}
+\begin{enumerate}
+\item נסמן
+$n \coloneqq \dim_{\mbb{F}}\prs{V}$
+ונוכיח את הטענה באינדוקציה על
+$m = n - \abs{B}$.
+
+עבור
+$m = 0$
+מתקיים
+$\abs{B} = n$
+ולכן
+$U = V$.
+נניח שהטענה נכונה לכל
+$k < m$
+ונוכיח אותה עבור
+$m$.
+
+אם
+$C \subseteq U$,
+מתקיים
+\[V = \Span_{\mbb{F}}\prs{C} \subseteq \Span_{\mbb{F}}\prs{U} = U\]
+ולכן
+$V = U$
+בסתירה לכך שהמימדים שונים.
+לכן, קיים
+$c \in C \setminus U$.
+אז
+$B \cup \prs{c}$
+קבוצה בלתי־תלויה לינארית, כי
+$c$
+אינו צירוף לינארי של הוקטורים הקודמים. נגדיר
+$U' = \Span_{\mbb{F}}\prs{B \cup \prs{c}}$.
+אז
+\[n - \dim\prs{U'} = n - \abs{B} - 1 = m-1 < m\]
+ולכן ניתן להשתמש בהנחת האינדוקציה ולקבל שניתן להשלים את
+$B \cup \prs{c}$
+לבסיס
+$\prs{B \cup \prs{c}} \cup \prs{c_2, \ldots, c_m}$
+של
+$V$,
+כאשר
+$c_i \in C$.
+אז
+$c, c_2, \ldots, c_m \in C$
+משלימים את
+$B$
+לבסיס של
+$V$.
+
+\item בסימונים של הסעיף הקודם,
+$B \cup \prs{c, \ldots, c_m}$
+בסיס של
+$V$.
+נסמן
+$D = \prs{c, c_2, \ldots, c_m}$
+וגם
+$W = \Span_{mbb{F}}\prs{D}$.
+אז
+$B \cup D$
+בסיס של
+$V$
+ולכן
+\[\text{,} V = \Span_{\mbb{F}}\prs{B} \oplus \Span_{\mbb{F}}\prs{D} = U \oplus W\]
+כנדרש.
+\end{enumerate}
+\end{solution}
+
+\begin{exercise}
+יהי
+$V = \mbb{R}_3\brs{x}$
+ותהיינה
+\begin{align*}
+B &= \prs{1+x, x+x^2} \\
+C &= \prs{1, x, x^2, x^3}
+\end{align*}
+קבוצות סדורות של וקטורים מ־%
+$V$.
+יהי
+$U = \Span\prs{B}$.
+
+\begin{enumerate}
+\item מיצאו משלים ישר
+$W$
+של
+$U$
+ובסיס עבור
+$W$
+שמורכב מוקטורים ב־%
+$C$.
+\item
+האם
+$W$
+שמצאתם יחיד? הוכיחו או הפריכו.
+\end{enumerate}
+\end{exercise}
+
+\begin{solution}
+\begin{enumerate}
+\item נשלים את
+$B$
+לבסיס של
+$V$
+על ידי הוספת וקטורים מ־%
+$C$.
+נוסיף את
+$1 \notin U$
+כדי לקבל
+$B' = \pmat{1 + x, x + x^2, 1}$
+ואז את
+$x^3 \notin \Span\prs{B'}$
+כדי לקבל בסיס
+$B'' = \pmat{1 + x, x + x^2, 1, x^3}$
+של
+$V$.
+
+נסמן
+$D = \prs{1, x^3}$
+וניקח
+$W = \Span\prs{D}$.
+אז
+$B'' = B \cup D$
+ולכן
+$V = U \oplus W$,
+כנדרש.
+
+\item לא.
+למשל, יכולנו לקחת
+$B' = \pmat{1 + x, x + x^2, x^2}$
+ואז
+$B'' = \pmat{1 + x, x + x^2, x^2, x^3}$.
+במקרה זה היינו מקבלים משלים ישר
+$\Span\prs{x^2, x^3}$,
+ששונה מ־%
+$W$.
+\end{enumerate}
+\end{solution}
+
+\section{מרחבים שמורים}
 
 %TODO
 
-\chapter{מרחבים שמורים}
-
-%TODO
-
-\chapter{לכסינות}
+\section{לכסינות}
 
 \begin{definition}[אופרטור לכסין]
 אופרטור
