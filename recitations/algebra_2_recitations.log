@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  15 NOV 2022 19:36
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  15 NOV 2022 21:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2031,16 +2031,7 @@ ut line 258.
 פרק 2.
 [12
 
-]
-Overfull \hbox (0.18149pt too wide) in paragraph at lines 1295--1308
-[][]\TU/FrankRuehlCLM(0)/m/n/10 בסימונים של הסעיף הקודם, $\OML/cmm/m/it/10 B \O
-MS/cmsy/m/n/10 [ []$ \TU/FrankRuehlCLM(0)/m/n/10 בסיס של $\OML/cmm/m/it/10 V$\T
-U/FrankRuehlCLM(0)/m/n/10 . נסמן $\OML/cmm/m/it/10 D \OT1/cmr/m/n/10 = []$ \TU/
-FrankRuehlCLM(0)/m/n/10 וגם $\OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = [][] []$\TU/F
-rankRuehlCLM(0)/m/n/10 .[]
- []
-
-[13]
+] [13]
 Overfull \hbox (6.80733pt too wide) in paragraph at lines 1344--1360
 [][]\TU/FrankRuehlCLM(0)/m/n/10 נשלים את $\OML/cmm/m/it/10 B$ \TU/FrankRuehlCLM
 (0)/m/n/10 לבסיס של $\OML/cmm/m/it/10 V$ \TU/FrankRuehlCLM(0)/m/n/10 על ידי הוס
@@ -2060,7 +2051,7 @@ n/10 = 0$\TU/FrankRuehlCLM(0)/m/it/10 , אם ורק אם $\OML/cmm/m/it/10 p[] [
 /cmr/m/n/10 = [] [] =$[]
  []
 
-[14] [15] [16]
+[14] [15] [16] [17]
 \tf@thm=\write8
 \openout8 = `algebra_2_recitations.thm'.
 
@@ -2114,20 +2105,20 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1986.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1986.
- (./algebra_2_recitations.aux Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1986.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1986.
+ [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2199.
+ (./algebra_2_recitations.aux
+Setting \if@calendar@hebrew Setting \if@calendar@hebrew)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2199.
 
 Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
 (rerunfilecheck)             Checksum: B06C3B83EC63A200EA57C8815906E5ED;573.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1986.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2199.
  ) 
 Here is how much of TeX's memory you used:
  41700 strings out of 479819
@@ -2136,6 +2127,6 @@ Here is how much of TeX's memory you used:
  58044 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,19n,86p,1293b,4185s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,19n,86p,1293b,4191s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algebra_2_recitations.pdf (19 pages).
+Output written on algebra_2_recitations.pdf (20 pages).
