@@ -1364,6 +1364,7 @@ $D = \prs{1, x^3}$
 $W = \Span\prs{D}$.
 אז
 $B'' = B \cup D$
+בסיס,
 ולכן
 $V = U \oplus W$,
 כנדרש.
@@ -1380,10 +1381,6 @@ $W$.
 \end{enumerate}
 \end{solution}
 
-\section{מרחבים שמורים}
-
-%TODO
-
 \section{לכסינות}
 
 \begin{definition}[אופרטור לכסין]
@@ -1399,7 +1396,7 @@ $V$
 $\alpha_1, \ldots, \alpha_n \in \mbb{F}$
 עבורם
 \begin{align*}
-\text{.} \brs{T}_B &= \pmat{\alpha_1 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & \alpha_n}
+\text{.} \brs{T}_B &= \pmat{\alpha_1 & & \\ & \ddots &  \\  &  & \alpha_n}
 \end{align*}
 בסיס
 $B$
@@ -1598,6 +1595,244 @@ $P^{-1} A P$
 אלכסונית.
 \end{definition}
 
+\section{מרחבים שמורים}
+
+נרצה להבין אופרטורים לינאריים דרך הבנה של צמצום שלהם לתת־מרחבים קטנים יותר.
+אם
+$T \in \End_{\mbb{F}}\prs{V}$,
+נוכל תמיד לצמצם את המקור כדי לקבל העתקה לינארית
+$\left. T \right|_{W} \colon W \to V$,
+אבל לא נוכל ללמוד מספיק כאשר הצמצום אינו אופרטור. לכן נרצה לצמצם גם את הטווח, מה שמוביל להגדרה הבאה.
+
+\begin{definition}[מרחב שמור]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$U \leq V$.
+נגיד כי
+$U$
+הינו
+\emph{$T$%
+־שמור} (או
+\emph{$T$%
+־אינווריאנטי}
+אם
+$T\prs{U} \subseteq U$.
+\end{definition}
+
+\begin{definition}
+במקרה ש־%
+$W$
+מרחב
+$T$%
+־שמור, נוכל להסתכל על הצמצום
+$\left. T \right|_W \colon W \to W$
+שמוגדר על ידי
+$\left. T \right|_W \prs{w} = T\prs{w}$.
+\end{definition}
+
+\begin{remark}
+שימו לב שהסימון הוא אותו סימון כמו הצמצום של המקור, אך במסגרת הקורס צמצום אופרטורים יתייחס לזה שבהגדרה אלא אם כן יצוין מפורשות אחרת.
+\end{remark}
+
+\begin{exercise}
+יהי
+$\mbb{C}$
+כמרחב וקטורי ממשי ויהי
+\begin{align*}
+T \colon \mbb{C} &\to \mbb{C} \\
+\text{.} \hphantom{lala} z &\mapsto iz
+\end{align*}
+מצאו את התת־מרחבים ה־%
+$T$%
+־שמורים של
+$\mbb{C}$
+והסיקו כי
+$T$
+אינו לכסין מעל
+$\mbb{R}$.
+\end{exercise}
+
+\begin{solution}
+$\mbb{C}, \set{0}$
+תת־מרחבים
+$T$%
+־שמורים.
+
+נניח כי
+$W \leq \mbb{C}$
+מרחב
+$T$%
+־שמור נוסף. אז
+$\dim_{\mbb{R}}\prs{W} = 1$
+ולכן יש
+\[z_0 \in \mbb{C}^\times \ceq \set{z \in \mbb{C}}{z \neq 0}\]
+עבורו
+$W = \spn\set{z_0}$.
+נקבל
+$T\prs{z_0} \in W$
+לכן
+$T\prs{z_0} = c z_0$
+עבור
+$c \in \mbb{R}$.
+אבל
+$c z_0 = i z_0$
+גורר
+$c = i$
+בסתירה.
+
+תת־מרחבים $T$־שמורים $1$־מימדיים של
+$\mbb{C}$
+הם
+$\Span_{\mbb{R}}\prs{v}$
+עבור
+$v$
+וקטור עצמי של
+$T$.
+ לכן אין ל־%
+$T$
+וקטורים עצמיים, ולכן הוא אינו לכסינה מעל
+$\mbb{R}$.
+\end{solution}
+
+\begin{exercise}
+יהי
+$W \leq V$
+ויהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+יהיו
+$v_1, \ldots, v_k \in V$
+וקטורים עצמיים עם ערכים עצמיים שונים
+$\lambda_1, \ldots, \lambda_k$.
+הראו כי אם
+$v_1 + \ldots + v_k \in W$
+אז
+$v_i \in W$
+לכל
+$i \in [k]$.
+\end{exercise}
+
+\begin{solution}
+נוכיח זאת באינדוקציה, כאשר הבסיס
+$k = 1$
+מיידי.
+נניח כי הטענה נכונה לכל
+$\ell < k$
+ונסמן
+$w = v_1 + \ldots + v_k$.
+אז
+\[\prs{T - \lambda_k} \prs{w} = \prs{\lambda_1 - \lambda_k} v_1 + \ldots + \prs{\lambda_k - \lambda_k} v_k = \sum_{i \in [k-1]} \prs{\lambda_i - \lambda_k} v_i \]
+וזה וקטור ב־%
+$W$
+כי
+$\prs{T - \lambda_k \id_V} w = T\prs{w} - \lambda_k w$
+וכי
+$T\prs{w} \in W$.
+מהנחת האינדוקציה נקבל כי
+$\prs{\lambda_i - \lambda_k} v_i \in W$
+לכל
+$i \in [k-1]$,
+ולכן גם
+$v_i \in W$
+לכל
+$i \in [k-1]$.
+לבסוף
+$v_k = w - v_1 - \ldots - v_{k-1} \in W$
+כצירוף לינארי של וקטורים ב־%
+$W$.
+\end{solution}
+
+\begin{exercise}
+יהי
+$V = \mbb{C}^n$
+ותהי
+\[T \colon V \to V\]
+עם
+\[\brs{T}_E = \lambda_1 I_{m_1} \oplus \ldots \oplus \lambda_k I_{m_k}\]
+עבור
+$\lambda_i \neq \lambda_j$
+לכל
+$i \neq j$.
+נסמן
+$n_i = m_1 + \ldots + m_{i-1} + 1$.
+מצאו את כל התת־מרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+\end{exercise}
+
+\begin{solution}
+ראשית, אם
+$W \leq V_i \coloneqq \Span\prs{e_{n_i}, \ldots, e_{n_i + m_i - 1}}$,
+נקבל כי
+$T\prs{w} = \lambda_i w \in W$
+לכל
+$w \in W$.
+לכן כל תת־מרחב כזה הינו
+$T$%
+־שמור.
+גם סכום של תת־מרחבים כאלה יהיה
+$T$%
+־שמור כי אם
+$v_i \in W_i \coloneqq W \cap V_i$
+לכל
+$i \in [k]$
+אז
+\[T\prs{v_1 + \ldots + v_k} = T\prs{v_1} + \ldots + T\prs{v_k}\]
+כאשר
+$T\prs{v_i} \in W$
+וגם
+$T\prs{v_i} = \lambda_i v_i \in V_i$,
+כלומר
+$T\prs{v_i} \in W_i$.
+נראה שאלו כל האפשרויות לתת־מרחבים שמורים.
+
+באופן כללי, אם
+$w \in W$
+ניתן לכתוב
+$w = v_1 + \ldots + v_k$
+עבור
+$v_i$
+וקטור עצמי של
+$T$
+עם ערך עצמי
+$\lambda_i$.
+נסמן ב־%
+$P_i \colon V \to V$
+את ההטלה על
+$V_i \coloneqq \Span\prs{e_{n_i}, \ldots, e_{n_i + m_i - 1}}$,
+ואז מהתרגיל הקודם
+$v_i = P_i\prs{w} \in W$
+לכל
+$i \in [k]$.
+נקבל כי
+$P_i\prs{W} \subseteq W$.
+כעת,
+\[w = v_1 + \ldots + v_k = P_1\prs{w} + \ldots + P_k\prs{w}\]
+לכן
+$W = \sum_{i \in [k]} P_i\prs{W}$.
+אם
+$u_1 + \ldots + u_k = 0$
+עבור
+$u_i \in V_i$,
+נקבל
+$u_i = 0$
+לכל
+$i$,
+כיוון שוקטורים עצמיים של ערכים עצמיים שונים הינם בלתי־תלויים לינארית.
+בפרט זה נכון עבור
+$u_i \in P_kprs{W}$,
+ולכן הסכום 
+$W = \bigoplus_{i \in [k]} P_i\prs{W}$
+הינו ישר.
+מתקיים
+$P_i\prs{W} \leq W_i$,
+ולכן התת־מרחבים השמורים הם בדיוק אלו מהצורה
+$\bigoplus_{i \in[k]} W_i$
+עבור
+$W_i \leq V_i$.
+\end{solution}
+
 \begin{exercise}
 \begin{enumerate}
 \item תהי
@@ -1748,7 +1983,4 @@ $\bar{\lambda}$,
 
 %\chapter{אלגברה מולטילינארית}
 
-\pagebreak
-
-\printbibliography
 \end{document}
