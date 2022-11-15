@@ -977,206 +977,361 @@ $\brs{-1}_C = \pmat{1 \\ 1 \\ 1 \\ 1}$,
 כפי שרצינו.
 \end{solution}
 
-\chapter{דטרמיננטות}
+\chapter{סכומים ישרים}
 
-הגדרנו בהרצאה הגדרה רקורסיבית עבור הדטרמיננטה.
-לפעמים, במיוחד בהוכחות על טיעונים אבסטרקטיים בנוגע לדטרמיננטה, נוח לעבור עם הגדרה אחרת לפי תמורות.
+%TODO
 
-\begin{definition}[פרמוטציה]
-\emph{פרמוטציה}
-של קבוצה
-$X$
-היא העתקה חד־חד ערכית ועל
-$\sigma \colon X \to X$.
-\end{definition}
+\chapter{מרחבים שמורים}
 
-\begin{notation}
-לכל
-$n \in \mbb{N}_+$,
-נסמן את הקבוצת הפרמוטציות של
-$\brs{n} = \set{1, \ldots, n}$
-בתור
-$S_n$.
-\end{notation}
+%TODO
 
-\begin{example}
-נוכל להגדיר
-$\sigma \in S_5$
-על ידי
+\chapter{לכסינות}
+
+\begin{definition}[אופרטור לכסין]
+אופרטור
+$T \in \End_{\mbb{F}}\prs{V}$
+נקרא
+\emph{לכסין}
+אם קיים בסיס
+$B$
+של
+$V$
+וקיימים
+$\alpha_1, \ldots, \alpha_n \in \mbb{F}$
+עבורם
 \begin{align*}
-\sigma\prs{1} &= 2 \\
-\sigma\prs{2} &= 3 \\
-\sigma\prs{3} &= 5 \\
-\sigma\prs{4} &= 4 \\
-\text{.} \sigma\prs{5} &= 1
+\text{.} \brs{T}_B &= \pmat{\alpha_1 & \cdots & 0 \\ \vdots & \ddots & \vdots \\ 0 & \cdots & \alpha_n}
 \end{align*}
-\end{example}
-
-\begin{definition}[שכלוף]
-תמורה
-$\sigma \in S_n$
+בסיס
+$B$
+כזה נקרא
+\emph{בסיס מלכסן}
+עבור
+$T$,
+והמטריצה
+$\brs{T}_B$
 נקראת
-\emph{שכלוף}
-אם יש
-$a,b \in \brs{n}$
-שונים
-עבורם
-$\sigma\prs{a} = b$, $\sigma\prs{b} = a$
-וגם
-$\sigma\prs{c} = c$
-לכל
-$c \in \brs{n} \setminus \set{a,b}$.
-
-נסמן שכלוף זה בתור
-$\prs{a,b}$
-ונשים לב כי
-$\prs{a,b}^{-1} = \prs{a,b}$
-כי
-$\prs{a,b}^2 = \id_{\brs{n}}$.
+\emph{מטריצה אלכסונית}.
 \end{definition}
 
-\begin{example}
-התמורה
-$\sigma \in S_5$
-המוגדרת על ידי
-\begin{align*}
-\sigma\prs{1} &= 1 \\
-\sigma\prs{2} &= 5 \\
-\sigma\prs{3} &= 3 \\
-\sigma\prs{4} &= 4 \\
-\sigma\prs{5} &= 2
-\end{align*}
-היא שכלוף.
-\end{example}
-
-\begin{proposition}
-כל
-$\sigma \in S_n$
-יתן לכתוב כהרכבה של שכלופים.
-\end{proposition}
-
-\begin{proof}
-נוכיח את הטענה באינדוקציה.
-אם
-$n = 1$
-הטענה טריוויאלית.
-נניח כי
-$n \geq 2$
-וכי הטענה נכונה לכל
-$m < n$,
-ותהי
-$\sigma \in S_n$.
-אם
-$\sigma\prs{n} = n$
-נקבל כי
-$\left.\sigma\right|_{\brs{n-1}}$
-חד־חד ערכית ועל, ולכן תמורה.
-אז מההנחה ניתן לכתוב אותה כהרכבה של חילופים ב־%
-$S_{n-1}$,
-והרכבת חילופים של אותם מספרים תיתן את
-$\sigma$.
-אחרת, יש
-$\ell \in \brs{n-1}$
+\begin{definition}
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+וקטור
+$v \in V \setminus \set{0}$
+נקרא
+\emph{וקטור עצמי של
+$T$}
+אם קיים
+$\lambda \in \mbb{F}$
 עבורו
-$\sigma\prs{n} = \ell$.
-אז
-\[\prs{\prs{n,\ell} \circ \sigma}\prs{n} = \prs{n,\ell}\prs{\ell} = n\]
-ולכן מהפירוט לעיל ניתן לכתוב
-\[\prs{n, \ell} \circ \sigma = \tau_1 \circ \tau_{2} \circ \ldots \circ \tau_k\]
-עבור שכלופים
-$\tau_1, \ldots, \tau_k$.
-אז
-\[\sigma = \prs{n, \ell} \circ \tau_k \circ \ldots \circ \tau_1\]
-הרכבת שכלופים.
-\end{proof}
+$T\prs{v} = \lambda v$.
 
-\begin{proposition}
-תהי
-$\sigma \in S_n$
-ונכתוב את
-$\sigma$
-כהרכבת שכלופים בשתי דרכים
-\begin{align*}
-\sigma &= \tau_1 \circ \ldots \circ \tau_k \\
-\text{.} \sigma &= \rho_1 \circ \ldots \rho_\ell
-\end{align*}
-אז ל־%
-$k,\ell$
-יש אותה זוגיות (כלומר, שניהם זוגיים או ששניהם אי־זוגיים).
-\end{proposition}
+במקרה זה
+$\lambda$
+נקרא
+\emph{ערך עצמי}
+של
+$T$.
+\end{definition}
 
-\begin{proof}
+\begin{remark}
+$v$
+וקטור עצמי של
+$T$
+אם ורק אם קיים
+$\lambda \in \mbb{F}$
+עבורו
+$T\prs{v} = \lambda v$.
 מתקיים
-\[\text{.} \id = \sigma \sigma^{-1} = \tau_k \circ \ldots \tau_k \circ \rho_1 \circ \ldots \circ \rho_\ell\]
-הזוגיות של
-$k,\ell$
-שווה אם ורק אם הסכום שלהם זוגי, ולכן די להוכיח כי אם
-$\id = \sigma_1 \circ \ldots \circ \sigma_m$
-אז
-$m$
-זוגי.
+$\Span_{\mbb{F}}\prs{v} = \set{\lambda v}{\lambda \in \mbb{F}}$
+ולכן באופן שקול
+$T\prs{v} \in \Span_{\mbb{F}}\prs{v}$
+ובאופן שקול
+$T\prs{\alpha v} = \alpha T\prs{v} \in \Span_{\mbb{F}}\prs{v}$
+לכל
+$\alpha \in \mbb{F}$.
 
-נשים לב כי אם
-$\tau$
-חילוף, יש
-$i,j \in [n]$
-עבורם
-$i < j$
-וגם
-$\tau\prs{i} > \tau\prs{j}$.
-באופן כללי,
-\end{proof}
-
-\begin{exercise}
-נתון כי
-\[\text{.} 17 \mid 20604, 53227, 25755, 20927, 289\]
-הוכיחו כי
-\[\text{.} 17 \mid \det\pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9}\]
-\end{exercise}
-
-\begin{solution}
-ראשית נשים לב שהדטרמיננטה מבוטאת באמצעות סכומים ומכפלות של מקדמי המטריצה, לכן אצלנו היא אכן מספר שלם. כעת, נרצה באמצעות פעולות דירוג שורה
-ועמודה לקבל מטריצה עם עמודה שכל איבריה מתחלקים ב־%
-$17$,
-ולהשתמש בתכונות דטרמיננטה כדי לקבל את הנדרש.
-נדרג
-\begin{align*}
-    \pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9} \xrightarrow{C_5 \mapsto C_5 + 10 C_4 + 100 C_3 + 1000 C_2 + 10000 C_1} \pmat{2 & 0 & 6 & 0 & 20604 \\ 5 & 3 & 2 & 2 & 53227 \\ 2 & 5 & 7 & 5 & 25755 \\ 2 & 0 & 9 & 2 & 20927 \\ 0 & 0 & 2 & 8 & 289}
-\end{align*}
-וכיוון שהוספקת כפולה של עמודה לעמודה אחרת לא משפיעה על הדטרמיננטה וכפולת עמודה בסקלר כופלת את הדטרמיננטה באותו סקלר, נקבל
-\begin{align*}
-    \text{.} \det\pmat{2 & 0 & 6 & 0 & 4 \\ 5 & 3 & 2 & 2 & 7 \\ 2 & 5 & 7 & 5 & 5 \\ 2 & 0 & 9 & 2 & 7 \\ 0 & 0 & 2 & 8 & 9} = \det\pmat{2 & 0 & 6 & 0 & 20604 \\ 5 & 3 & 2 & 2 & 53227 \\ 2 & 5 & 7 & 5 & 25755 \\ 2 & 0 & 9 & 2 & 20927 \\ 0 & 0 & 2 & 8 & 289} = 17 \det\pmat{2 & 0 & 6 & 0 & 20604/17 \\ 5 & 3 & 2 & 2 & 53227/17 \\ 2 & 5 & 7 & 5 & 25755/17 \\ 2 & 0 & 9 & 2 & 20927/17 \\ 0 & 0 & 2 & 8 & 289/17}
-\end{align*}
-הדטרמיננטה של המטריצה בצד ימין שלמה, כי כל מקדמי המטריצה שלמים, ולכן נקבל את הנדרש.
-\end{solution}
-
-\begin{exercise}
-הוכיחו כי לכל
-$z,u,w \in \mbb{C}$
-ולכל
-$a,b,c \in \mbb{R}$
-מתקיים
-\[\text{.} \Re\prs{\det\pmat{a & z & \bar{z} \\ b & u & \bar{u} \\ c & w & \bar{w}}} = 0\]
-\end{exercise}
-
-\begin{solution}
-ראשית, נשים לב כי
-$\det\prs{\bar{A}} = \overline{\det\prs{A}}$,
-כי הדטרמיננטה מורכבת מסכומים ומכפלות של המקדמים, וכי צמוד מתחלף עם סכומים ומכפלות.
-מצד שני, נקבל כי
-$\bar{A}$
-היא המטריצה
-$A$
-בהחלפת העמודות השנייה והשלישית. אנו יודעים כי פעולה זאת הופכת את הסימן של הדטרמיננטה, ולכן
-\begin{align*}
-    \text{.} \det\prs{A} = \overline{\det\prs{\bar{A}}} = \overline{-\det\prs{A}} = -\overline{\det\prs{A}}
-\end{align*}
 לכן,
-\[\Re\prs{\det\prs{A}} = \frac{\det\prs{A} + \overline{\det\prs{A}}}{2} = \frac{0}{2} = 0\]
+$v$
+וקטור עצמי של
+$T$
+אם ורק אם
+$\Span_{\mbb{F}}\prs{v}$
+הינו
+$T$%
+־שמור.
+\end{remark}
+
+\begin{remark}
+אופרטור
+$T \in \End_{\mbb{F}}\prs{V}$
+הינו לכסין אם ורק אם קיים בסיס של
+$V$
+שמורכב מוקטורים עצמיים של
+$T$.
+\end{remark}
+
+\begin{definition}[מרחב עצמי]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$\lambda$
+ערך עצמי של
+$T$.
+\emph{המרחב העצמי}
+של
+$T$
+עם הערך
+$\lambda$
+הוא
+\begin{align*}
+\text{.} V_{\lambda} &\coloneqq \set{v \in V}{T\prs{v} = \lambda v} = \ker\prs{\lambda \id_V - T}
+\end{align*}
+\end{definition}
+
+\begin{definition}[פולינום אופייני]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+\emph{הפולינום האופייני של
+$T$}
+הוא
+\[\text{.} p_T\prs{x} \coloneqq \det\prs{x \id_V - T}\]
+\end{definition}
+
+\begin{remark}
+בפועל, נסתכל בדרך כלל על פולינום אופייני של מטריצה, כיוון שצריך לבחור בסיס כדי לחשב את הדטרמיננטה.
+ראינו כי הדטרמיננטה לא תלויה בבחירת הבסיס, ולכן
+$p_T\prs{x} = p_{\brs{T}_B}\prs{x}$
+לכל בסיס
+$B$
+של
+$V$,
+כאשר
+$p_A\prs{x} = \det\prs{xI - A}$.
+\end{remark}
+
+\begin{corollary}
+איבר
+$\lambda \in \mbb{F}$
+הוא ערך עצמי של
+$T$
+אם ורק אם
+$\ker\prs{\lambda \id_V - T} \neq 0$,
+אם ורק אם
+$p_T\prs{\lambda} = \det\prs{\lambda \id_V - T} = 0$.
+
+כלומר, הערכים העצמיים של
+$T$
+הם השורשים של
+$p_T$.
+\end{corollary}
+
+\begin{remark}
+כיוון שלכל פולינום
+$p \in \mbb{C}\brs{x}$
+יש שורש, לכל
+$T \in \End_{\mbb{C}}\prs{V}$
+יש ערך עצמי.
+\end{remark}
+
+\begin{definition}[ריבוי אלגברי]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+\emph{הריבוי האלגברי}
+של ערך עצמי
+$\lambda \in \mbb{F}$
+הוא הריבוי שלו כשורש של
+$p_T$.
+נסמו
+$r_a\prs{\lambda}$.
+\end{definition}
+
+\begin{definition}[ריבוי גיאומטרי]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+\emph{הריבוי הגיאומטרי}
+של ערך עצמי
+$\lambda \in \mbb{F}$
+הוא
+$r_g\prs{\lambda} \coloneqq \dim V_\lambda$.
+\end{definition}
+
+\begin{remark}
+מתקיים תמיד
+$r_a\prs{\lambda} \leq r_g\prs{\lambda}$.
+\end{remark}
+
+\begin{definition}
+תהי
+$A \in \Mat_{n}\prs{\mbb{F}}$
+ויהי
+$T = T_A$
+אופרטור כפל ב־$
+A$
+משמאל (כלומר,
+$T\prs{v} = Av$).
+אם
+$T$
+לכסין, קיים בסיס
+$B$
+עבורו
+$D \coloneqq \brs{T}_B$
+אלכסונית.
+אז
+\begin{align*}
+A &= \brs{T}_E
+\\&= \brs{\id \circ T \circ \id}_E
+\\&= M^B_E \brs{T}_B M^E_B
+\\&= M^B_E D \prs{M^B_E}^{-1}
+\end{align*}
+ואם נסמן
+$P = M^B_E$
+נקבל כי זאת מטריצה הפיכה עבורה
+$P^{-1} A P = D$.
+
+לכן, נגיד שמטריצה
+$A \in \Mat_n\prs{\mbb{F}}$
+הפיכה אם קיימת
+$P \in \Mat_n\prs{\mbb{F}}$
+הפיכה עבורה
+$P^{-1} A P$
+אלכסונית.
+\end{definition}
+
+\begin{exercise}
+\begin{enumerate}
+\item תהי
+$A \in \Mat_n\prs{\mbb{R}}$.
+הוכיחו כי אם אין ל־%
+$T_A$
+תת־מרחב שמור ממימד
+$1$,
+יש לה ת־מרחב שמור ממימד
+$2$.
+\item נניח כי
+$A \in \Mat_n\prs{\mbb{C}}$
+מטריצה שכל מקדמיה ממשיים. הוכיחו כי אם
+$\lambda$
+ערך עצמי של
+$T_A$,
+גם
+$\bar{\lambda}$
+ערך עצמי של
+$T_A$.
+\end{enumerate}
+\end{exercise}
+
+\begin{solution}
+עבור מטריצה
+$A = \prs{a_{i,j}} \in \mrm{Mat}_{n, m}$
+נגדיר
+\[\bar{A} = \prs{\bar{a}_{i,j}}\]
+את המטריצה שמקדמיה הם המספרים הצמודים לאלו ב־%
+$A$.
+נשים לב כי עבור שתי מטריצות
+$A \in \mrm{Mat}_{m,n}\prs{\mbb{C}}, B \in \mrm{Mat}_{n,\ell}\prs{\mbb{C}}$
+מתקיים
+\begin{align*}
+\prs{\overline{AB}}_{i,j} &= \overline{\sum_{k = 1}^n a_{i,k} b_{k,j}}
+\\&= \sum_{k=1}^n \overline{a_{i,k}} \overline{b_{k,j}}
+\\&= \prs{\abs{A} \abs{B}}_{i,j}
+\end{align*}
+ולכן
+$\overline{AB} = \bar{A} \bar{B}$.
+
+\begin{enumerate}
+\item
+תת־מרחב
+$T_A$%
+־שמור ממימד
+$1$
+הוא מהצורה
+$\Span_{\mbb{R}}\prs{v}$
+עבור וקטור עצמי
+$v$
+של
+$A$.
+לכן מההנחה, אין ל־%
+$T_A$
+וקטורים עצמיים.
+
+אבל, אפשר לחשוב על
+$A$
+כעל מטריצה ב־%
+$\mrm{Mat}_n\prs{\mbb{C}}$
+שנסמנה
+$\tilde{A}$.
+אז ל־%
+$T_{\tilde{A}} \in \End_{\mbb{C}}\prs{\mbb{C}^n}$
+יש וקטור עצמי כאופרטור מעל
+$\mbb{C}$.
+יהי
+$v \in \mbb{C}^n$
+וקטור עצמי של
+$T_{\tilde{A}}$
+עם ערך עצמי
+$\lambda = \alpha + i \beta$,
+ונכתוב
+\[v = \pmat{u_1 + i w_1 \\ \vdots \\ u_n + i w_n} = u + iw\]
+כאשר
+$u,w \in \mbb{C}^n$
+וקטורים עם מקדמים ממשיים. נוכל לחשוב עליהם כחיים ב־%
+$\mbb{R}^n$.
+אז
+\begin{align*}
+Au + iAw &= A\prs{u + iw}
+\\&= Av
+\\&= \lambda v
+\\&= \prs{\alpha + i \beta} \prs{u + iw}
+\\&= \alpha u + \alpha i w + \beta i u - \beta w
+\\&= \prs{\alpha u - \beta w} + i\prs{\alpha w + \beta u}
+\end{align*}
+כאשר
+$Au, Aw \in \mbb{R}^n$.
+אז, נוכל להשוות מקדמים ולקבל
+\begin{align*}
+T_A\prs{u} &= Au = \alpha u - \beta w \in \Span\prs{u,w} \\
+\text{.} T_A\prs{w} &= Aw =  \alpha w + \beta u \in \Span\prs{u,w}
+\end{align*}
+לכן
+$\Span\prs{u,w}$
+הינו תת־מרחב
+$L_A$%
+־שמור של
+$\mbb{R}^n$.
+
+\item אם
+$\lambda$
+ממשי אין מה להוכיח כי
+$\lambda = \bar{\lambda}$.
+נניח אם כן כי
+$\lambda = \alpha + i\beta$
+עבור
+$\beta \neq 0$.
+נסמן ב־%
+$v = u + iw$
+וקטור עצמי של
+$A$
+עם ערך עצמי
+$\lambda$,
+כאשר
+$u,w \in \mbb{C}^n$
+עם מקדמים ממשיים.
+אז
+\begin{align*}
+\bar{A}\bar{v} = \overline{Av} = \overline{\lambda v} = \bar{\lambda} \bar{v}
+\end{align*}
+ולכן
+$\bar{v}$
+וקטור עצמי של
+$A$
+עם ערך עצמי
+$\bar{\lambda}$,
 כנדרש.
+\end{enumerate}
 \end{solution}
 
-%\chapter{מרחבים שמורים}
 
 %\chapter{צורת ז'ורדן}
 

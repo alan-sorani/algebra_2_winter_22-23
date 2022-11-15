@@ -10,4 +10,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}גרעין ותמונה}{8}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}דטרמיננטות}{12}{chapter.2}%
+\contentsline {chapter}{\numberline {2}סכומים ישרים}{12}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}מרחבים שמורים}{13}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}לכסינות}{14}{chapter.4}%

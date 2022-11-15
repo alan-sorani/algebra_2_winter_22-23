@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  30 OCT 2022 16:17
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  15 NOV 2022 17:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2026,13 +2026,30 @@ Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
 ut line 258.
  [3] [4] [5] [6] [7] [8] [9] [10] [11]
 פרק 2.
-Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 1003.
 [12
 
-] [13]
+]
+פרק 3.
+[13
 
-LaTeX Warning: Empty bibliography on input line 1199.
+]
+פרק 4.
+Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
+put line 1115.
+
+Overfull \hbox (16.8405pt too wide) in paragraph at lines 1115--1123
+[][]\TU/FrankRuehlCLM(0)/m/it/10 איבר $\OML/cmm/m/it/10 ^^U \OMS/cmsy/m/n/10 2 
+\U/msb/m/n/10 F$ \TU/FrankRuehlCLM(0)/m/it/10 הוא ערך עצמי של $\OML/cmm/m/it/10
+ T$ \TU/FrankRuehlCLM(0)/m/it/10 אם ורק אם $[] [] \OMS/cmsy/m/n/10 6\OT1/cmr/m/
+n/10 = 0$\TU/FrankRuehlCLM(0)/m/it/10 , אם ורק אם $\OML/cmm/m/it/10 p[] [] \OT1
+/cmr/m/n/10 = [] [] =$[]
+ []
+
+[14
+
+] [15]
+
+LaTeX Warning: Empty bibliography on input line 1354.
 
 \tf@thm=\write8
 \openout8 = `algebra_2_recitations.thm'.
@@ -2087,27 +2104,34 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1200.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1200.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1355.
 (./algebra_2_recitations.aux Setting \if@calendar@hebrew
 Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1200.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1200.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1355.
 
-Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
-(rerunfilecheck)             Checksum: 758EA9E6304755ED14FF854A7DE2C04F;353.
+
+
+Package rerunfilecheck Warning: File `algebra_2_recitations.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `algebra_2_recitations.out':
+(rerunfilecheck)             Before: 67A04E071FB85E339E2B77D8F76B8000;477
+(rerunfilecheck)             After:  53017D33B8F65017A9F4F7239A0C8AC0;477.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1200.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1355.
  ) 
 Here is how much of TeX's memory you used:
  41670 strings out of 479819
- 860235 string characters out of 5895846
- 1731586 words of memory out of 5000000
+ 860237 string characters out of 5895846
+ 1731720 words of memory out of 5000000
  58014 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,19n,86p,1293b,4081s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algebra_2_recitations.pdf (15 pages).
+Output written on algebra_2_recitations.pdf (17 pages).
