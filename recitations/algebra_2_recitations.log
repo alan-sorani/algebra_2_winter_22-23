@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  15 NOV 2022 19:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  15 NOV 2022 19:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2014,8 +2014,8 @@ Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
  line 88.
 Package hyperref Info: bookmark level for unknown theoremx defaults to 0 on inp
 ut line 115.
-Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
-ut line 142.
+Package hyperref Info: bookmark level for unknown exercisechap defaults to 0 on
+ input line 142.
 Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
 input line 155.
 [2
@@ -2131,11 +2131,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1986.
  ) 
 Here is how much of TeX's memory you used:
  41700 strings out of 479819
- 860810 string characters out of 5895846
- 1733290 words of memory out of 5000000
+ 860814 string characters out of 5895846
+ 1733351 words of memory out of 5000000
  58044 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,19n,86p,1293b,4205s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,19n,86p,1293b,4185s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on algebra_2_recitations.pdf (19 pages).
