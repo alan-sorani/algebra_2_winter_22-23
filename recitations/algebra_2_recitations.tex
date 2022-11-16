@@ -1656,7 +1656,7 @@ $T$%
 ־שמור אם ורק אם
 $P^{-1}\prs{W}$
 הינו
-$T \circ P$%
+$P^{-1} \circ T \circ P$%
 ־שמור.
 \end{exercisechap}
 
@@ -1665,36 +1665,46 @@ $T \circ P$%
 $W$
 הינו
 $T$%
-־שמור, ויהי
-$u \in P^{-1}\prs{W}$.
-אז יש
+־שמור ויהי
+$v \in P^{-1}\prs{W}$.
+נרצה להראות כי
+$P^{-1} \circ T \circ P \prs{v} \in P^{-1}\prs{W}$.
+יהי
 $w \in W$
 עבורו
-$u = P^{-1}\prs{w}$.
-מתקיים
-\[\prs{T \circ P}\prs{u} = T\prs{P\prs{u}} = T\prs{P\prs{P^{-1}\prs{w}}} = T\prs{w} \in W\]
+$v = P^{-1}\prs{w}$.
+אז
+\begin{align*}
+P^{-1} \circ T \circ P \prs{v} &= P^{-1} \circ T \circ P \circ P^{-1}\prs{W}
+\\&= P^{-1} \circ T \prs{w}
+\end{align*}
 כאשר
 $T\prs{w} \in W$
 כי
 $W$
 הוא
 $T$%
-־שמור.
+־שמור. נקבל כי
+$P^{-1} \circ T \circ P \prs{v} \in P^{-1}\prs{W}$.
 
 בכיוון השני, נניח כי
 $U \coloneqq P^{-1}\prs{W}$
 הינו
-$T \circ P$%
+$P^{-1} \circ T \circ P$%
 ־שמור.
 נגדיר
-$S = T \circ P$,
-ואז
-$T = S \circ P^{-1}$
+$S = P^{-1} \circ T \circ P$,
 וגם
-$W = P P^{-1} W = P U = \prs{P^{-1}}^{-1} U$.
+$Q = P^{-1}$.
+אז
+$T = Q^{-1} \circ T \circ Q$
+וגם
+$W = P\prs{P^{-1}\prs{W}} = P\prs{U} = Q^{-1}\prs{U}$.
 מהכיוון הראשון, נקבל כי
 $W$
 הינו
+$\prs{Q^{-1} \circ T \circ Q}$%
+־שמור, כלומר
 $T$%
 ־שמור.
 \end{solution}
