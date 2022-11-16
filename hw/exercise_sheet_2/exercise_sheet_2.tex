@@ -1,0 +1,205 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}     
+            
+%BIBLIOGRAPHY
+\usepackage[
+backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{bibliography.bib} %Imports bibliography file
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' - גיליון תרגילי בית 2 \\
+סכומים ישרים, מרחבים שמורים, ונילפוטנטיות
+\\
+\vspace{1cm}
+\large{תאריך הגשה: 30.11.2022}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי מעל שדה
+$\mbb{F}$
+ויהיו
+$U,W \leq V$
+עבורם
+$V = V \oplus W$.
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהיו
+$B,C$
+בסיסים של
+$U,W$
+בהתאמה.
+הראו ש־%
+$U$
+הינו
+$T$%
+־שמור אם ורק אם ניתן לכתוב
+\begin{align*}
+\brs{T}_{B \cup C} &= \pmat{X & Y \\ 0 & Z}
+\end{align*}
+עבור מטריצות
+\begin{align*}
+X &\in \Mat_{\dim\prs{U}}\prs{\mbb{F}} \\
+Y &\in \Mat_{\dim\prs{U} \times \dim\prs{W}}\prs{\mbb{F}} \\
+\text{.} Z &\in \Mat_{\dim\prs{W}}\prs{\mbb{F}}
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי, יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$B$
+בסיס של
+$V$.
+
+\begin{enumerate}
+\item נסמן
+$A = \brs{T}_B$
+ונזכיר כי
+\begin{align*}
+T_A \colon \mbb{F}^n &\to \mbb{F}^n \\
+v &\mapsto Av
+\end{align*}
+ןכי
+\begin{align*}
+\rho_B \colon V &\to \mbb{F}^n \\
+\text{.} \hphantom{lalala} v &\mapsto \brs{v}_B
+\end{align*}
+הראו כי
+\[\text{.} T_A = \rho_B^{-1} \circ T_A \circ \rho_B\]
+
+\item
+הראו כי
+$W \leq V$
+הינו
+$T$%
+־שמור אם ורק אם
+$\rho_B\prs{W}$
+הינו
+$T_A$%
+־שמור.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי, יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$B = \prs{v_1, \ldots, v_n}$
+בסיס של
+$V$.
+\begin{enumerate}
+\item נניח כי
+$\brs{T}_B = J_m\prs{\lambda}$.
+מיצאו את המרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+
+\item נניח כי
+\begin{align*}
+\brs{T}_B = \pmat{J_{m_1}\prs{\lambda_1} & & \\ & \ddots & \\ & & J_{m_k}\prs{\lambda_k}}
+\end{align*}
+כאשר
+$\lambda_i \neq \lambda_j$
+לכל
+$i \neq j$.
+מיצאו את המרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי, יהי
+$T \in \End\prs{V}$
+ויהיו
+$V_1, \ldots, V_k \leq V$
+כולם
+$T$%
+־שמורים וכך שמתקיים
+$V = \bigoplus_{i \in [k]} V_i$.
+במקרה זה נכתוב
+$T = \bigoplus_{i \in [k]} \left. T \right|_{V_i}$.
+הראו כי
+\begin{align*}
+\ker\prs{T} &= \bigoplus_{i \in [k]} \ker\prs{\left. T \right|_{V_i}} \\
+\text{.} \im\prs{T} &= \bigoplus_{i \in [k]} \im\prs{\left. T \right|_{V_i}}
+\end{align*}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי ממימד
+$n > 0$
+ותהי
+\[0 < n_1 < n_2 < \ldots < n_{k-1} < n_k = n\]
+סדרת מספרים.
+
+\begin{enumerate}
+\item נניח כי
+$n_i - n_{i-1}$
+מונוטונית יורדת (לאו דווקא ממש).
+הראו שיש העתקה
+$T \in \endo_{\mbb{F}}\prs{V}$
+עבורה
+\[n_i = \dim\ker\prs{T^i}\]
+לכל
+$i \in [k]$.
+
+\textbf{רמז:}
+חישבו על מטריצות מהצורה
+$J_m\prs{0}$.
+
+\item נניח כי יש
+$i \in [k]$
+עבורו
+$n_{i+1} - n_i > n_i - n_{i-1}$.
+הראו שאין העתקה
+$T \in \endo_{\mbb{F}}\prs{V}$
+עבורה
+\[n_i = \dim\ker\prs{T^i}\]
+לכל
+$i \in [k]$.
+\end{enumerate}
+\end{exercise}
+
+\end{document}
