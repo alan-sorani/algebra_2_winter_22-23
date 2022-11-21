@@ -45,38 +45,6 @@ style=alphabetic,
 \begin{exercise}
 יהי
 $V$
-מרחב וקטורי מעל שדה
-$\mbb{F}$
-ויהיו
-$U,W \leq V$
-עבורם
-$V = V \oplus W$.
-יהי
-$T \in \End_{\mbb{F}}\prs{V}$
-ויהיו
-$B,C$
-בסיסים של
-$U,W$
-בהתאמה.
-הראו ש־%
-$U$
-הינו
-$T$%
-־שמור אם ורק אם ניתן לכתוב
-\begin{align*}
-\brs{T}_{B \cup C} &= \pmat{X & Y \\ 0 & Z}
-\end{align*}
-עבור מטריצות
-\begin{align*}
-X &\in \Mat_{\dim\prs{U}}\prs{\mbb{F}} \\
-Y &\in \Mat_{\dim\prs{U} \times \dim\prs{W}}\prs{\mbb{F}} \\
-\text{.} Z &\in \Mat_{\dim\prs{W}}\prs{\mbb{F}}
-\end{align*}
-\end{exercise}
-
-\begin{exercise}
-יהי
-$V$
 מרחב וקטורי סוף־מימדי, יהי
 $T \in \End_{\mbb{F}}\prs{V}$
 ויהי
@@ -130,15 +98,15 @@ $T$%
 ־שמורים של
 $V$.
 
-\item נניח כי
+\item
+יהי
+$V = \Mat_2\prs{\mbb{C}}$
+ויהי
 \begin{align*}
-\brs{T}_B = \pmat{J_{m_1}\prs{\lambda_1} & & \\ & \ddots & \\ & & J_{m_k}\prs{\lambda_k}}
+T \colon V &\to V \\
+\text{.} \pmat{a & b \\ c & d} &\mapsto \pmat{d & a \\ b & 0}
 \end{align*}
-כאשר
-$\lambda_i \neq \lambda_j$
-לכל
-$i \neq j$.
-מיצאו את המרחבים ה־%
+מיצאו את כל התת־מרחבים ה־%
 $T$%
 ־שמורים של
 $V$.
@@ -149,7 +117,7 @@ $V$.
 יהי
 $V$
 מרחב וקטורי סוף־מימדי, יהי
-$T \in \End\prs{V}$
+$T \in \End_{\mbb{F}}\prs{V}$
 ויהיו
 $V_1, \ldots, V_k \leq V$
 כולם
@@ -158,11 +126,39 @@ $T$%
 $V = \bigoplus_{i \in [k]} V_i$.
 במקרה זה נכתוב
 $T = \bigoplus_{i \in [k]} \left. T \right|_{V_i}$.
+\begin{enumerate}
+\item 
 הראו כי
 \begin{align*}
 \ker\prs{T} &= \bigoplus_{i \in [k]} \ker\prs{\left. T \right|_{V_i}} \\
 \text{.} \im\prs{T} &= \bigoplus_{i \in [k]} \im\prs{\left. T \right|_{V_i}}
 \end{align*}
+
+\item
+הראו כי
+\begin{align*}
+\ker\prs{T - \lambda \id_V} &= \bigoplus_{i \in [k]} \ker\prs{\left. T \right|_{V_i} - \lambda \id_{V_i}}
+\end{align*}
+לכל
+$\lambda \in \mbb{F}$,
+והסיקו שהערכים העצמיים של
+$T$
+הם אלו של כל ה־%
+$\left. T \right|_{V_i}$
+וגם כי
+\begin{align*}
+r_{T,a}\prs{\lambda} &= \sum_{i \in \brs{k}} r_{\left. T \right|_{V_i}, a}\prs{\lambda} \\
+r_{T,g}\prs{\lambda} &= \sum_{i \in \brs{k}} r_{\left. T \right|_{V_i}, g}\prs{\lambda}
+\end{align*}
+לכל
+$\lambda \in \mbb{F}$
+וכאשר
+$r_{S,a}\prs{\lambda}, r_{S,g}\prs{\lambda}$
+הריבויים האלגברי והגיאומטרי של
+$\lambda$
+כערך עצמי של
+$S \in \End_{\mbb{F}}\prs{V}$.
+\end{enumerate}
 \end{exercise}
 
 \begin{exercise}
@@ -200,6 +196,20 @@ $T \in \endo_{\mbb{F}}\prs{V}$
 לכל
 $i \in [k]$.
 \end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V = \Mat_{2}\prs{\mbb{C}}$
+ויהי
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \pmat{a & b \\ c & d} &\mapsto \pmat{b & c \\ d & 0}
+\end{align*}
+מיצאו בסיס וצורת ז'ורדן עבור
+$T$
+ובסיס וצורת ז'ורדן עבור
+$S \coloneqq T^2$.
 \end{exercise}
 
 \end{document}
