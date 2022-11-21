@@ -20,4 +20,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}צורת ז'ורדן}{19}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}נילפוטנטיות}{19}{section.3.1}%
+\contentsline {section}{\numberline {3.1}אופרטורים נילפוטנטיים}{19}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}מציאת בסיס ז'ורדן עבור אופרטורים נילפוטנטיים}{20}{subsection.3.1.1}%
