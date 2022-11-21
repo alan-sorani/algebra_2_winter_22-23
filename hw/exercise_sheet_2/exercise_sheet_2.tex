@@ -47,85 +47,13 @@ style=alphabetic,
 $V$
 מרחב וקטורי סוף־מימדי, יהי
 $T \in \End_{\mbb{F}}\prs{V}$
-ויהי
-$B$
-בסיס של
-$V$.
-
-\begin{enumerate}
-\item נסמן
-$A = \brs{T}_B$
-ונזכיר כי
-\begin{align*}
-T_A \colon \mbb{F}^n &\to \mbb{F}^n \\
-v &\mapsto Av
-\end{align*}
-ןכי
-\begin{align*}
-\rho_B \colon V &\to \mbb{F}^n \\
-\text{.} \hphantom{lalala} v &\mapsto \brs{v}_B
-\end{align*}
-הראו כי
-\[\text{.} T_A = \rho_B^{-1} \circ T_A \circ \rho_B\]
-
-\item
-הראו כי
-$W \leq V$
-הינו
-$T$%
-־שמור אם ורק אם
-$\rho_B\prs{W}$
-הינו
-$T_A$%
-־שמור.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}
-יהי
-$V$
-מרחב וקטורי סוף־מימדי, יהי
-$T \in \End_{\mbb{F}}\prs{V}$
-ויהי
-$B = \prs{v_1, \ldots, v_n}$
-בסיס של
-$V$.
-\begin{enumerate}
-\item נניח כי
-$\brs{T}_B = J_m\prs{\lambda}$.
-מיצאו את המרחבים ה־%
-$T$%
-־שמורים של
-$V$.
-
-\item
-יהי
-$V = \Mat_2\prs{\mbb{C}}$
-ויהי
-\begin{align*}
-T \colon V &\to V \\
-\text{.} \pmat{a & b \\ c & d} &\mapsto \pmat{d & a \\ b & 0}
-\end{align*}
-מיצאו את כל התת־מרחבים ה־%
-$T$%
-־שמורים של
-$V$.
-\end{enumerate}
-\end{exercise}
-
-\begin{exercise}
-יהי
-$V$
-מרחב וקטורי סוף־מימדי, יהי
-$T \in \End_{\mbb{F}}\prs{V}$
 ויהיו
 $V_1, \ldots, V_k \leq V$
 כולם
 $T$%
 ־שמורים וכך שמתקיים
 $V = \bigoplus_{i \in [k]} V_i$.
-במקרה זה נכתוב
-$T = \bigoplus_{i \in [k]} \left. T \right|_{V_i}$.
+
 \begin{enumerate}
 \item 
 הראו כי
@@ -210,6 +138,77 @@ T \colon V &\to V \\
 $T$
 ובסיס וצורת ז'ורדן עבור
 $S \coloneqq T^2$.
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי, יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$B$
+בסיס של
+$V$.
+
+\begin{enumerate}
+\item נסמן
+$A = \brs{T}_B$
+ונזכיר כי
+\begin{align*}
+T_A \colon \mbb{F}^n &\to \mbb{F}^n \\
+v &\mapsto Av
+\end{align*}
+וכי
+\begin{align*}
+\rho_B \colon V &\to \mbb{F}^n \\
+\text{.} \hphantom{lalala} v &\mapsto \brs{v}_B
+\end{align*}
+הראו כי
+\[\text{.} T = \rho_B^{-1} \circ T_A \circ \rho_B\]
+
+\item
+הראו כי
+$W \leq V$
+הינו
+$T$%
+־שמור אם ורק אם
+$\rho_B\prs{W}$
+הינו
+$T_A$%
+־שמור.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי, יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$B = \prs{v_1, \ldots, v_n}$
+בסיס של
+$V$.
+\begin{enumerate}
+\item נניח כי
+$\brs{T}_B = J_m\prs{\lambda}$.
+מיצאו את המרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+
+\item
+יהי
+$V = \Mat_2\prs{\mbb{C}}$
+ויהי
+\begin{align*}
+T \colon V &\to V \\
+\text{.} \pmat{a & b \\ c & d} &\mapsto \pmat{d & a \\ b & 0}
+\end{align*}
+מיצאו את כל התת־מרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+\end{enumerate}
 \end{exercise}
 
 \end{document}

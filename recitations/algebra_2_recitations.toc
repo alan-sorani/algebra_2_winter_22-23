@@ -17,3 +17,7 @@
 \contentsline {section}{\numberline {2.2}לכסינות}{14}{section.2.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}מרחבים שמורים}{15}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}צורת ז'ורדן}{19}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}נילפוטנטיות}{19}{section.3.1}%

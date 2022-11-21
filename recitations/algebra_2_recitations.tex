@@ -1851,7 +1851,7 @@ $T$.
 כנדרש.
 \end{solution}
 
-\begin{definition}
+\begin{definition}[בלוק ז'ורדן]
 יהי
 $\lambda \in \mbb{F}$.
 נגדיר
@@ -2189,8 +2189,53 @@ $\bar{\lambda}$,
 \end{enumerate}
 \end{solution}
 
+\chapter{צורת ז'ורדן}
 
-%\chapter{צורת ז'ורדן}
+כדי לבצע חישובים על אופרטורים לינאריים, בדרך כלל יש לקחת בסיס ולערוך את החישובים על המטריצות המייצגות.
+נרצה לקחת בסיס שיתן לנו מטריצה שתאפשר חישובים פשוטים ככל הניתן: מטריצה אלכסונית. אין לכל אופרטור צורה אלכסונית, אבל יש צורה
+``כמעט אלכסונית'' שנקראת
+\emph{צורת ז'ורדן}.
+
+\begin{definition}
+יהי
+$\lambda \in \mbb{F}$.
+נגדיר
+\emph{בלוק ז'ורדן מגודל
+$m$
+עם ערך עצמי
+$\lambda$}
+בתור
+\begin{align*}
+\text{.} J_m\prs{\lambda} \coloneqq \pmat{\lambda & 1 & & \\ & \lambda & \ddots & \\ & & \ddots & 1 \\ & & & \lambda} \in \Mat_m\prs{\mbb{F}}
+\end{align*}
+\end{definition}
+
+\begin{definition}[מטריצת ז'ורדן]
+מטריצה
+$A \in \Mat_n\prs{\mbb{F}}$
+נקראת
+\emph{מטריצת ז'ורדן}
+אם היא מטריצה אלכסונית בלוקים שכל הבלוקים בה הם בלוקי ז'ורדן.
+\end{definition}
+
+\begin{definition}[בסיס ז'ורדן]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+\emph{בסיס ז'ורדן}
+עבור
+$T$
+הוא בסיס
+$B$
+של
+$V$
+עבורו
+$\brs{T}_B$
+מטריצת ז'ורדן.
+\end{definition}
+
+
+
+\section{נילפוטנטיות}
 
 %\chapter{פירוק פרימרי}
 
