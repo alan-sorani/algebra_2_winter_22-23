@@ -153,6 +153,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{15}{}}{16}{solution.15}%
 \defcounter {refsection}{0}\relax 
+\contentsline {example}{{דוגמה}{2.3.{7}}{}}{17}{theoremx.2.3.7}%
+\defcounter {refsection}{0}\relax 
 \contentsline {exercisechap}{{תרגיל}{2.{8}}{}}{17}{exercisechap.2.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{16}{}}{17}{solution.16}%
@@ -194,3 +196,9 @@
 \contentsline {exercisechap}{{תרגיל}{3.{6}}{}}{21}{exercisechap.3.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{22}{}}{21}{solution.22}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{3.2.{1}}{מרחב עצמי מוכלל}}{22}{theoremx.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{3.2.{2}}{פירוק למרחבים עצמיים מוכללים}}{22}{theoremx.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{{טענה}{3.2.{3}}{}}{22}{theoremx.3.2.3}%

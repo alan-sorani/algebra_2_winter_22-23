@@ -2077,6 +2077,16 @@ $W_2 = \mbb{F}^n, W_1 = \set{0}$,
 \end{enumerate}
 \end{solution}
 
+\begin{example}
+יהי
+$V = \mbb{C}^4$,
+ויהי
+$T = T_{J_4\prs{0}} \in \End_{\mbb{C}}\prs{V}$.
+נניח כי
+$W \leq V$
+מכיל
+\end{example}
+
 \begin{exercisechap}
 \begin{enumerate}
 \item תהי
@@ -2685,7 +2695,102 @@ $A \cong A^t$.
 \end{enumerate}
 \end{solution}
 
-%\section{משפט ז'ורדן הכללי}
+\section{משפט ז'ורדן הכללי}
+
+לאחר שהבנו כיצד למצוא בסיס ז'ורדן עבור אופרטורים נילפוטנטיים, נוכל לדבר על אופרטורים כלליים. אם
+$\lambda_1, \ldots, \lambda_k$
+הערכים העצמיים השונים של
+$T \in \End_{\mbb{F}}\prs{V}$,
+נוכל לכתוב
+\[V = V_{\lambda_1}' \oplus \ldots \oplus V_{\lambda_k}'\]
+כאשר
+$V_{\lambda_i}'$
+\emph{מרחבים עצמיים מוכללים},
+שהינם
+$T$%
+־שמורים. כדי למצוא את הבלוקים עם ערך עצמי
+$\lambda_i$
+נסתכל על
+$\left. T \right|_{V_{\lambda_i}'} - \id_{V_{\lambda_i}'}$
+שהינו אופרטור נילפוטנטי על
+$V_{\lambda_i}'$,
+וניעזר באלגוריתם למציאת בסיס ז'ורדן למקרה הנילפוטנטי.
+
+\begin{definition}[מרחב עצמי מוכלל]
+יהי
+$V$
+מרחב וקטורי סוף־מימדי ויהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+נסמן
+$n \coloneqq \dim_{\mbb{F}}\prs{V}$.
+\emph{המרחב העצמי המוכלל}
+של
+$\lambda \in \mbb{F}$
+עבור
+$T$
+הוא
+\[\text{.} V_{\lambda}' \coloneqq \ker\prs{\prs{T - \lambda \id_V}^n}\]
+\end{definition}
+
+\begin{theorem}[פירוק למרחבים עצמיים מוכללים]
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה סגור אלגברית, יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהיו
+$\lambda_1, \ldots, \lambda_k \in \mbb{F}$
+הערכים העצמיים השונים של
+$T$.
+אז
+$V_{\lambda_i}'$
+הינו
+$T$%
+־שמור לכל
+$i \in [k]$,
+וגם
+\[\text{.} V = \bigoplus V_{\lambda_i}'\]
+\end{theorem}
+
+לפני שנתאר את האלגוריתם הכללי, נזכיר תכונות שראינו בהרצאה.
+
+\begin{proposition}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה סגור אלגברית, ויהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+
+\begin{enumerate}
+\item הבלוק המקסימלי עם ערך עצמי
+$\lambda \in \mbb{F}$
+בצורת ז'ורדן של
+$T$
+הוא מגודל
+$r_g\prs{\lambda}$,
+וסכום גדלי הבלוקים עם ערך עצמי
+$\lambda$
+הוא
+$r_a\prs{\lambda}$.
+
+\item מספר הבלוקים עם ערך עצמי
+$\lambda$
+שהינם מגודל לפחות
+$r$
+הוא
+\[\text{.} \dim \ker\prs{\prs{T - \lambda \id_V}^r} - \dim \ker\prs{\prs{T - \lambda \id_V}^{r-1}}\]
+
+\item מספר הבלוקים עם ערך עצמי
+$\lambda$
+מגודל בדיוק
+$r$
+הוא
+\[\text{.} 2 \dim \ker\prs{\prs{T - \lambda \id_V}^r} - \dim \ker\prs{\prs{T - \lambda \id_V}^{r+1}} - \dim \ker\prs{\prs{T - \lambda \id_V}^{r-1}}\]
+\end{enumerate}
+\end{proposition}
+
+
+\subsection{מציאת בסיס ז'ורדן עבור אופרטור כללי}
+
+
 
 %\chapter{פירוק פרימרי}
 
