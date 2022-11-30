@@ -1,0 +1,88 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}     
+            
+%BIBLIOGRAPHY
+\usepackage[
+backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{bibliography.bib} %Imports bibliography file
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' - גיליון תרגילי בית 4 \\
+מרחבי מכפלה פנימית
+\\
+\vspace{1cm}
+\large{תאריך הגשה: 14.12.2022}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{exercise}
+יהי
+$V$
+מרכב מכפלה פנימית מעל שדה
+$\mbb{F} \in \set{\mbb{R}, \mbb{C}}$.
+נגיד כי וקטורים
+$u,v$
+\emph{ניצבים}
+אם
+$\trs{u,v} = 0$,
+ונסמן זאת
+$u \perp v$.
+עבור תת־קבוצה
+$S \subseteq V$
+נגדיר את
+\emph{המרחב הניצב}
+\[\text{.} S^\perp = \set{v \in V}{\forall s \in S : v \perp s}\]
+
+\begin{enumerate}
+\item הראו כי
+$S^\perp \leq V$
+תת־מרחב וקטורי של
+$V$.
+
+\item תהי
+$S \subseteq V$.
+הראו כי
+$S \subseteq \prs{S^{\perp}}^{\perp}$
+והסיקו כי
+$\Span\prs{S} \subseteq \prs{S^{\perp}}^{\perp}$.
+
+\item
+נראה בהרצאה כי עבור
+$W \leq V$
+מתקיים
+$V = W \oplus W^\perp$.
+היעזרו בכך כדי להראות כי
+$\prs{S^\perp}^\perp = \Span\prs{S}$
+לכל
+$S \subseteq V$.
+\end{enumerate}
+\end{exercise}
+
+\end{document}

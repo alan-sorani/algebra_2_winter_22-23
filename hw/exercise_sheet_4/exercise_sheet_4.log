@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  30 NOV 2022 12:19
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  30 NOV 2022 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**exercise_sheet_3.tex
-(./exercise_sheet_3.tex
+**exercise_sheet_4.tex
+(./exercise_sheet_4.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -1788,9 +1788,8 @@ File: biblatex.cfg
 LaTeX Warning: Unused global option(s):
     [openany].
 
-(./exercise_sheet_3.aux Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-\openout1 = `exercise_sheet_3.aux'.
+No file exercise_sheet_4.aux.
+\openout1 = `exercise_sheet_4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
 LaTeX Font Info:    ... okay on input line 42.
@@ -1803,7 +1802,6 @@ LaTeX Font Info:    ... okay on input line 42.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 2.
-
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1872,11 +1870,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
 LaTeX Info: Redefining \nameref on input line 42.
-
-(./exercise_sheet_3.out) (./exercise_sheet_3.out)
 \@outlinefile=\write6
-\openout6 = `exercise_sheet_3.out'.
+\openout6 = `exercise_sheet_4.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 ABD: EveryShipout initializing macros
 
@@ -1951,12 +1950,12 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `exercise_sheet_3.bcf'.
+\openout5 = `exercise_sheet_4.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'exercise_sheet_3.bbl' not found.
+Package biblatex Info: ... file 'exercise_sheet_4.bbl' not found.
 
-No file exercise_sheet_3.bbl.
+No file exercise_sheet_4.bbl.
 Package biblatex Info: Reference section=0 on input line 42.
 Package biblatex Info: Reference segment=0 on input line 42.
 Setting \if@calendar@hebrew Setting \if@calendar@hebrew
@@ -1983,15 +1982,8 @@ LaTeX Warning: No \author given.
 
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 46.
-(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-)
-[1
-
-]
 \tf@thm=\write7
-\openout7 = `exercise_sheet_3.thm'.
+\openout7 = `exercise_sheet_4.thm'.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -2043,27 +2035,48 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
- (./exercise_sheet_3.aux Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
-Package rerunfilecheck Info: File `exercise_sheet_3.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package logreq Info: Writing requests to 'exercise_sheet_3.run.xml'.
-\openout1 = `exercise_sheet_3.run.xml'.
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+)
+[1
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 88.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 88.
+ (./exercise_sheet_4.aux Setting \if@calendar@hebrew
+Setting \if@calendar@hebrew)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 88.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 88.
+
+
+Package rerunfilecheck Warning: File `exercise_sheet_4.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `exercise_sheet_4.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+
+LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                exercise_sheet_4
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'exercise_sheet_4.run.xml'.
+\openout1 = `exercise_sheet_4.run.xml'.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  ) 
 Here is how much of TeX's memory you used:
- 41604 strings out of 479819
- 858674 string characters out of 5895846
- 1724660 words of memory out of 5000000
- 57969 multiletter control sequences out of 15000+600000
- 540255 words of font info for 85 fonts, out of 8000000 for 9000
+ 41606 strings out of 479819
+ 858816 string characters out of 5895846
+ 1728341 words of memory out of 5000000
+ 57974 multiletter control sequences out of 15000+600000
+ 540263 words of font info for 86 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,15n,86p,1288b,3857s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,86p,1288b,3857s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on exercise_sheet_3.pdf (2 pages).
+Output written on exercise_sheet_4.pdf (1 page).
