@@ -1,0 +1,152 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' (104168)  \\
+תרגילים ממבחנים על דטרמיננטות ועל צורת ובסיס ז'ורדן
+}
+
+\author{אלן סורני}
+
+\begin{document}
+\maketitle
+
+\begin{exercise}[מועד א' - אביב 2020]
+תהי
+$A \in \Mat_n\prs{\mbb{F}}$
+נילפוטנטית. הראו כי
+$\det\prs{A} = 0$
+וגם
+$\det\prs{I+A} = 1$.
+\end{exercise}
+
+\begin{exercise}[מועד ב' - אביב 2020]
+תהיינה
+$A,B \in \Mat_{3}\prs{\mbb{R}}$
+עבורן מתקיים
+\[\text{.} \det\prs{A} = \det\prs{A+B} = \det\prs{A + 2B} = \det\prs{A + 3B} = 1\]
+מיצאו את
+$\det\prs{3A + 7B}$.
+\end{exercise}
+
+\begin{exercise}[מועד א' - חורף 2022]
+תהי
+\[\text{.} A \coloneqq \pmat{0 & -1 & -1 & 0 \\ 1 & -2 & -1 & -1 \\ 0 & 0 & -1 & 1 \\ 0 & 0 & 0 & -1} \in \Mat_4\prs{\mbb{C}}\]
+\begin{enumerate}
+\item מיצאו את צורת ז'ורדן של
+$A$
+ומיצאו מטריצה הפיכה
+$P \in \Mat_4\prs{\mbb{C}}$
+עבורה
+$P^{-1} A P$
+מטריצת ז'ורדן.
+
+\item הוכיחו כי
+$A^{-1}$
+ו־%
+$A^3$
+דומות.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[מועד א' - אביב 2021]
+\begin{enumerate}
+\item
+יהי
+$\lambda \in \mbb{C} \setminus \set{0}$
+ויהי
+$n > 1$.
+הראו כי
+$J_n\prs{\lambda}^2$
+אינה לכסינה.
+
+\item
+יהי
+$V$
+מרחב וקטורי מרוכב סוף־מימדי, יהי
+$T \in \End_{\mbb{C}}\prs{V}$
+כך ש־%
+$T^2$
+לכסין. מיצאו את כל צורות ז'ורדן האפשריות של
+$T$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[מועד א' - אביב 2022]
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל
+$\mbb{C}$,
+ויהי
+$T \in \End_{\mbb{C}}\prs{V}$.
+\begin{enumerate}
+\item בהינתן
+$p \in \mbb{C}\brs{x}$,
+הראו שקיים
+$S \in \End_{\mbb{C}}\prs{V}$
+עבורו
+$p\prs{S} = T$,
+אם ורק אם קיים בסיס
+$B$
+של
+$V$
+וקיימת מטריצת ז'ורדן
+$J$
+עבורה
+\[\text{.} \brs{T}_B = p\prs{J}\]
+
+\item
+נניח כי
+$\dim V = 4$
+וכי הפולינום המינימלי של
+$T$
+הוא
+$m_T\prs{x} = x^3$.
+הוכיחו כי אין
+$S \in \End_{\mbb{C}}\prs{V}$
+עבורו
+$S^2 = T$.
+\item
+תנו דוגמה מפורשת למפורטת לאופרטור
+$S \in \End_{\mbb{C}}\prs{\mbb{C}^4}$
+עבורו
+$\dim \ker \prs{S^2} = 2$
+וגם
+$\dim \ker \prs{S^4} = 3$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[מועד א' - חורף 2021]
+הראו כי קיימת מטריצה
+$A \in \Mat_{3}\prs{\mbb{R}}$
+עבורה
+\[\text{.} A^{20} + A^{21} = \pmat{1 & 20 & 0 \\ 0 & 1 & 21 \\ 0 & 0 & 1}\]
+
+\textbf{רמז:}
+ראינו בהרצאה כי
+\[\text{.} J_n\prs{\lambda}^k = \sum_{i = 0}^k \binom{k}{i} \lambda^{k-i} J_n\prs{0}^i\]
+\end{exercise}
+
+\end{document}

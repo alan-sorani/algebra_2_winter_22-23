@@ -1,25 +1,24 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  30 NOV 2022 14:47
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  30 NOV 2022 14:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**algebra_2_recitations.tex
-(./algebra_2_recitations.tex
+**determinants_and_jordan.tex
+(./determinants_and_jordan.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14>
-(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
-Document Class: book 2019/12/20 v1.4l Standard LaTeX document class
-(/usr/share/texlive/texmf-dist/tex/latex/base/bk10.clo
-File: bk10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
 \c@part=\count163
-\c@chapter=\count164
-\c@section=\count165
-\c@subsection=\count166
-\c@subsubsection=\count167
-\c@paragraph=\count168
-\c@subparagraph=\count169
-\c@figure=\count170
-\c@table=\count171
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
@@ -47,13 +46,13 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count172
+\inf@bad=\count171
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count173
-\leftroot@=\count174
+\uproot@=\count172
+\leftroot@=\count173
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count175
-\DOTSCASE@=\count176
+\classnum@=\count174
+\DOTSCASE@=\count175
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -62,15 +61,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen137
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count177
-\c@MaxMatrixCols=\count178
+\macc@depth=\count176
+\c@MaxMatrixCols=\count177
 \dotsspace@=\muskip16
-\c@parentequation=\count179
-\dspbrk@lvl=\count180
+\c@parentequation=\count178
+\dspbrk@lvl=\count179
 \tag@help=\toks15
-\row@=\count181
-\column@=\count182
-\maxfields@=\count183
+\row@=\count180
+\column@=\count181
+\maxfields@=\count182
 \andhelp@=\toks16
 \eqnshift@=\dimen138
 \alignsep@=\dimen139
@@ -109,15 +108,15 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count184
-\calc@Bcount=\count185
+\calc@Acount=\count183
+\calc@Bcount=\count184
 \calc@Adimen=\dimen144
 \calc@Bdimen=\dimen145
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count186
+\calc@Ccount=\count185
 \calc@Cskip=\skip54
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -127,7 +126,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count187
+\g_MT_multlinerow_int=\count186
 \l_MT_multwidth_dim=\dimen146
 \origjot=\skip55
 \l_MT_shortvdotswithinadjustabove_dim=\dimen147
@@ -147,17 +146,17 @@ Package: expl3 2020-02-14 L3 programming layer (loader)
 
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
 File: l3backend-xdvipdfmx.def 2020-02-03 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count188
+\g__graphics_track_int=\count187
 \l__pdf_internal_box=\box47
-\g__pdf_backend_object_int=\count189
-\g__pdf_backend_annotation_int=\count190
+\g__pdf_backend_object_int=\count188
+\g__pdf_backend_annotation_int=\count189
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2020-02-14 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count191
-\g__xparse_grabber_int=\count192
-\l__xparse_m_args_int=\count193
-\l__xparse_v_nesting_int=\count194
+\l__xparse_current_arg_int=\count190
+\g__xparse_grabber_int=\count191
+\l__xparse_m_args_int=\count192
+\l__xparse_v_nesting_int=\count193
 )
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -166,9 +165,9 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\integerpart=\count195
+\integerpart=\count194
 Invalid UTF-8 byte or sequence at line 35 replaced by U+FFFD.
-\decimalpart=\count196
+\decimalpart=\count195
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 79 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 83 replaced by U+FFFD.
@@ -368,8 +367,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen159
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count197
-\c@continuedfloat=\count198
+\c@caption@flags=\count196
+\c@continuedfloat=\count197
 )
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
@@ -377,9 +376,9 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count199
-\Gm@cntv=\count266
-\c@Gm@tempcnt=\count267
+\Gm@cnth=\count198
+\Gm@cntv=\count199
+\c@Gm@tempcnt=\count266
 \Gm@bindingoffset=\dimen160
 \Gm@wd@mp=\dimen161
 \Gm@odd@mp=\dimen162
@@ -431,8 +430,8 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen168
-\Hy@linkcounter=\count268
-\Hy@pagecounter=\count269
+\Hy@linkcounter=\count267
+\Hy@pagecounter=\count268
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020/01/14 v7.00d Hyperref: PDFDocEncoding definition (HO)
@@ -443,7 +442,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count270
+\Hy@SavedSpaceFactor=\count269
 Package hyperref Info: Option `colorlinks' set `true' on input line 4421.
 Package hyperref Info: Hyper figures OFF on input line 4547.
 Package hyperref Info: Link nesting OFF on input line 4552.
@@ -452,7 +451,7 @@ Package hyperref Info: Plain pages OFF on input line 4562.
 Package hyperref Info: Backreferencing OFF on input line 4567.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4800.
-\c@Hy@tempcnt=\count271
+\c@Hy@tempcnt=\count270
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
@@ -468,7 +467,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count272
+\Fld@menulength=\count271
 \Field@Width=\dimen170
 \Fld@charsize=\dimen171
 Package hyperref Info: Hyper figures OFF on input line 6430.
@@ -484,9 +483,9 @@ LaTeX Info: Redefining \pageref on input line 6504.
 (/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count273
-\c@Item=\count274
-\c@Hfootnote=\count275
+\Hy@abspage=\count272
+\c@Item=\count273
+\c@Hfootnote=\count274
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
@@ -501,10 +500,10 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box48
-\c@Hy@AnnotLevel=\count276
-\HyField@AnnotCount=\count277
-\Fld@listcount=\count278
-\c@bookmark@seq@number=\count279
+\c@Hy@AnnotLevel=\count275
+\HyField@AnnotCount=\count276
+\Fld@listcount=\count277
+\c@bookmark@seq@number=\count278
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -601,14 +600,14 @@ ex
 \pgf@yd=\dimen186
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count280
-\c@pgf@countb=\count281
-\c@pgf@countc=\count282
-\c@pgf@countd=\count283
+\c@pgf@counta=\count279
+\c@pgf@countb=\count280
+\c@pgf@countc=\count281
+\c@pgf@countd=\count282
 \t@pgf@toka=\toks25
 \t@pgf@tokb=\toks26
 \t@pgf@tokc=\toks27
-\pgf@sys@id@count=\count284
+\pgf@sys@id@count=\count283
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
@@ -624,13 +623,13 @@ File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
 f
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )
-\pgfsys@objnum=\count285
+\pgfsys@objnum=\count284
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
 tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count286
-\pgfsyssoftpath@bigbuffer@items=\count287
+\pgfsyssoftpath@smallbuffer@items=\count285
+\pgfsyssoftpath@bigbuffer@items=\count286
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
 tex
@@ -644,7 +643,7 @@ Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen187
-\pgfmath@count=\count288
+\pgfmath@count=\count287
 \pgfmath@box=\box51
 \pgfmath@toks=\toks28
 \pgfmath@stack@operand=\toks29
@@ -668,7 +667,7 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count289
+\c@pgfmathroundto@lastzeros=\count288
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
@@ -707,7 +706,7 @@ File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box52
 \pgf@hbox=\box53
 \pgf@layerbox@main=\box54
-\pgf@picture@serial@count=\count290
+\pgf@picture@serial@count=\count289
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
@@ -740,8 +739,8 @@ File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen267
-\pgf@sys@shading@range@num=\count291
-\pgf@shadingcount=\count292
+\pgf@sys@shading@range@num=\count290
+\pgf@shadingcount=\count291
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
@@ -801,7 +800,7 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count293
+\pgf@plot@mark@count=\count292
 \pgfplotmarksize=\dimen272
 )
 \tikz@lastx=\dimen273
@@ -816,18 +815,18 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@figbox@bg=\box58
 \tikz@tempbox=\box59
 \tikz@tempbox@bg=\box60
-\tikztreelevel=\count294
-\tikznumberofchildren=\count295
-\tikznumberofcurrentchild=\count296
-\tikz@fig@count=\count297
+\tikztreelevel=\count293
+\tikznumberofchildren=\count294
+\tikznumberofcurrentchild=\count295
+\tikz@fig@count=\count296
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count298
-\pgfmatrixcurrentcolumn=\count299
-\pgf@matrix@numberofcolumns=\count300
+\pgfmatrixcurrentrow=\count297
+\pgfmatrixcurrentcolumn=\count298
+\pgf@matrix@numberofcolumns=\count299
 )
-\tikz@expandcount=\count301
+\tikz@expandcount=\count300
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -863,7 +862,7 @@ e.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen284
 \pgfdecoratedinputsegmentremainingdistance=\dimen285
 \pgf@decorate@distancetomove=\dimen286
-\pgf@decorate@repeatstate=\count302
+\pgf@decorate@repeatstate=\count301
 \pgfdecorationsegmentamplitude=\dimen287
 \pgfdecorationsegmentlength=\dimen288
 )
@@ -992,7 +991,7 @@ File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count303
+\etb@tempcnta=\count302
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ntheorem/ntheorem.sty
 Style `ntheorem', Version 1.33 <2011/08/15>
@@ -1028,119 +1027,116 @@ Package: ntheorem 2011/08/15 1.33
 \thm@topsep=\skip73
 \thm@topsepadd=\skip74
 Package ntheorem Info: Option `thmmarks' loaded on input line 1175.
-\c@endNonectr=\count304
-\c@currNonectr=\count305
+\c@endNonectr=\count303
+\c@currNonectr=\count304
 \mysavskip=\skip75
 Package ntheorem Info: option `amsmath' handling for `thmmarks' loaded on input
  line 1175.
 \thm@amstmpdepth=\dimen305
 \tagwidth=\dimen306
 )
-\c@currproofctr=\count306
-\c@endproofctr=\count307
-\c@proof=\count308
-\c@currtheoremxctr=\count309
-\c@endtheoremxctr=\count310
-\c@theoremx=\count311
-\c@currtheoremstarredctr=\count312
-\c@endtheoremstarredctr=\count313
-\c@theoremstarred=\count314
-\c@currlemmactr=\count315
-\c@endlemmactr=\count316
-\c@currcorollaryctr=\count317
-\c@endcorollaryctr=\count318
-\c@currpropositionctr=\count319
-\c@endpropositionctr=\count320
-\c@currconjecturectr=\count321
-\c@endconjecturectr=\count322
-\c@currcriterionctr=\count323
-\c@endcriterionctr=\count324
-\c@currassertionctr=\count325
-\c@endassertionctr=\count326
-\c@currfactctr=\count327
-\c@endfactctr=\count328
-\c@currhypothesisctr=\count329
-\c@endhypothesisctr=\count330
-\c@currdefinitionxctr=\count331
-\c@enddefinitionxctr=\count332
-\c@currdefinitionstarredctr=\count333
-\c@enddefinitionstarredctr=\count334
-\c@definitionstarred=\count335
-\c@currconditionctr=\count336
-\c@endconditionctr=\count337
-\c@curraxiomctr=\count338
-\c@endaxiomctr=\count339
-\c@axiom=\count340
-\c@currpostulatectr=\count341
-\c@endpostulatectr=\count342
-\c@currpropertyctr=\count343
-\c@endpropertyctr=\count344
-\c@currterminologyxctr=\count345
-\c@endterminologyxctr=\count346
-\c@currterminologystarredctr=\count347
-\c@endterminologystarredctr=\count348
-\c@terminologystarred=\count349
-\c@currproblemctr=\count350
-\c@endproblemctr=\count351
-\c@currexamplectr=\count352
-\c@endexamplectr=\count353
-\c@currexercisectr=\count354
-\c@endexercisectr=\count355
-\c@exercise=\count356
-\c@currexercisexctr=\count357
-\c@endexercisexctr=\count358
-\c@exercisex=\count359
-\c@currexercisechapctr=\count360
-\c@endexercisechapctr=\count361
-\c@exercisechap=\count362
-\c@curralgorithmxctr=\count363
-\c@endalgorithmxctr=\count364
-\c@curralgorithmstarredctr=\count365
-\c@endalgorithmstarredctr=\count366
-\c@algorithmstarred=\count367
-\c@currquestionctr=\count368
-\c@endquestionctr=\count369
-\c@currassumptionctr=\count370
-\c@endassumptionctr=\count371
-\c@currremarkctr=\count372
-\c@endremarkctr=\count373
-\c@currnotectr=\count374
-\c@endnotectr=\count375
-\c@currobservationctr=\count376
-\c@endobservationctr=\count377
-\c@currnotationctr=\count378
-\c@endnotationctr=\count379
-\c@currclaimctr=\count380
-\c@endclaimctr=\count381
-\c@currsummaryctr=\count382
-\c@endsummaryctr=\count383
-\c@summary=\count384
-\c@curracknowledgementctr=\count385
-\c@endacknowledgementctr=\count386
-\c@currcasectr=\count387
-\c@endcasectr=\count388
-\c@case=\count389
-\c@curroptionctr=\count390
-\c@endoptionctr=\count391
-\c@option=\count392
-\c@currconclusionctr=\count393
-\c@endconclusionctr=\count394
-\c@conclusion=\count395
-\c@currsolutionctr=\count396
-\c@endsolutionctr=\count397
-\c@solution=\count398
-\c@currmotivationctr=\count399
-\c@endmotivationctr=\count400
-\c@motivation=\count401
-\c@currnotationstarredctr=\count402
-\c@endnotationstarredctr=\count403
-\c@notationstarred=\count404
-\c@currexms_rawctr=\count405
-\c@endexms_rawctr=\count406
-\c@exms_raw=\count407
-\c@currexrs_rawctr=\count408
-\c@endexrs_rawctr=\count409
-\c@exrs_raw=\count410
+\c@currproofctr=\count305
+\c@endproofctr=\count306
+\c@proof=\count307
+\c@currtheoremxctr=\count308
+\c@endtheoremxctr=\count309
+\c@theoremx=\count310
+\c@currtheoremstarredctr=\count311
+\c@endtheoremstarredctr=\count312
+\c@theoremstarred=\count313
+\c@currlemmactr=\count314
+\c@endlemmactr=\count315
+\c@currcorollaryctr=\count316
+\c@endcorollaryctr=\count317
+\c@currpropositionctr=\count318
+\c@endpropositionctr=\count319
+\c@currconjecturectr=\count320
+\c@endconjecturectr=\count321
+\c@currcriterionctr=\count322
+\c@endcriterionctr=\count323
+\c@currassertionctr=\count324
+\c@endassertionctr=\count325
+\c@currfactctr=\count326
+\c@endfactctr=\count327
+\c@currhypothesisctr=\count328
+\c@endhypothesisctr=\count329
+\c@currdefinitionxctr=\count330
+\c@enddefinitionxctr=\count331
+\c@currdefinitionstarredctr=\count332
+\c@enddefinitionstarredctr=\count333
+\c@definitionstarred=\count334
+\c@currconditionctr=\count335
+\c@endconditionctr=\count336
+\c@curraxiomctr=\count337
+\c@endaxiomctr=\count338
+\c@axiom=\count339
+\c@currpostulatectr=\count340
+\c@endpostulatectr=\count341
+\c@currpropertyctr=\count342
+\c@endpropertyctr=\count343
+\c@currterminologyxctr=\count344
+\c@endterminologyxctr=\count345
+\c@currterminologystarredctr=\count346
+\c@endterminologystarredctr=\count347
+\c@terminologystarred=\count348
+\c@currproblemctr=\count349
+\c@endproblemctr=\count350
+\c@currexamplectr=\count351
+\c@endexamplectr=\count352
+\c@currexercisectr=\count353
+\c@endexercisectr=\count354
+\c@exercise=\count355
+\c@currexercisexctr=\count356
+\c@endexercisexctr=\count357
+\c@exercisex=\count358
+\c@curralgorithmxctr=\count359
+\c@endalgorithmxctr=\count360
+\c@curralgorithmstarredctr=\count361
+\c@endalgorithmstarredctr=\count362
+\c@algorithmstarred=\count363
+\c@currquestionctr=\count364
+\c@endquestionctr=\count365
+\c@currassumptionctr=\count366
+\c@endassumptionctr=\count367
+\c@currremarkctr=\count368
+\c@endremarkctr=\count369
+\c@currnotectr=\count370
+\c@endnotectr=\count371
+\c@currobservationctr=\count372
+\c@endobservationctr=\count373
+\c@currnotationctr=\count374
+\c@endnotationctr=\count375
+\c@currclaimctr=\count376
+\c@endclaimctr=\count377
+\c@currsummaryctr=\count378
+\c@endsummaryctr=\count379
+\c@summary=\count380
+\c@curracknowledgementctr=\count381
+\c@endacknowledgementctr=\count382
+\c@currcasectr=\count383
+\c@endcasectr=\count384
+\c@case=\count385
+\c@curroptionctr=\count386
+\c@endoptionctr=\count387
+\c@option=\count388
+\c@currconclusionctr=\count389
+\c@endconclusionctr=\count390
+\c@conclusion=\count391
+\c@currsolutionctr=\count392
+\c@endsolutionctr=\count393
+\c@solution=\count394
+\c@currmotivationctr=\count395
+\c@endmotivationctr=\count396
+\c@motivation=\count397
+\c@currnotationstarredctr=\count398
+\c@endnotationstarredctr=\count399
+\c@notationstarred=\count400
+\c@currexms_rawctr=\count401
+\c@endexms_rawctr=\count402
+\c@exms_raw=\count403
+\c@currexrs_rawctr=\count404
+\c@endexrs_rawctr=\count405
+\c@exrs_raw=\count406
 ) (/home/lemon/texmf/tex/latex/hebrewdoc/hebrewdoc.sty
 Package: hebrewdoc 2018/10/05 Hebrew Macros
 
@@ -1164,7 +1160,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks53
 \XKV@tempa@toks=\toks54
 )
-\XKV@depth=\count411
+\XKV@depth=\count407
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
@@ -1173,17 +1169,17 @@ Package: fontspec 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTeX
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2020/02/03 v2.7h Font selection for XeLaTeX and LuaLaTe
 X
-\l__fontspec_script_int=\count412
-\l__fontspec_language_int=\count413
-\l__fontspec_strnum_int=\count414
-\l__fontspec_tmp_int=\count415
-\l__fontspec_tmpa_int=\count416
-\l__fontspec_tmpb_int=\count417
-\l__fontspec_tmpc_int=\count418
-\l__fontspec_em_int=\count419
-\l__fontspec_emdef_int=\count420
-\l__fontspec_strong_int=\count421
-\l__fontspec_strongdef_int=\count422
+\l__fontspec_script_int=\count408
+\l__fontspec_language_int=\count409
+\l__fontspec_strnum_int=\count410
+\l__fontspec_tmp_int=\count411
+\l__fontspec_tmpa_int=\count412
+\l__fontspec_tmpb_int=\count413
+\l__fontspec_tmpc_int=\count414
+\l__fontspec_em_int=\count415
+\l__fontspec_emdef_int=\count416
+\l__fontspec_strong_int=\count417
+\l__fontspec_strongdef_int=\count418
 \l__fontspec_tmpa_dim=\dimen307
 \l__fontspec_tmpb_dim=\dimen308
 \l__fontspec_tmpc_dim=\dimen309
@@ -1258,16 +1254,16 @@ X
 Package: biditools 2020-01-29 v1.10 Programming tools for bidi package
 \@bidi@envbody=\toks55
 \@bidi@emptytoks=\toks56
-\bidi@tempcountb=\count423
+\bidi@tempcountb=\count419
 \bidi@temptoksa=\toks57
 \bidi@temptoksb=\toks58
-\bidi@dummies=\count424
+\bidi@dummies=\count420
 \bidi@are@these@correct=\toks59
 \bidi@toks@lista=\toks60
 \bidi@toks@listb=\toks61
-\bidi@stack@length=\count425
+\bidi@stack@length=\count421
 \bidi@empty@stack=\toks62
-\bidi@looprepeat@depth=\count426
+\bidi@looprepeat@depth=\count422
 )
 (/usr/share/texlive/texmf-dist/tex/latex/zref/zref-abspage.sty
 Package: zref-abspage 2019/11/29 v2.28 Module abspage for zref (HO)
@@ -1278,7 +1274,7 @@ Package zref Info: New property list: main on input line 763.
 Package zref Info: New property: default on input line 764.
 Package zref Info: New property: page on input line 765.
 )
-\c@abspage=\count427
+\c@abspage=\count423
 Package zref Info: New property: abspage on input line 66.
 )
 \@bidi@copyins@=\insert252
@@ -1287,17 +1283,17 @@ Package zref Info: New property: abspage on input line 66.
 File: latex-xetex-bidi.def 2019/03/03 v1.3.7 bidi adaptations for `latex.ltx' f
 or XeTeX engine
 \bidi@n@everypar=\toks63
-\bidi@column@check@number=\count428
+\bidi@column@check@number=\count424
 
 (/usr/share/texlive/texmf-dist/tex/xelatex/bidi/footnote-xetex-bidi.def
 File: footnote-xetex-bidi.def 2017/08/09 v1.1 bidi footnote macros for XeTeX en
 gine
-\c@footdir@label=\count429
+\c@footdir@label=\count425
 \footdir@toks=\toks64
 )
-(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/book-xetex-bidi.def
-File: book-xetex-bidi.def 2017/06/09 v1.0 bidi adaptations for standard book cl
-ass for XeTeX engine
+(/usr/share/texlive/texmf-dist/tex/xelatex/bidi/article-xetex-bidi.def
+File: article-xetex-bidi.def 2017/06/09 v0.6 bidi adaptations for standard arti
+cle class for XeTeX engine
 )
 (/usr/share/texlive/texmf-dist/tex/xelatex/bidi/mathtools-xetex-bidi.def
 File: mathtools-xetex-bidi.def 2018/01/07 v0.1 bidi adaptations for mathtools p
@@ -1359,7 +1355,7 @@ f package for XeTeX engine
 File: loadingorder-xetex-bidi.def 2017/12/29 v0.97 making sure that bidi is the
  last package loaded
 )
-\bidi@digits=\count430
+\bidi@digits=\count426
 \bidi@digits@charclass=\XeTeXcharclass2
 \bidi@sepmark@charclass=\XeTeXcharclass3
 )
@@ -1371,17 +1367,17 @@ Package: hebrewcal 2019/12/03 v2.7 Hebrew calendar for polyglossia (adapted fro
 m hebcal.sty in Babel)
 
 (/usr/share/texlive/texmf-dist/tex/latex/polyglossia/cal-util.def
-\c@tmpA=\count431
-\c@tmpB=\count432
-\c@tmpC=\count433
-\c@tmpD=\count434
-\c@tmpE=\count435
-\c@tmpF=\count436
+\c@tmpA=\count427
+\c@tmpB=\count428
+\c@tmpC=\count429
+\c@tmpD=\count430
+\c@tmpE=\count431
+\c@tmpF=\count432
 )
-\hebrewday=\count437
-\hebrewmonth=\count438
-\hebrewyear=\count439
-\@common=\count440
+\hebrewday=\count433
+\hebrewmonth=\count434
+\hebrewyear=\count435
+\@common=\count436
 )
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -1528,12 +1524,12 @@ Package: stylish 2018/10/05 Stylish Book Design
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2019-12-06 v5.2j context-sensitive quotations (JAW)
-\csq@reset=\count441
-\csq@gtype=\count442
-\csq@glevel=\count443
-\csq@qlevel=\count444
-\csq@maxlvl=\count445
-\csq@tshold=\count446
+\csq@reset=\count437
+\csq@gtype=\count438
+\csq@glevel=\count439
+\csq@qlevel=\count440
+\csq@maxlvl=\count441
+\csq@tshold=\count442
 \csq@ltx@everypar=\toks65
 
 (/usr/share/texlive/texmf-dist/tex/latex/csquotes/csquotes.def
@@ -1559,265 +1555,46 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \enit@outerparindent=\dimen311
 \enit@toks=\toks66
 \enit@inbox=\box83
-\enit@count@id=\count447
-\enitdp@description=\count448
+\enit@count@id=\count443
+\enitdp@description=\count444
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
-\c@subfigure=\count449
-\c@subtable=\count450
+\c@subfigure=\count445
+\c@subtable=\count446
 )
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.sty
-Package: biblatex 2019/12/01 v3.14 programmable bibliographies (PK/MW)
 
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.sty
-Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count451
+LaTeX Warning: Unused global option(s):
+    [openany].
 
-(/usr/share/texlive/texmf-dist/tex/latex/logreq/logreq.def
-File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-))
-\c@tabx@nest=\count452
-\c@listtotal=\count453
-\c@listcount=\count454
-\c@liststart=\count455
-\c@liststop=\count456
-\c@citecount=\count457
-\c@citetotal=\count458
-\c@multicitecount=\count459
-\c@multicitetotal=\count460
-\c@instcount=\count461
-\c@maxnames=\count462
-\c@minnames=\count463
-\c@maxitems=\count464
-\c@minitems=\count465
-\c@citecounter=\count466
-\c@maxcitecounter=\count467
-\c@savedcitecounter=\count468
-\c@uniquelist=\count469
-\c@uniquename=\count470
-\c@refsection=\count471
-\c@refsegment=\count472
-\c@maxextratitle=\count473
-\c@maxextratitleyear=\count474
-\c@maxextraname=\count475
-\c@maxextradate=\count476
-\c@maxextraalpha=\count477
-\c@abbrvpenalty=\count478
-\c@highnamepenalty=\count479
-\c@lownamepenalty=\count480
-\c@maxparens=\count481
-\c@parenlevel=\count482
-\blx@tempcnta=\count483
-\blx@tempcntb=\count484
-\blx@tempcntc=\count485
-\blx@maxsection=\count486
-\blx@maxsegment@0=\count487
-\blx@notetype=\count488
-\blx@parenlevel@text=\count489
-\blx@parenlevel@foot=\count490
-\blx@sectionciteorder@0=\count491
-\blx@entrysetcounter=\count492
-\labelnumberwidth=\skip77
-\labelalphawidth=\skip78
-\biblabelsep=\skip79
-\bibitemsep=\skip80
-\bibnamesep=\skip81
-\bibinitsep=\skip82
-\bibparsep=\skip83
-\bibhang=\skip84
-\blx@bcfin=\read3
-\blx@bcfout=\write5
-\blx@langwohyphens=\language85
-\c@mincomprange=\count493
-\c@maxcomprange=\count494
-\c@mincompwidth=\count495
-Package biblatex Info: Trying to load biblatex default data model...
-Package biblatex Info: ... file 'blx-dm.def' found.
+No file determinants_and_jordan.aux.
+\openout1 = `determinants_and_jordan.aux'.
 
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-dm.def
-File: blx-dm.def 2019/12/01 v3.14 biblatex localization (PK/MW)
-)
-Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'alphabetic.dbx' not found.
-Package biblatex Info: Trying to load biblatex custom data model...
-Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count496
-\c@savedafterword=\count497
-\c@annotator=\count498
-\c@savedannotator=\count499
-\c@author=\count500
-\c@savedauthor=\count501
-\c@bookauthor=\count502
-\c@savedbookauthor=\count503
-\c@commentator=\count504
-\c@savedcommentator=\count505
-\c@editor=\count506
-\c@savededitor=\count507
-\c@editora=\count508
-\c@savededitora=\count509
-\c@editorb=\count510
-\c@savededitorb=\count511
-\c@editorc=\count512
-\c@savededitorc=\count513
-\c@foreword=\count514
-\c@savedforeword=\count515
-\c@holder=\count516
-\c@savedholder=\count517
-\c@introduction=\count518
-\c@savedintroduction=\count519
-\c@namea=\count520
-\c@savednamea=\count521
-\c@nameb=\count522
-\c@savednameb=\count523
-\c@namec=\count524
-\c@savednamec=\count525
-\c@translator=\count526
-\c@savedtranslator=\count527
-\c@shortauthor=\count528
-\c@savedshortauthor=\count529
-\c@shorteditor=\count530
-\c@savedshorteditor=\count531
-\c@labelname=\count532
-\c@savedlabelname=\count533
-\c@institution=\count534
-\c@savedinstitution=\count535
-\c@lista=\count536
-\c@savedlista=\count537
-\c@listb=\count538
-\c@savedlistb=\count539
-\c@listc=\count540
-\c@savedlistc=\count541
-\c@listd=\count542
-\c@savedlistd=\count543
-\c@liste=\count544
-\c@savedliste=\count545
-\c@listf=\count546
-\c@savedlistf=\count547
-\c@location=\count548
-\c@savedlocation=\count549
-\c@organization=\count550
-\c@savedorganization=\count551
-\c@origlocation=\count552
-\c@savedoriglocation=\count553
-\c@origpublisher=\count554
-\c@savedorigpublisher=\count555
-\c@publisher=\count556
-\c@savedpublisher=\count557
-\c@language=\count558
-\c@savedlanguage=\count559
-\c@origlanguage=\count560
-\c@savedoriglanguage=\count561
-\c@pageref=\count562
-\c@savedpageref=\count563
-\shorthandwidth=\skip85
-\shortjournalwidth=\skip86
-\shortserieswidth=\skip87
-\shorttitlewidth=\skip88
-\shortauthorwidth=\skip89
-\shorteditorwidth=\skip90
-\locallabelnumberwidth=\skip91
-\locallabelalphawidth=\skip92
-\localshorthandwidth=\skip93
-\localshortjournalwidth=\skip94
-\localshortserieswidth=\skip95
-\localshorttitlewidth=\skip96
-\localshortauthorwidth=\skip97
-\localshorteditorwidth=\skip98
-Package biblatex Info: Trying to load enhanced support for Unicode engines...
-Package biblatex Info: ... file 'blx-unicode.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-unicode.def)
-Package biblatex Info: Trying to load compatibility code...
-Package biblatex Info: ... file 'blx-compat.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/blx-compat.def
-File: blx-compat.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-)
-Package biblatex Info: Trying to load generic definitions...
-Package biblatex Info: ... file 'biblatex.def' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.def
-File: biblatex.def 2019/12/01 v3.14 biblatex compatibility (PK/MW)
-\c@textcitecount=\count564
-\c@textcitetotal=\count565
-\c@textcitemaxnames=\count566
-\c@biburlbigbreakpenalty=\count567
-\c@biburlbreakpenalty=\count568
-\c@biburlnumpenalty=\count569
-\c@biburlucpenalty=\count570
-\c@biburllcpenalty=\count571
-\biburlbigskip=\muskip21
-\biburlnumskip=\muskip22
-\biburlucskip=\muskip23
-\biburllcskip=\muskip24
-\c@smartand=\count572
-)
-Package biblatex Info: Trying to load bibliography style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/alphabetic.bbx
-File: alphabetic.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-Package biblatex Info: Trying to load bibliography style 'standard'...
-Package biblatex Info: ... file 'standard.bbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
-File: standard.bbx 2019/12/01 v3.14 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count573
-\c@bbx:relatedtotal=\count574
-))
-Package biblatex Info: Trying to load citation style 'alphabetic'...
-Package biblatex Info: ... file 'alphabetic.cbx' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/cbx/alphabetic.cbx
-File: alphabetic.cbx 2019/12/01 v3.14 biblatex citation style (PK/MW)
-Package biblatex Info: Redefining '\cite'.
-Package biblatex Info: Redefining '\parencite'.
-Package biblatex Info: Redefining '\footcite'.
-Package biblatex Info: Redefining '\footcitetext'.
-Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\textcite'.
-Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
-)
-Package biblatex Info: Trying to load configuration file...
-Package biblatex Info: ... file 'biblatex.cfg' found.
-
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/biblatex.cfg
-File: biblatex.cfg 
-))
-(./algebra_2_recitations.aux Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-\openout1 = `algebra_2_recitations.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 5
-1.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
+3.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 33.
+LaTeX Font Info:    ... okay on input line 33.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -1838,13 +1615,13 @@ Package caption Info: End \AtBeginDocument code.
 * \textheight=731.23584pt
 * \oddsidemargin=13.08827pt
 * \evensidemargin=13.08827pt
-* \topmargin=-45.43198pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
-* \headsep=18.06749pt
+* \headsep=25.0pt
 * \topskip=10.0pt
-* \footskip=25.29494pt
+* \footskip=30.0pt
 * \marginparwidth=56.9055pt
-* \marginparsep=7.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
@@ -1857,7 +1634,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box84
-Package hyperref Info: Link coloring ON on input line 51.
+Package hyperref Info: Link coloring ON on input line 33.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -1867,16 +1644,17 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count575
+\c@section@level=\count447
 )
-LaTeX Info: Redefining \ref on input line 51.
-LaTeX Info: Redefining \pageref on input line 51.
-LaTeX Info: Redefining \nameref on input line 51.
+LaTeX Info: Redefining \ref on input line 33.
+LaTeX Info: Redefining \pageref on input line 33.
+LaTeX Info: Redefining \nameref on input line 33.
+\@outlinefile=\write5
+\openout5 = `determinants_and_jordan.out'.
 
-(./algebra_2_recitations.out) (./algebra_2_recitations.out)
-\@outlinefile=\write6
-\openout6 = `algebra_2_recitations.out'.
 
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 ABD: EveryShipout initializing macros
 
@@ -1885,189 +1663,80 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 51.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 51.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 51.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 51.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 51.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 51.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 51.
-LaTeX Font Info:    Redeclaring math accent \check on input line 51.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 51.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 51.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 51.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 51.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 33.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 33.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 33.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 33.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 33.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 33.
+LaTeX Font Info:    Redeclaring math accent \check on input line 33.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 33.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 33.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 33.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 33.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 51.
+(Font)              `operators' in the math version `normal' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 51.
+(Font)                  OT1/cmr/m/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 51.
+(Font)              `operators' in the math version `bold' on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 51.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 51.
+(Font)                  OT1/cmr/m/it --> TU/lmr/m/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 51.
+(Font)                  OT1/cmr/bx/n --> TU/lmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 51.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 51.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 33.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 51.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 51.
+(Font)                  OT1/cmr/bx/it --> TU/lmr/b/it on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 51.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 33.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 51.
-Package biblatex Info: Trying to load language 'hebrew'...
-Package biblatex Info: ... file 'hebrew.lbx' not found.
-
-
-Package biblatex Warning: Language 'hebrew' not supported.
-(biblatex)                Using fallback language 'english' on input line 51.
-
-Package biblatex Info: Trying to load language 'english'...
-Package biblatex Info: ... file 'english.lbx' found.
-(/usr/share/texlive/texmf-dist/tex/latex/biblatex/lbx/english.lbx
-File: english.lbx 2019/12/01 v3.14 biblatex localization (PK/MW)
-)
-Package biblatex Info: XeTeX detected.
-(biblatex)             Assuming input encoding 'utf8'.
-Package biblatex Info: Automatic encoding selection.
-(biblatex)             Assuming data encoding 'utf8'.
-\openout5 = `algebra_2_recitations.bcf'.
-
-Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'algebra_2_recitations.bbl' found.
-
-(./algebra_2_recitations.bbl)
-Package biblatex Info: Reference section=0 on input line 51.
-Package biblatex Info: Reference segment=0 on input line 51.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 33.
  Setting \if@calendar@hebrew
 Setting \if@calendar@hebrew
-File: images/front.png Graphic file (type bmp)
-<images/front.png>
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
 
-Overfull \hbox (6.82864pt too wide) in paragraph at lines 54--54
- [][][][][] 
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 54.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 54
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 35
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-
-LaTeX Warning: No \author given.
-
-(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-)
-[1
-
-
-
-] (./algebra_2_recitations.toc Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-\tf@toc=\write7
-\openout7 = `algebra_2_recitations.toc'.
-
- [2
-
-] [1
-
-
-]
-פרק 1.
-Package hyperref Info: bookmark level for unknown definitionx defaults to 0 on 
-input line 64.
-Package hyperref Info: bookmark level for unknown remark defaults to 0 on input
- line 88.
-Package hyperref Info: bookmark level for unknown theoremx defaults to 0 on inp
-ut line 115.
-Package hyperref Info: bookmark level for unknown exercisechap defaults to 0 on
- input line 142.
-Package hyperref Info: bookmark level for unknown proposition defaults to 0 on 
-input line 155.
-[2
-
-]
-Package hyperref Info: bookmark level for unknown proof defaults to 0 on input 
-line 173.
-Package hyperref Info: bookmark level for unknown notation defaults to 0 on inp
-ut line 205.
-Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
-ut line 258.
- [3] [4] [5] [6] [7] [8] [9] [10] [11]
-פרק 2.
-[12
-
-] [13]
-Overfull \hbox (6.80733pt too wide) in paragraph at lines 1344--1360
-[][]\TU/FrankRuehlCLM(0)/m/n/10 נשלים את $\OML/cmm/m/it/10 B$ \TU/FrankRuehlCLM
-(0)/m/n/10 לבסיס של $\OML/cmm/m/it/10 V$ \TU/FrankRuehlCLM(0)/m/n/10 על ידי הוס
-פת וקטורים מ־$\OML/cmm/m/it/10 C$\TU/FrankRuehlCLM(0)/m/n/10 . נוסיף את $\OT1/c
-mr/m/n/10 1 [] \OML/cmm/m/it/10 U$ \TU/FrankRuehlCLM(0)/m/n/10 כדי לקבל $\OML/c
-mm/m/it/10 B[] \OT1/cmr/m/n/10 = []$[]
- []
-
-Package hyperref Info: bookmark level for unknown corollary defaults to 0 on in
-put line 1511.
-
-Overfull \hbox (16.8405pt too wide) in paragraph at lines 1511--1519
-[][]\TU/FrankRuehlCLM(0)/m/it/10 איבר $\OML/cmm/m/it/10 ^^U \OMS/cmsy/m/n/10 2 
-\U/msb/m/n/10 F$ \TU/FrankRuehlCLM(0)/m/it/10 הוא ערך עצמי של $\OML/cmm/m/it/10
- T$ \TU/FrankRuehlCLM(0)/m/it/10 אם ורק אם $[] [] \OMS/cmsy/m/n/10 6\OT1/cmr/m/
-n/10 = 0$\TU/FrankRuehlCLM(0)/m/it/10 , אם ורק אם $\OML/cmm/m/it/10 p[] [] \OT1
-/cmr/m/n/10 = [] [] =$[]
- []
-
-[14] [15] [16]
-Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 2081.
- [17] [18]
-פרק 3.
-[19
-
-] [20] [21]
-Overfull \hbox (4.7878pt too wide) in paragraph at lines 2736--2751
-[][]\TU/FrankRuehlCLM(0)/m/it/10 יהי $\OML/cmm/m/it/10 V$ \TU/FrankRuehlCLM(0)/
-m/it/10 מרחב וקטורי סוף־מימדי מעל שדה סגור אלגברית, יהי $\OML/cmm/m/it/10 T \OM
-S/cmsy/m/n/10 2 [][] []$[]
- []
-
-[22] [23] [24] [25]
-\tf@thm=\write8
-\openout8 = `algebra_2_recitations.thm'.
+Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
+ut line 36.
+\tf@thm=\write6
+\openout6 = `determinants_and_jordan.thm'.
 
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
@@ -2119,32 +1788,39 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [26]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3070.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3070.
- (./algebra_2_recitations.aux
-Setting \if@calendar@hebrew Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3070.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3070.
 
-Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
-(rerunfilecheck)             Checksum: 5D774457F5E0EF140487C142A7140E08;1054.
+(/usr/share/texlive/texmf-dist/tex/generic/stringenc/se-ascii-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
+
+)
+[1
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+ (./determinants_and_jordan.aux Setting \if@calendar@hebrew
+Setting \if@calendar@hebrew)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 152.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+Package rerunfilecheck Warning: File `determinants_and_jordan.out' has changed.
 
-Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
-\openout1 = `algebra_2_recitations.run.xml'.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3070.
+Package rerunfilecheck Info: Checksums for `determinants_and_jordan.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 41707 strings out of 479819
- 860903 string characters out of 5895846
- 1733798 words of memory out of 5000000
- 58051 multiletter control sequences out of 15000+600000
- 540335 words of font info for 95 fonts, out of 8000000 for 9000
+ 34942 strings out of 479819
+ 721130 string characters out of 5895846
+ 1231394 words of memory out of 5000000
+ 51358 multiletter control sequences out of 15000+600000
+ 540255 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 68i,20n,86p,1293b,4191s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,11n,86p,1295b,383s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algebra_2_recitations.pdf (28 pages).
+Output written on determinants_and_jordan.pdf (1 page).
