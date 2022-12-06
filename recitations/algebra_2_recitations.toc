@@ -28,14 +28,18 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}מציאת בסיס ז'ורדן עבור אופרטור כללי}{23}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {part}{II\hspace {1em}חלק שני - מרחבי מכפלה פנימית ואלגברה מולטי־לינארית}{27}{part.2}%
+\contentsline {section}{\numberline {3.3}הפולינום המינימלי ופירוק פרימרי}{27}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}מרחבי מכפלה פנימית}{28}{chapter.4}%
+\contentsline {chapter}{\numberline {4}תרגילי חזרה}{30}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}מוטיבציה}{28}{section.4.1}%
+\contentsline {part}{II\hspace {1em}חלק שני - מרחבי מכפלה פנימית ואלגברה מולטי־לינארית}{31}{part.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}הגדרות}{28}{section.4.2}%
+\contentsline {chapter}{\numberline {5}מרחבי מכפלה פנימית}{32}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.3}תכונות של מכפלות פנימיות, ונורמות}{30}{section.4.3}%
+\contentsline {section}{\numberline {5.1}מוטיבציה}{32}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}מטריקות וניצבות}{32}{section.4.4}%
+\contentsline {section}{\numberline {5.2}הגדרות}{32}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}תכונות של מכפלות פנימיות, ונורמות}{34}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.4}מטריקות וניצבות}{36}{section.5.4}%

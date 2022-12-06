@@ -1765,7 +1765,7 @@ $v$
 $T$.
  לכן אין ל־%
 $T$
-וקטורים עצמיים, ולכן הוא אינו לכסינה מעל
+וקטורים עצמיים, ולכן הוא אינו לכסין מעל
 $\mbb{R}$.
 \end{solution}
 
@@ -3052,6 +3052,393 @@ A^{2022} &= P J^{2022} P^{-1}
 \end{align*}
 \end{description}
 \end{solution}
+
+\section{הפולינום המינימלי ופירוק פרימרי}
+
+כאשר
+$V$
+מרחב וקטורי מעל שדה סגור אלגברית
+$\mbb{F}$,
+ו־%
+$T \in \End_{\mbb{F}}\prs{V}$,
+ראינו כי
+$V$
+הינו סכום ישר של המרחבים העצמיים המוכללים של
+$T$.
+\begin{align*}
+\text{.} V = V'_{\lambda_1} \oplus \ldots \oplus V'_{\lambda_k}
+\end{align*}
+כאן
+\[V'_{\lambda} = \ker\prs{\prs{T - \lambda \id_V}^{r_i}}\]
+עבור ערכים שלמים
+$r_i$.
+נקבל כי עבור
+$p\prs{x} = \prs{x - \lambda_1}^{r_1} \cdot \ldots \cdot \prs{x- \lambda_k}^{r_k}$
+מתקיים
+$p\prs{T} = 0$,
+וכי כל פולינום
+$q$
+עבורו
+$q\prs{T} = 0$
+הוא כפולה של
+$p$.
+
+\begin{definition}[פולינום מינימלי]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$.
+\emph{הפולינום המינימלי}
+של
+$T$
+הוא הפולינום
+$m_T \in \mbb{F}\brs{x}$
+המתוקן מהמעלה המינימלית עבורו
+$m_T\prs{T} = 0$.
+\end{definition}
+
+\begin{proposition}
+הפולינום המינימלי קיים, ואם
+$q\prs{T} = 0$
+אז
+$m_T \mid q$.
+\end{proposition}
+
+\begin{example}
+במקרה שיש ל־%
+$T$
+צורת ז'ורדן (למשל, אם השדה סגור אלגברית), הפולינום המינימלי יהיה בדיוק
+\[m_T\prs{x} = \prod_{i \in [k]} \prs{x - \lambda_i}^{r_i}\]
+כאשר
+$\lambda_i$
+הערכים העצמיים, ו־%
+$r_i$
+גודל הבלוק המקסימלי עם ערך עצמי
+$\lambda_i$.
+אכן, אם
+$J_{m_i}\prs{\lambda_i}$
+בלוק בצורת ז'ורדן של
+$T$,
+נקבל
+$m_T\prs{J_{m_i}\prs{\lambda_i}} = 0$
+כי אחד הגורמים בכפל הזה הוא
+\[\text{.} \prs{J_{m_i}\prs{\lambda_i} - \lambda_i I_{m_i}}^{r_i} = J_{m_i}\prs{0}^{r_i} = 0\]
+אם היה איזהשהו
+$r_j < m_j$
+היה מתקבל
+\[m_T\prs{J_{m_j}\prs{\lambda_j}} = \prod_{i \in [k]} \prs{J_{m_j}\prs{\lambda_j} - \lambda_i I_{m_j}}^{r_i}\]
+כאשר
+$J_{m_j}\prs{\lambda_j} - \lambda_i I_{m_j}$
+הפיכה לכל
+$j \neq i$
+ונילפוטנטית מאינדקס
+$m_i$
+שגדול מ־%
+$r_i$
+כאשר
+$j = i$.
+לכן במקרה זה היה מתקבל
+$m_T\prs{J_{m_j}\prs{\lambda_j}} \neq 0$
+ולכן לא יתכן ש־%
+$J_{m_j}\prs{\lambda_j}$
+בלוק בצורת ז'ורדן של
+$T$,
+בסתירה.
+\end{example}
+
+\begin{exercisechap}
+יהי
+$\mbb{F} = \mbb{C}$
+ותהי
+$T \in \endo_{\mbb{F}}\prs{V}$.
+יהי
+$m \in \mbb{N}_+$
+עבורו
+$T^m = \id_V$.
+הראו כי
+$T$
+לכסין.
+\end{exercisechap}
+
+\begin{solution}
+כדי להראות ש־%
+$T$
+לכסין מספיק להראות שכל שורשי
+$m_T$
+הינם מריבוי
+$1$.
+מההנחה, מתקיים
+$m_T \mid \prs{x^m - 1}$
+ולכן די להראות שכל שורשי
+$x^m - 1$
+הם מריבוי
+$1$.
+אכן, יש לפולינום זה
+$m$
+שורשים שונים
+\[\text{.} \set{e^{\frac{2 \pi i k}{m}}}{k \in [m]} = \set{\mrm{cis}\prs{\frac{2 \pi k}{m}}}{k \in [m]}\]
+\end{solution}
+
+\begin{exercisechap}
+\begin{enumerate}
+\item
+יהיו
+$A,B \in M_6\prs{\mbb{C}}$
+המקיימות
+\begin{enumerate}[label = (\roman*)]
+\item $p_A = p_B$.
+\item $m_A = m_B$
+וזהו פולינום ממעלה
+$5$.
+\end{enumerate}
+הראו כי
+$A \sim B$.
+
+\item
+מצאו
+$A,B \in M_6\prs{\mbb{C}}$
+שאינן דומות וכך שמתקיים
+\begin{enumerate}[label = (\roman*)]
+\item $p_A = p_B$.
+\item $m_A = m_B$
+וזהו פולינום ממעלה
+$4$.
+\end{enumerate}
+\end{enumerate}
+\end{exercisechap}
+
+\begin{solution}
+\begin{enumerate}
+\item נתון
+$\deg m_A = 5$,
+וזהו סכום גדלי הבלוקים המקסימליים של הערכים העצמיים השונים של
+$A$.
+לכן יש ערך עצמי
+$\lambda$
+מריבוי גיאומטרי
+$2$
+ובלוק מגודל
+$1$,
+וכל ערך עצמי אחר הוא מריבוי גיאומטרי
+$1$.
+אז
+\[\text{.} A \sim \pmat{\lambda & 0 & \cdots & & 0 \\ 0 & J_m\prs{\lambda_1} & \ddots & & \\ \vdots & \ddots & \ddots & & \vdots \\ & & & \ddots & 0 \\ 0 & & \cdots & 0 & J_{m_r}\prs{\lambda_r}}\]
+נתון
+$m_A = m_B$
+לכן באותו אופן
+\[B \sim \pmat{\lambda & 0 & \cdots & & 0 \\ 0 & J_m\prs{\lambda_1} & \ddots & & \\ \vdots & \ddots & \ddots & & \vdots \\ & & & \ddots & 0 \\ 0 & & \cdots & 0 & J_{m_r}\prs{\lambda_r}}\]
+ונסיק כי
+$A \sim B$.
+
+\item נסתכל על
+\begin{align*}
+A &\ceq \pmat{J_1\prs{0} & & \\  & J_1\prs{0} & \\ & & J_4\prs{0}} \\
+B &\ceq \pmat{J_2\prs{0} & \\ & J_4\prs{0}}
+\end{align*}
+ונקבל
+$m_A = m_B = x^4$
+אבל
+$A \not\sim B$
+כי יש להן צורת ז'ורדן שונה.
+
+\end{enumerate}
+\end{solution}
+
+מעל שדה כללי, יתכן שלא תהיה צורת ז'ורדן. במקרה זה, במקום פירוק למרחבים עצמיים מוכללים, נקבל פירוק כללי היותר הנקרא
+\emph{פירוק פרימרי}.
+
+\begin{theorem}[פירוק פרימרי]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+\[m_T = \prod_{i \in [k]} p_i^{r_i}\]
+פירוק של הפולינום המינימלי
+$m_T$
+של
+$T$
+לגורמים אי־פריקים (כלומר, אם
+$p_i = f \cdot g$,
+לפחות אחד מבין
+$f,g$
+קבוע).
+לכל
+$i \in [k]$
+יהי
+$V_i \coloneqq \ker\prs{p_i^{r_i}\prs{T}}$.
+מתקיים
+\[V = \bigoplus_{i \in [k]} V_i\]
+וההטלות על
+$V_i$
+נתונות על ידי פולינומים ב־%
+$T$.
+\end{theorem}
+
+הרבה תרגילים מעניינים על פירוק פרימרי מצריכים שימוש
+\emph{בפולינום מינימלי ביחס לוקטור},
+לכן נגדיר זאת לפני שנעבור לתרגיל.
+
+\begin{definition}[פולינום מינימלי ביחס לוקטור]
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+ויהי
+$v \in V$.
+\emph{הפולינום המינימלי של
+$T$
+ביחס לוקטור
+$v$},
+שיסומן
+$m_{T,v}$,
+הוא הפולינום המתוקן מהמעלה המינימלית עבורו
+$m_{T,v}\prs{T}\prs{v} = 0$.
+\end{definition}
+
+\begin{fact}
+בדומה לתכונה של
+$m_T$,
+אם
+$p\prs{T}\prs{v} = 0$
+אז
+$m_{T,v} \mid p$.
+\end{fact}
+
+\begin{corollary}
+תמיד מתקיים
+$m_T\prs{T}\prs{v} = 0$
+כי
+$m_T\prs{T} = 0$,
+לכן
+$m_{T,v} \mid m_T$.
+\end{corollary}
+
+\begin{exercisechap}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל שדה
+$\mbb{F}$,
+ויהי
+$T \in \End_{\mbb{F}}\prs{V}$
+עם פולינום מינימלי
+$m_T = \prod_{i \in [k]} g_i^{r_i}$
+עבור
+$g_i$
+אי־פריקים וזרים.
+יהי
+\[V = \bigoplus_{i \in [k]} W_i = \bigoplus_{i \in [k]} \ker\prs{g_i\prs{T}}^{r_i}\]
+הפירוק הפרימרי של
+$V$
+שמתאים ל־%
+$T$
+ויהי
+$W \leq V$
+תת־מרחב
+$T$%
+־שמור.
+
+הראו שמתקיים
+\[\text{.} W = \bigoplus_{i \in [k]} \prs{W \cap W_i}\]
+\end{exercisechap}
+
+\begin{solution}
+מתקיים
+\[m_T\prs{\left. T \right|_W} = \left. m_T\prs{T} \right|_W = 0\]
+ולכן
+$m_{\left. T \right|_W} \mid m_T$.
+נקבל כי
+\[m_{\left. T \right|_W} = \prod_{i \in [k]} g_i^{s_i}\]
+עבור שלמים אי־שליליים
+$s_1, \ldots, s_k$.
+הפולינומים
+$g_i$
+זרים ולכן זהו פירוק לגורמים אי־פריקים של
+$m_{\left. T \right|_W}$.
+ממשפט הפירוק הפרימרי נקבל כי
+\[\text{.} W = \bigoplus_{i \in [k]} \ker\prs{p_i\prs{\left. T \right|_W}^{s_i}}\]
+
+נראה כי
+$\ker\prs{p_i\prs{\left. T \right|_W}^{s_i}} = W \cap W_i$
+ונקבל את הנדרש.
+
+\begin{itemize}
+\item[-]
+יהי
+$v \in \ker\prs{g_i\prs{\left. T \right|_W}^{s_i}}$.
+אז
+$v \in W$
+ומתקיים
+\[\text{.} g_i\prs{T}^{r_i}\prs{v} = g_i\prs{T}^{r_i - s_i} \underset{=0}{\underbrace{g_i\prs{T}^{s_i}\prs{v}}} = 0\]
+לכן גם
+$v \in \ker\prs{g_i\prs{T}^{r_i}} = W_i$
+ולכן
+$v \in W \cap W_i$.
+
+\item[-]
+יהי
+$v \in W \cap W_i$.
+אז
+$g_i\prs{T}^{r_i}\prs{v} = 0$.
+מתקיים תמיד
+$m_{\left. T \right|_W, v} \mid m_{\left. T \right|_W}$,
+ומהנ"ל
+$m_{\left. T \right|_W, v} \mid g_i^{r_i}$.
+לכן,
+$m_{\left. T \right|_W, } \mid g_i^{s_i}$
+כי זאת החזקה הכי גדולה של
+$g_i$
+ב־%
+$m_{\left. T \right|_W}$.
+לכן
+$g_i\prs{\left. T \right|_W}^{s_i}\prs{v} = 0$
+כלומר
+$v \in g_i\prs{\left. T \right|_W}^{s_i}$.
+\end{itemize}
+\end{solution}
+
+\begin{corollary}
+יהי
+$T \in \End_{\mbb{F}}\prs{V}$
+עם צורת ז'ורדן
+$\brs{T}_B = \diag\prs{J_{m_1}\prs{\lambda_1}, \ldots, J_{m_k}\prs{\lambda_k}}$
+עבור
+$\lambda_i$
+שונים.
+אם
+$W \leq V$
+הינו
+$T$%
+־שמור נקבל כי
+\[\text{.} W = \bigoplus_{i \in [k]} \prs{W \cap V'_{\lambda_i}}\]
+לאופרטור
+$\left. T \right|_{V'_{\lambda_i}}$
+יש ערך עצמי יחיד
+$\lambda_i$
+וצורת ז'ורדן
+$J_{m_i}\prs{\lambda_i}$
+לפי החלק המתאים בבסיס. אם נכתוב
+\[B = B_1 \cup \ldots \cup B_k\]
+כאשר
+\[B_i = \prs{b_{i,1}, \ldots, b_{i,r_i}} = \prs{\prs{T - \lambda_i}^{r_i - 1}\prs{v_i}, \ldots, \prs{T - \lambda_i}\prs{v_i}, v_i}\]
+בסיס של
+$V'_{\lambda_i}$
+נקבל מתרגיל שראינו (או נראה בגיליון התרגילים) כי המרחבים השמורים של
+$\left. T \right|_{V'_{\lambda_i}}$
+הם אלו מהצורה
+$\Span\prs{b_{i,1}, \ldots, b_{i,m}}$
+עבור
+$m \in \set{0, \ldots, r_i}$.
+
+כיוון ש־%
+$\bigoplus_{i \in [k]} \prs{W \cap W_i}$
+הינו
+$T$%
+־שמור אם ורק אם כל אחד מהגורמים הינו
+$\left. T \right|_{V'_{\lambda_i}}$%
+־שמור, נקבל כי המרחבים השמורים הם אלו מהצורה
+\[\Span\prs{b_{1,1}, \ldots, b_{1,m_1}, b_{2,1}, \ldots, b_{2, m_2}, \ldots, b_{k,1}, \ldots, b_{k,m_k}}\]
+עבור ערכים
+$m_i \in \set{0, \ldots, r_i}$.
+\end{corollary}
+
+\chapter{תרגילי חזרה}
+
+%TODO fill in
 
 \part{חלק שני - מרחבי מכפלה פנימית ואלגברה מולטי־לינארית}
 

@@ -211,62 +211,90 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{24}{}}{25}{solution.24}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.2.{1}}{מכפלה פנימית}}{28}{theoremx.4.2.1}%
+\contentsline {definitionx}{{הגדרה}{3.3.{1}}{פולינום מינימלי}}{27}{theoremx.3.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{{הערה}{4.2.{2}}{}}{29}{theoremx.4.2.2}%
+\contentsline {proposition}{{טענה}{3.3.{2}}{}}{27}{theoremx.3.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{1}}{}}{29}{exercisechap.4.1}%
+\contentsline {example}{{דוגמה}{3.3.{3}}{}}{27}{theoremx.3.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{25}{}}{29}{solution.25}%
+\contentsline {exercisechap}{{תרגיל}{3.{9}}{}}{27}{exercisechap.3.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.3.{1}}{נורמה}}{30}{theoremx.4.3.1}%
+\contentsline {solution}{{פתרון}{25}{}}{27}{solution.25}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{4.3.{2}}{נורמה המושרית ממכפלה פנימית}}{30}{theoremx.4.3.2}%
+\contentsline {exercisechap}{{תרגיל}{3.{10}}{}}{27}{exercisechap.3.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{4.3.{3}}{אי־שוויון קושי־שוורץ}}{30}{theoremx.4.3.3}%
+\contentsline {solution}{{פתרון}{26}{}}{27}{solution.26}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{2}}{}}{30}{exercisechap.4.2}%
+\contentsline {theoremx}{{משפט}{3.3.{4}}{פירוק פרימרי}}{28}{theoremx.3.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{26}{}}{31}{solution.26}%
+\contentsline {definitionx}{{הגדרה}{3.3.{5}}{פולינום מינימלי ביחס לוקטור}}{28}{theoremx.3.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {proposition}{{טענה}{4.3.{4}}{זהות הפולריזציה}}{31}{theoremx.4.3.4}%
+\contentsline {fact}{{עובדה}{3.3.{6}}{}}{28}{theoremx.3.3.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{3}}{}}{31}{exercisechap.4.3}%
+\contentsline {corollary}{{מסקנה}{3.3.{7}}{}}{28}{theoremx.3.3.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{27}{}}{31}{solution.27}%
+\contentsline {exercisechap}{{תרגיל}{3.{11}}{}}{28}{exercisechap.3.11}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{4.3.{5}}{זהות המקבילית}}{32}{theoremx.4.3.5}%
+\contentsline {solution}{{פתרון}{27}{}}{28}{solution.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{4}}{}}{32}{exercisechap.4.4}%
+\contentsline {corollary}{{מסקנה}{3.3.{8}}{}}{29}{theoremx.3.3.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{28}{}}{32}{solution.28}%
+\contentsline {definitionx}{{הגדרה}{5.2.{1}}{מכפלה פנימית}}{32}{theoremx.5.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{1}}{מטריקה}}{32}{theoremx.4.4.1}%
+\contentsline {remark}{{הערה}{5.2.{2}}{}}{33}{theoremx.5.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{2}}{מטריקה המושרית מנורמה}}{32}{theoremx.4.4.2}%
+\contentsline {exercisechap}{{תרגיל}{5.{1}}{}}{33}{exercisechap.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{3}}{מרחק מקבוצה}}{32}{theoremx.4.4.3}%
+\contentsline {solution}{{פתרון}{28}{}}{33}{solution.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{4}}{זווית במרחב מכפלה פנימית}}{32}{theoremx.4.4.4}%
+\contentsline {definitionx}{{הגדרה}{5.3.{1}}{נורמה}}{34}{theoremx.5.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{5}}{וקטורים ניצבים}}{32}{theoremx.4.4.5}%
+\contentsline {theoremx}{{משפט}{5.3.{2}}{נורמה המושרית ממכפלה פנימית}}{34}{theoremx.5.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {remark}{{הערה}{4.4.{6}}{}}{32}{theoremx.4.4.6}%
+\contentsline {theoremx}{{משפט}{5.3.{3}}{אי־שוויון קושי־שוורץ}}{34}{theoremx.5.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{7}}{}}{32}{theoremx.4.4.7}%
+\contentsline {exercisechap}{{תרגיל}{5.{2}}{}}{34}{exercisechap.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{4.4.{8}}{פיתגורס}}{32}{theoremx.4.4.8}%
+\contentsline {solution}{{פתרון}{29}{}}{35}{solution.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{5}}{}}{33}{exercisechap.4.5}%
+\contentsline {proposition}{{טענה}{5.3.{4}}{זהות הפולריזציה}}{35}{theoremx.5.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{29}{}}{33}{solution.29}%
+\contentsline {exercisechap}{{תרגיל}{5.{3}}{}}{35}{exercisechap.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{6}}{}}{33}{exercisechap.4.6}%
+\contentsline {solution}{{פתרון}{30}{}}{35}{solution.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{30}{}}{33}{solution.30}%
+\contentsline {theoremx}{{משפט}{5.3.{5}}{זהות המקבילית}}{36}{theoremx.5.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{4.4.{9}}{מרחב ניצב}}{33}{theoremx.4.4.9}%
+\contentsline {exercisechap}{{תרגיל}{5.{4}}{}}{36}{exercisechap.5.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{4.{7}}{}}{33}{exercisechap.4.7}%
+\contentsline {solution}{{פתרון}{31}{}}{36}{solution.31}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{31}{}}{33}{solution.31}%
+\contentsline {definitionx}{{הגדרה}{5.4.{1}}{מטריקה}}{36}{theoremx.5.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{2}}{מטריקה המושרית מנורמה}}{36}{theoremx.5.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{3}}{מרחק מקבוצה}}{36}{theoremx.5.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{4}}{זווית במרחב מכפלה פנימית}}{36}{theoremx.5.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{5}}{וקטורים ניצבים}}{36}{theoremx.5.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{{הערה}{5.4.{6}}{}}{36}{theoremx.5.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{7}}{}}{36}{theoremx.5.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{5.4.{8}}{פיתגורס}}{36}{theoremx.5.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{5.{5}}{}}{37}{exercisechap.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{32}{}}{37}{solution.32}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{5.{6}}{}}{37}{exercisechap.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{33}{}}{37}{solution.33}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.4.{9}}{מרחב ניצב}}{37}{theoremx.5.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{5.{7}}{}}{37}{exercisechap.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{34}{}}{37}{solution.34}%
