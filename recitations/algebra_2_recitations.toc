@@ -27,3 +27,15 @@
 \contentsline {section}{\numberline {3.2}משפט ז'ורדן הכללי}{22}{section.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2.1}מציאת בסיס ז'ורדן עבור אופרטור כללי}{23}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {part}{II\hspace {1em}חלק שני - מרחבי מכפלה פנימית ואלגברה מולטי־לינארית}{27}{part.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}מרחבי מכפלה פנימית}{28}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}מוטיבציה}{28}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}הגדרות}{28}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}תכונות של מכפלות פנימיות, ונורמות}{30}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}מטריקות וניצבות}{32}{section.4.4}%
