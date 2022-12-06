@@ -3693,6 +3693,72 @@ $T\prs{u} = S\prs{u}$.
 \end{enumerate}
 \end{solution}
 
+\begin{exercisechap}
+יהי
+$V$
+מרחב מכפלה פנימית ויהיו
+$u,v \in V$.
+הראו כי
+$u \perp v$
+אם ורק אם
+\[\norm{u} \leq \norm{u+av}\]
+לכל
+$a \in \mbb{F}$.
+\end{exercisechap}
+
+\begin{solution}
+אם
+$u \perp v$
+ו־%
+$a \in \mbb{F}$,
+נקבל מפיתגורס
+\begin{align*}
+\norm{u+av}^2 &= \norm{u}^2 + \abs{a}^2 \norm{v}^2 \geq \norm{u}^2
+\end{align*}
+ולכן
+$\norm{u} \leq \norm{u+av}$.
+
+נניח כי
+$\trs{u,v} \neq 0$
+ונניח תחילה כי
+$\norm{v} = 1$.
+אז
+\[\trs{\trs{u,v}v, v} = \trs{u,v} \trs{v,v} = \trs{u,v} \norm{v}^2 = \trs{u,v} \neq 0\]
+וגם
+\[\text{.} \trs{u - \trs{u,v}v, v} = \trs{u,v} - \trs{\trs{u,v}v,v} = 0\]
+אז, ממשפט פיתגורס
+\begin{align*}
+\norm{u}^2 &= \norm{u - \trs{u,v}v + \trs{u,v}v}^2
+\\&=
+\norm{u - \trs{u,v}v}^2 + \norm{\trs{u,v}v}^2
+\\&>
+\norm{u-\trs{u,v}v}^2
+\end{align*}
+כאשר האי־שוויון חזק כי
+$\trs{u,v}v \neq 0$
+מההנחה
+$\trs{u,v} \neq 0$.
+לכן, עבור
+$a = \trs{u,v}$
+לא מתקיים
+$\norm{u} \leq \norm{u+av}$.
+
+כעת, אם
+$v$
+כללי, הוקטור
+$\frac{v}{\norm{v}}$
+הינו מאורך
+$1$
+ולכן יש
+$a' \in \mbb{F}$
+עבורו
+$\norm{u} > \norm{u+a' \frac{v}{\norm{v}}}$.
+אז ניקח
+$a = \frac{a'}{\norm{v}}$
+ונקבל כי
+$\norm{u} > \norm{u + av}$.
+\end{solution}
+
 כעת, כדי לדבר על המרחק של וקטור
 $v \in V$
 מתת־מרחב
