@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  7 DEC 2022 01:01
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  7 DEC 2022 10:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2067,9 +2067,9 @@ S/cmsy/m/n/10 2 [][] []$[]
 
 [22] [23] [24] [25] [26] [27]
 Package hyperref Info: bookmark level for unknown fact defaults to 0 on input l
-ine 3294.
+ine 3332.
  [28]
-Overfull \hbox (35.62549pt too wide) in paragraph at lines 3417--3426
+Overfull \hbox (35.62549pt too wide) in paragraph at lines 3455--3464
 []\TU/FrankRuehlCLM(0)/m/it/10 בסיס של $\OML/cmm/m/it/10 V[]$ \TU/FrankRuehlCLM
 (0)/m/it/10 נקבל מתרגיל שראינו (או נראה בגיליון התרגילים) כי המרחבים השמורים של
  $[][]$ הם אלו מהצורה $[] []$[]
@@ -2080,7 +2080,7 @@ Overfull \hbox (35.62549pt too wide) in paragraph at lines 3417--3426
 [30
 
 ] [31] [32]
-Overfull \hbox (16.93845pt too wide) in paragraph at lines 3871--3885
+Overfull \hbox (16.93845pt too wide) in paragraph at lines 3909--3923
 [][]\TU/FrankRuehlCLM(0)/m/n/10 ננסה להיעזר בתכונה $[] [] \OT1/cmr/m/n/10 = [] 
 [] [] []$\TU/FrankRuehlCLM(0)/m/n/10 . מתקיים $\OML/cmm/m/it/10 A[] \OMS/cmsy/m
 /n/10 ^^@ \OML/cmm/m/it/10 B[] \OT1/cmr/m/n/10 = [] []$ \TU/FrankRuehlCLM(0)/m/
@@ -2148,24 +2148,24 @@ braces):
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
  [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4668.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4668.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4706.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4706.
  (./algebra_2_recitations.aux
 Setting \if@calendar@hebrew Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4668.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4668.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4706.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4706.
 
 Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
 (rerunfilecheck)             Checksum: 72520FA95B97643BBB05C42F340B8600;1734.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4668.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4706.
  ) 
 Here is how much of TeX's memory you used:
  41714 strings out of 479819
  860994 string characters out of 5895846
- 1735438 words of memory out of 5000000
+ 1735439 words of memory out of 5000000
  58058 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
