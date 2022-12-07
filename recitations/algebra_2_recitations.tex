@@ -3438,7 +3438,472 @@ $m_i \in \set{0, \ldots, r_i}$.
 
 \chapter{תרגילי חזרה}
 
-%TODO fill in
+\begin{exercisechap}
+יהי
+$V = \mbb{C}_n\brs{x}$
+ויהי
+$T \in \End_{\mbb{C}}\prs{V}$
+המוגדר על ידי
+$T\prs{p}\prs{x} = p\prs{x+1}$.
+
+\begin{enumerate}
+\item מיצאו את צורת ז'ורדן של
+$T$.
+\item
+נניח כי
+$n = 3$.
+מיצאו בסיס מז'רדן עבור
+$T$.
+\item
+נניח עדיין כי
+$n = 3$.
+מיצאו את כל התת־מרחבים ה־%
+$T$%
+־שמורים של
+$V$.
+\end{enumerate}
+\end{exercisechap}
+
+\begin{solution}
+\begin{enumerate}
+\item
+כדי למצוא את צורת ז'ורדן נצטרך קודם כל למצוא ערכים עצמיים. נתחיל בחיפוש מטריצה מייצגת. יהי
+$E = \prs{1,x, x^2, \ldots, x^n}$
+הבסיס הסטנדרטי של
+$V$.
+העמודה ה־%
+$i$
+של
+$\brs{T}_E$
+היא
+$\brs{T\prs{x^{i-1}}}_E$.
+לפי הבינום של ניוטון מתקיים
+\[\text{.} T\prs{x^i} = \prs{x+1}^i = \sum_{j = 0}^i \binom{i}{j} x^j\]
+זה וקטור מהצורה
+$x^i + v$
+עבור
+$v \in \Span\prs{1, x, \ldots, x^{i-1}}$.
+לכן, המטריצה
+$\brs{T}_E$
+הינה משולשת עליונה עם
+$1$
+על האלכסון.
+כיוון שהערכים העצמיים של מטריצה משולשת עליונה הם ערכי האלכסון, נקבל כי
+$1$
+ערך עצמי יחיד מריבוי אלגברי
+$n$.
+
+כעת, המקדם
+$\binom{i}{j}$
+תמיד שונה מאפס בסכום הנ"ל ולכן כל האיברים מעל האלכסון במטריצה
+$\brs{T}_E$
+שונים מאפס. נקבל כי
+$\rank\prs{\brs{T}_E - 1 \cdot I_n} = n-1$
+ולכן
+$r_g\prs{1} = n - \rank\prs{\brs{T}_E - I_n} = 1$.
+ראינו כי מספר הבלוקים בצורת ז'ורדן עם ערך עצמי
+$\lambda$
+שווה לריבוי הגיאומטרי של
+$\lambda$,
+ולכן אצלנו יש בלוק יחיד
+$J_n\prs{1}$
+בצורת ז'ורדן של
+$T$.
+
+\item
+מצאנו כי בצורת ז'ורדן של
+$T$
+יש בלוק יחיד עם ערך עצמי
+$1$.
+לכן
+$T - \id_V$
+אופרטור הזזה, ונחפש וקטור
+$v \in V$
+שיתן בסיס ז'ורדן
+$\prs{\prs{T - \id_V}^3 \prs{v}, \prs{T - \id_V}^2 \prs{v}, \prs{T - \id_V}\prs{v}, v}$.
+כדי למצוא וקטור כזה, נשלים בסיס של
+$\ker\prs{T - \id_V}^3$
+לבסיס של
+$V$.
+מתקיים
+\begin{align*}
+\brs{T - \id_V}_E &= \pmat{0 & \binom{1}{0} & \binom{2}{0} & \binom{3}{0} \\ 0 & 0 & \binom{2}{1} & \binom{3}{1} \\ 0 & 0 & 0 & \binom{3}{2} \\ 0 & 0 & 0 & 0}
+=
+\pmat{0 & 1 & 1 & 1 \\ 0 & 0 & 2 & 3 \\ 0 & 0 & 0 & 3 \\ 0 & 0 & 0 & 0}
+\end{align*}
+ולכן
+\begin{align*}
+\text{.} \brs{T - \id_V}_E^3 &= \pmat{0 & 0 & 0 & 6 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 0 & 0}
+\end{align*}
+פתרון המערכת ההומוגנית
+$\brs{T - \id_V}_E^3 \vec{b} = 0$
+הוא
+$\Span\prs{e_1, e_2, e_3}$
+ולכן
+\[\text{.} \ker\prs{T - \id_V} = \rho_B^{-1}\prs{\Span{e_1, e_2, e_3}} = \Span\prs{1,x,x^2}\]
+נשלים את הבסיס
+$\prs{1,x,x^2}$
+של גרעין זה לבסיס
+$E$
+של
+$V$
+על ידי הוספת
+$x^3$,
+ונקבל בסיס ז'ורדן
+\[\text{.} \prs{\prs{T - \id_V}^3\prs{x^3}, \prs{T - \id_V}^2\prs{x^3}, \prs{T - \id_V}\prs{x^3}, x^3}\]
+נחשב את כל הוקטורים בבסיס:
+\begin{align*}
+\prs{T - id_V}\prs{x^3} &= \prs{x+1}^3 - x^3 = 3 x^2 + 3x + 1 \\
+\prs{T - \id_V}^2\prs{x^3} &= \prs{T - \id_V}\prs{3 x^2 + 3x + 1} \\&= 6x + 6 \\
+\prs{T - \id_V}^3\prs{x^3} &= \prs{T - \id_V}\prs{6x+6} = 6
+\end{align*}
+
+\item
+קיבלנו כי
+$\brs{T}_B = J_4\prs{1}$.
+ראינו בתרגיל בית שבמקרה זה המרחבים ה־%
+$T$%
+־שמורים הם מהצורה
+$\Span\prs{b_1, \ldots, b_i}$
+עבור
+$i \in \set{0, \ldots, 4}$
+וכאשר
+$B = \prs{b_1, ldots, b_4}$.
+
+אצלנו נקבל כי המרחבים ה־%
+$T$%
+־שמורים הם
+\begin{align*}
+\set{0} \\
+\Span\prs{6} &= \Span\prs{1} \\
+\Span\prs{6, 6x + 6} &= \Span\prs{1, x} \\
+\Span\prs{6, 6x, 3 x^2 + 3x + 1} &= \Span\prs{1,x, x^2} \\
+\text{.} \Span\prs{6,6x, 3x^2 + 3x + 1, x^3} &= V
+\end{align*}
+\end{enumerate}
+\end{solution}
+
+\begin{exercisechap}
+\begin{enumerate}
+\item מיצאו את צורת ז'ורדן של האופרטור
+\begin{align*}
+T \colon \mbb{C}_n\brs{x} &\mapsto \mbb{C}_n\brs{x} \\
+\text{.} \hphantom{lalala} p\prs{x} &\mapsto p\prs{x} + p''\prs{x}
+\end{align*}
+
+\item
+נניח כעת כי
+$n = 5$,
+נסמן
+$V = \mbb{C}_5\brs{x}$
+ויהי
+\begin{align*}
+S \colon V &\to V \\
+\text{.} p\prs{x} &\mapsto p\prs{x} + p''\prs{x} + p'''\prs{x}
+\end{align*}
+האם קיים אופרטור
+$M \in \End_{\mbb{C}}\prs{V}$
+הפיך עבורו
+$M^{-1} S M = T$?
+הוכיחו את תשובתכן.
+\end{enumerate}
+\end{exercisechap}
+
+\begin{solution}
+\begin{enumerate}
+\item נתחיל בחיפוש ערכים עצמיים.
+נסמן ראשית
+$V = \mbb{C}_n\brs{x}$
+ונשים לב כי
+$\prs{T - \id_V}\prs{p} = p''$.
+זה אופרטור נילפוטנטי כי הנגזרת ה־%
+$n+1$
+מתאפסת.
+
+אז
+$\prs{T - \id_V}^{\ceil{\frac{n+1}{2}}} = 0$
+אבל,
+$\prs{T - \id_V}^{\ceil{\frac{n+1}{2}} - 1} \neq 0$
+כי הנגזרת ה־%
+$n$
+לא מתאפסת, למשל
+$\frac{\diff}{\diff x} x^n = n! \neq 0$.
+לכן
+$T - \id_V$
+נילפוטנטי מאינדקס
+$\ceil{\frac{n+1}{2}}$.
+
+כיוון שאינדקס הנילפוטנטיות שווה לגודל הבלוק המקסימלי בצורת ז'ורדן, נקבל שיש בלוק מגודל
+$\ceil{\frac{n+1}{2}}$.
+כעת,
+$\ker\prs{T - \id_V} = \Span\prs{1,x}$
+תת־מרחב דו־מימדי. מספר הבלוקים בצורת ז'ורדן של
+$T$
+עם ערך עצמי
+$\lambda$
+שווה
+$r_g\prs{\lambda}$,
+ולכן יש במקרה שלנו בדיוק שני בלוקים.
+לכן יש בלוק נוסף מגודל
+$n+1 - \ceil{\frac{n+1}{2}} = \floor{\frac{n+1}{2}}$
+ובסך הכל צורת ז'ורדן של
+$T$
+היא
+$\pmat{J_{\ceil{\frac{n+1}{2}}}\prs{1} & \\ & J_{\floor{\frac{n+1}{2}}}\prs{1}}$.
+
+\item
+כמו מקודם, גם
+$S - \id_V$
+אופרטור נילפוטנטי, ולכן
+$1$
+ערך עצמי יחיד של
+$S$.
+אם
+$D\prs{p} = p'$
+מתקיים
+\begin{align*}
+\prs{S - \id_V}^2 &= \prs{D^2 + D^3}^2 = D^4 + 2 D^5 + \cancelto{0}{D^6}
+\end{align*}
+וזה שונה מאפס למשל כי
+\[\text{.} \prs{D^4 + 2 D^5}\prs{x^5} = 5! \prs{x + 2} \neq 0\]
+אבל,
+\[\prs{S - \id_V}^3 = \prs{D^2 + D^3}^3 = \prs{D^4 + 2D^5}\prs{D^2 + D^3} = D^6 + D^7 + 2\prs{D^7 + D^8} = 0\]
+כי
+$D^6 = 0$.
+לכן
+$S - \id_V$
+נילפוטנטי מאינדקס
+$3$
+ולכן גודל הבלוק המקסימלי הוא
+$3$
+כי זה שווה לאינדקס הנילפוטנטיות.
+כמו מקודם,
+$\ker\prs{S - \id_V} = \Span\prs{1,x}$,
+ולכן יש בסך הכל שני בלוקים, ונקבל כי צורת ז'ורדן של
+$S$
+היא
+$\pmat{J_3\prs{1} & \\ & J_3\prs{1}}$.
+
+זאת בדיוק אותה צורת ז'ורדן כמו של
+$T$,
+ונסמנה
+$J$.
+יהיו בסיסים
+$B,C$
+של
+$V$
+עבורם
+$\brs{T}_B = \brs{S}_C = J$.
+מתקיים
+\begin{align*}
+J =\brs{T}_B &= \prs{M^B_E}^{-1} \brs{T}_E M^B_E
+J = \brs{S}_C &= \prs{M^C_E}^{-1} \brs{S}_E M^C_E
+\end{align*}
+ולכן מהשוואת האגפים הימנים מתקיים
+\begin{align*}
+\text{.} \brs{T}_E = \prs{M^B_E} \prs{M^C_E}^{-1} \brs{S}_E M^C_E \prs{M^B_E}^{-1}
+\end{align*}
+ידוע כי
+$\prs{M^B_E}^{-1} = M^E_B$
+ולכן
+\begin{align*}
+\text{.} \brs{T}_E &= \prs{M^E_B}^{-1} \prs{M^C_E}^{-1} \brs{S}_E M^C_E M^E_B
+\\&= \prs{M^C_E M^E_B}^{-1} \brs{S}_E \prs{M^C_E M^E_B}
+\end{align*}
+נסמן
+$P = M^C_E M^E_B$
+ויהי
+$M \in \End\prs{V}$
+אופרטור עבורו
+$\brs{P}_E = M$.
+אז
+$M$
+הפיך כי
+$P$
+הפיכה. מתקיים
+\[\brs{M^{-1} S M}_E = \brs{M^{-1}}_E \brs{S}_E \brs{M}_E = P^{-1} \brs{S}_E P = \brs{T}_E\]
+ולכן גם
+$M^{-1} S M = T$.
+\end{enumerate}
+\end{solution}
+
+\begin{exercisechap}
+תהי
+$N \in \Mat_n\prs{\mbb{C}}$
+נילפוטנטית מאינדקס
+$k$.
+הראו כי
+$I - N, I + N$
+שתיהן הפיכות, ומצאו את ההופכית של כל אחת מהן.
+
+\textbf{רמז:}
+המטריצות ההופכיות הינן פולינומים ב־%
+$N$.
+\end{exercisechap}
+
+\begin{solution}
+נסתכל תחילה על
+$I - N$.
+כדי לנחש פולינום ב־%
+$N$
+שיהיה המטריצה ההופכית, ניזכר שעבור
+$\abs{r} < 1$
+מתקיים
+$\prs{1-r}^{-1} = \sum_{i = 0}^{\infty} r^i$
+(זה טור גיאומטרי).
+כיוון שאצלנו
+$N^i = 0$
+לכל
+$i \geq k$,
+ננחש כי
+$\prs{I - N}^{-1} = \sum_{i=0}^{k-1} N^i$.
+אכן,
+\begin{align*}
+\prs{I - N} \prs{\sum_{i=0}^{k-1} N^i} &= \sum_{i=0}^{k-1} N^i - N \cdot \sum_{i=0}^{k-1} N^i
+\\&= \sum_{i=0}^{k-1} N^i - \sum_{i=0}^{k-1} N^{i+1}
+\\&= \sum_{i=0}^{k-1} N^i - \sum_{j=1}^{k} N^j
+\\&= N^0 - N^k
+\\&= N^0
+\\\text{.} \hphantom{\prs{I - N} \prs{\sum_{i=0}^{k-1} N^i}} &= I
+\end{align*}
+
+כעת,
+$-N$
+גם היא נילפוטנטית מאינדקס
+$k$.
+לכן נוכל להחליף את
+$N$
+ב־%
+$-N$
+בביטוי של המטריצה ההופכית, כדי לקבל את ההופכית של
+$I + N = I - \prs{-N}$.
+נקבל כי
+\[\text{.} \prs{I + N}^{-1} = \sum_{i = 0}^{k-1} \prs{-1}^i N^i\]
+\end{solution}
+
+\begin{exercisechap}
+תהיינה
+$A,B \in \Mat_3\prs{\mbb{R}}$
+מטריצות שכל הערכים העצמים שלהן חיוביים.
+לכל
+$t \in \brs{0,1}$
+נסתכל על המטריצה
+$X_t \coloneqq \prs{1-t} A + t B$.
+תהי
+\begin{align*}
+f \colon \brs{0,1} &\to \mbb{R} \\
+\text{.} \hphantom{lalalala} t &\mapsto \det\prs{X_t}
+\end{align*}
+יהיו
+$a,b \in \brs{0,1}$
+עבורם
+\begin{align*}
+a &< b \\
+f\prs{a} &< 0 \\
+\text{.} f\prs{b} &> 0
+\end{align*}
+
+הראו כי
+$f\prs{c} \geq 0$
+לכל
+$c > b$.
+\end{exercisechap}
+
+\begin{solution}
+כיוון שהדטרמיננטה של מטריצה שווה למכפלת הערכים העצמיים שלה, מתקיים
+$\det\prs{A} = \det\prs{B} > 0$.
+לכן
+$f\prs{0} = f\prs{1} > 0$.
+
+כעת, הדטרמיננטה של מטריצה
+$n \times n$
+היא ביטוי פולינומיאלי ממעלה
+$n$
+במקדמים, לכן
+$f\prs{x} = det\prs{\prs{1-x} A + xB}$
+פולינום ממעלה לכל היותר
+$3$.
+ממשפט ערך הביניים, יש
+$t_1 \in \brs{0,a}$
+עבורו
+$f\prs{t_1} = 0$
+ויש
+$t_2 \in \brs{a,b}$
+עבורו
+$f\prs{t_2} = 0$.
+
+נניח בדרך השלילה שיש
+$c \in \left(b, 1 \right]$
+עבורו
+$f\prs{c} < 0$.
+מערך הביניים, יש
+$t_3 \in \prs{b,c}$
+וגם
+$t_4 \in \left(c, 1\right]$
+עבורם
+$f\prs{t_3} = f\prs{t_4} = 0$.
+אז ל־%
+$f$
+יש ארבעה שורשים שונים, אך זהו פולינום ממעלה
+$3$
+ולכן
+$f\prs{t} \equiv 0$
+בסתירה להנחה
+$f\prs{a} < 0$.
+\end{solution}
+
+\begin{exercisechap}
+תהיינה
+$A,B \in \Mat_n\prs{\mbb{C}}$
+עבורן
+$AB = BA = 0$,
+וגם
+\begin{align*}
+\det\prs{2 A^2 + B^2} &= 2 \\
+\det\prs{A^2 - B^2} &= 3 \\
+\text{.} \det\prs{2A^3 -B^3} &= 6
+\end{align*}
+חשבו את
+$\det\prs{A+B}$.
+\end{exercisechap}
+
+\begin{solution}
+ננסה להיעזר בתכונה
+$\det\prs{XY} = \det\prs{X} \det\prs{Y}$.
+מתקיים
+$A^2 - B^2 = \prs{A+B}\prs{A-B}$
+וגם
+$\prs{2A^2 + B^2} = \prs{A+B}\prs{2A+B}$.
+נקבל כי
+$\det\prs{A+B}\det\prs{A-B} = 2$
+וגם
+$\det\prs{A+B}\det\prs{2A+B} = 3$,
+ולכן
+$\frac{\det\prs{A-B}}{\det\prs{2A+B}} = \frac{2}{3}$
+כלומר
+$\det\prs{A-B} = \frac{2}{3} \det\prs{2A+B}$.
+
+כעת,
+$2A^3 -B^3 = \prs{A+B}\prs{A-B}\prs{2A+B}$.
+נציב את הנ"ל ונקבל
+\begin{align*}
+6 &= \det\prs{2A^3 - B^3}
+\\&= \det\prs{A+B} \det\prs{A-B} \det\prs{2A+B}
+\\ \text{.} \hphantom{6} &= \frac{2}{3} \det\prs{A+B} \det\prs{2A+B}^2
+\end{align*}
+לכן
+\[\text{.} \det\prs{A+B} \det\prs{2A+B}^2 = \frac{3}{2} \cdot 6 = 9\]
+אבל אז
+\begin{align*}
+9 &= \det\prs{A+B} \det\prs{2A+B}^2 = 3 \cdot \det\prs{2A+B}
+\end{align*}
+כי
+$\det\prs{A+B}\det\prs{2A+B} = 3$.
+מחלוקת שני האגפים נקבל כי
+$\det\prs{2A+B} = 3$
+ומהצבת זאת בשוויון הקודם נקבל
+$\det\prs{A+B} = \frac{3}{3} = 1$.
+\end{solution}
 
 \part{חלק שני - מרחבי מכפלה פנימית ואלגברה מולטי־לינארית}
 
