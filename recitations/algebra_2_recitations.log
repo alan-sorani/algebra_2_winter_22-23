@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  7 DEC 2022 10:53
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  7 DEC 2022 11:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2148,19 +2148,19 @@ braces):
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
  [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4706.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4706.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4811.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4811.
  (./algebra_2_recitations.aux
 Setting \if@calendar@hebrew Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4706.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4706.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4811.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4811.
 
 Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
 (rerunfilecheck)             Checksum: 72520FA95B97643BBB05C42F340B8600;1734.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4706.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 4811.
  ) 
 Here is how much of TeX's memory you used:
  41714 strings out of 479819
