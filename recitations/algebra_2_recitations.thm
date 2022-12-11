@@ -315,12 +315,36 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{38}{}}{40}{solution.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{5.{6}}{}}{40}{exercisechap.5.6}%
+\contentsline {definitionx}{{הגדרה}{5.5.{1}}{מרחב ניצב}}{40}{theoremx.5.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{{טענה}{5.5.{2}}{}}{40}{theoremx.5.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercise}{{תרגיל}{1}{}}{40}{exercise.1}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{39}{}}{40}{solution.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {definitionx}{{הגדרה}{5.4.{9}}{מרחב ניצב}}{40}{theoremx.5.4.9}%
+\contentsline {remark}{{הערה}{5.5.{3}}{}}{40}{theoremx.5.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{5.{7}}{}}{40}{exercisechap.5.7}%
+\contentsline {exercisechap}{{תרגיל}{5.{6}}{}}{41}{exercisechap.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {solution}{{פתרון}{40}{}}{40}{solution.40}%
+\contentsline {solution}{{פתרון}{40}{}}{41}{solution.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.5.{4}}{בסיס אורתונורמלי}}{41}{theoremx.5.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{5.5.{5}}{הטלה אורתוגונלית}}{41}{theoremx.5.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{{טענה}{5.5.{6}}{}}{41}{theoremx.5.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{5.{7}}{}}{41}{exercisechap.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{41}{}}{41}{solution.41}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{5.5.{7}}{גרם־שמידט}}{41}{theoremx.5.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {corollary}{{מסקנה}{5.5.{8}}{}}{42}{theoremx.5.5.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{5.5.{9}}{מרחק של וקטור מתת־מרחב}}{42}{theoremx.5.5.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercise}{{תרגיל}{2}{}}{42}{exercise.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{42}{}}{42}{solution.42}%

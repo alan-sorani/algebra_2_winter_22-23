@@ -43,3 +43,5 @@
 \contentsline {section}{\numberline {5.3}תכונות של מכפלות פנימיות, ונורמות}{37}{section.5.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5.4}מטריקות וניצבות}{39}{section.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.5}בסיסים אורתונורמליים והמרחב הניצב}{40}{section.5.5}%
