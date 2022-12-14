@@ -4444,12 +4444,15 @@ $\norm{v}_{\infty} = \max_{i \in [n]} \abs{v_i}$.
 אם הנורמה מושרית ממכפלה פנימית,
 $\trs{\cdot, \cdot}$,
 מתקיים מזהות הפולריזציה כי
-\[\text{.} \trs{u,v} = \frac{1}{4} \prs{\prs{\max_{i \in [n]} \prs{u_i + v_i}}^2 + \prs{\max_{i \in [n]} \prs{u_i - v_i}}^2}\]
+\[\text{.} \trs{u,v} = \frac{1}{4} \prs{\prs{\max_{i \in [n]} \abs{u_i + v_i}}^2 - \prs{\max_{i \in [n]} \abs{u_i - v_i}}^2}\]
 אבל זאת לא מכפלה פנימית, למשל כי אינה לינארית.
 מתקיים
-\[\trs{\pmat{1 \\ \vdots \\ 1}, 0} = \frac{1}{4} \prs{1^2 + 1^2} = \frac{1}{2}\]
+\begin{align*}
+\trs{e_1, e_2} &= \frac{1}{4} \prs{1^2 - 1^2} = 0 \\
+\trs{e_2, e_2} &= \frac{1}{4} \prs{2^2 - 0^2} = 1
+\end{align*}
 ואילו
-\[\text{.} \trs{\pmat{2 \\ \vdots \\ 2}, 0} = \frac{1}{4} \prs{2^2 + 2^2} = 2 \neq 2 \cdot \frac{1}{2}\]
+\[\text{.} \trs{e_1 + e_2, e_2} = \frac{1}{4} \prs{2^2 + 1^2} = \frac{5}{4} \neq 1 + 0\]
 \end{solution}
 
 יש לנו דךר נוספת לבדוק האם נורמה מושרית ממכפלה פנימית.
@@ -4468,7 +4471,7 @@ $u,v$
 \begin{exercisechap}
 הראו שהנורמה
 \begin{align*}
-\norm{p} = p\prs{0} + p\prs{1} + p\prs{2}
+\norm{p} = \abs{p\prs{0}} + \abs{p\prs{1}} + \abs{p\prs{2}}
 \end{align*}
 על
 $\mbb{R}_2\brs{x}$
@@ -4478,17 +4481,20 @@ $\mbb{R}_2\brs{x}$
 \begin{solution}
 נראה שלא מתקיימת זהות המקבילית.
 נסתכל על הפולינומים
-$p\prs{x} = x$
-ו־%
-$q\prs{x} = x^2$.
+$p\prs{x} = x, q\prs{x} = x^2 - 1$.
 אז
 \begin{align*}
-\norm{p}^2 &= 3^2 = 9 \\
-\norm{q}^2 &= \prs{1+4}^2 = 15 \\
-\norm{p+q}^2 &= \prs{3+5}^2 = 64
+\norm{p} &= 0+1+2 = 3 \\
+\norm{q} &= 1 + 0 + 3 = 4 \\
+\norm{p+q} &= 1 + 1 + 5 = 7 \\
+\norm{p-q} &= 1 + 1 + 1 = 3
 \end{align*}
-ולכן לא יתכן
-\[\text{.} 2\norm{p}^2 + 2\norm{q}^2 = 48 = 64 + \norm{p-q}^2 = \norm{p+q}^2 + \norm{p-q}^2\]
+ולכן
+\begin{align*}
+2 \prs{\norm{p}^2 + \norm{q}^2} &= 2 \prs{9 + 16} = 50 \\
+\norm{p-q}^2 + \norm{p-q}^2 &= 49 + 9 = 58
+\end{align*}
+ערכים שונים.
 \end{solution}
 
 \section{מטריקות וניצבות}
@@ -5161,6 +5167,7 @@ $W$
 ולכן
 $d\prs{A, W} = \frac{1}{\sqrt{2}}$.
 
+ניתן 
 %TODO continue
 \end{enumerate}
 \end{solution}
