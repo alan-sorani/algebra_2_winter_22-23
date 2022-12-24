@@ -35,54 +35,136 @@ style=alphabetic,
 מרחבי מכפלה פנימית
 \\
 \vspace{1cm}
-\large{תאריך הגשה: 14.12.2022}
+\large{תאריך הגשה: 28.12.2022}
 }
 \date{}
 
 \begin{document}
 \maketitle
 
-\begin{exercise}
+\begin{exercise}%1
 יהי
-$V$
-מרכב מכפלה פנימית מעל שדה
-$\mbb{F} \in \set{\mbb{R}, \mbb{C}}$.
-נגיד כי וקטורים
-$u,v$
-\emph{ניצבים}
-אם
-$\trs{u,v} = 0$,
-ונסמן זאת
-$u \perp v$.
-עבור תת־קבוצה
-$S \subseteq V$
-נגדיר את
-\emph{המרחב הניצב}
-\[\text{.} S^\perp = \set{v \in V}{\forall s \in S : v \perp s}\]
-
-\begin{enumerate}
-\item הראו כי
-$S^\perp \leq V$
-תת־מרחב וקטורי של
+$V = \mbb{R}_2\brs{x}$
+ותהיינה
+\begin{align*}
+\trs{f,g}_1 &= \int_0^1 f\prs{x} g\prs{x} \diff x \\
+\trs{f,g}_2 &= f\prs{-1} g\prs{-1} + f\prs{0} g\prs{0} + f\prs{1} g\prs{1}
+\end{align*}
+שתי מכפלות פנימיות על
 $V$.
-
-\item תהי
-$S \subseteq V$.
-הראו כי
-$S \subseteq \prs{S^{\perp}}^{\perp}$
-והסיקו כי
-$\Span\prs{S} \subseteq \prs{S^{\perp}}^{\perp}$.
+יהי
+\[\text{.} W = \set{f \in V}{f\prs{x} = f\prs{-x}} \leq V\]
+\begin{enumerate}
+\item 
+מיצאו בסיס
+$B = \prs{w_1, \ldots, w_m}$
+של
+$W$
+והשלימו אותו לבסיס
+$C$
+של
+$V$.
+בצעו את תהליך גרם־שמידט על
+$C$
+לפי כל אחת מהמכפלות הפנימיות כדי לקבל בסיסים אורתונורמליים לפיהן.
 
 \item
-נראה בהרצאה כי עבור
-$W \leq V$
-מתקיים
-$V = W \oplus W^\perp$.
-היעזרו בכך כדי להראות כי
-$\prs{S^\perp}^\perp = \Span\prs{S}$
-לכל
-$S \subseteq V$.
+היעזרו בבסיסים שמצאתן בסעיף הקודם כדי למצוא
+את
+$W^\perp$
+לפי כל אחת מהמכפלות הפנימיות.
+
+\item
+מיצאו את ההטלה האורתוגונלית
+$P_W$
+על
+$W$
+לפי כל אחת מהמכפלות הפנימיות.
+
+\item
+יהי
+$f\prs{x} = 1 + x$.
+מיצאו את המרחק של
+$f$
+מ־%
+$W$
+לפי כל אחת מהמכפלות הפנימיות.
 \end{enumerate}
+\end{exercise}
+
+\begin{exercise}%2
+יהי
+$V$
+מרחב מכפלה פנימית סוף־מימדי, ויהי
+$P \in \End_{\mbb{F}}\prs{V}$
+המקיים
+$P^2 = P$.
+
+נניח כי
+$\norm{P\prs{v}} \leq \norm{v}$
+לכל
+$v \in V$.
+הראו כי
+$\im\prs{P} \perp \ker\prs{P}$
+והסיקו כי
+$P$
+הטלה אורתוגונלית.
+
+\textbf{רמז:}
+ראינו תרגיל שקישר בין אי־שוויון בין נורמות לבין ניצבות.
+\end{exercise}
+
+\begin{exercise}%3
+יהי
+$V$
+מרחב מכפלה פנימית סוף־מימדי מעל
+$\mbb{C}$,
+ויהי
+$T \in \End_{\mbb{C}}\prs{V}$.
+הראו כי קיים בסיס אורתונורמלי
+$B$
+עבורו
+$\brs{T}_B$
+משולשת עליונה.
+
+\textbf{רמז:}
+היעזרו במשפטי ז'ורדן וגרם־שמידט.
+\end{exercise}
+
+\begin{exercise}%4
+יהי
+$V = M_2\prs{\mbb{R}}$
+עם הבסיס
+\[\text{.} B = \prs{\pmat{1 & 1 \\ 0 & 0}, \pmat{1 & 2 \\ 0 & 0}, \pmat{1 & 0 \\ 1 & 0}, \pmat{0 & 1 \\ 0 & 1}}\]
+מיצאו מכפלה פנימית על
+$V$
+לפיה
+$B$
+בסיס אורתונורמלי.
+
+\textbf{רמז:}
+עבור בסיס
+$C$
+של
+$V$
+הגדרנו מכפלה פנימית על ידי
+\[\text{,} \trs{u,v}_C = \trs{\brs{u}_C, \brs{v}_C}_{\mrm{Std}}\]
+וראינו שכל המכפלות הפנימיות על
+$V$
+הן מהצורה הזאת.
+\end{exercise}
+
+\begin{exercise}%5
+יהי
+$V = \mbb{C}_4\brs{x}$
+עם המכפלה הפנימית
+\[\text{.} \trs{f,g} = \sum_{i \in \brs{4}} f\prs{i} \bar{g}\prs{i}\]
+מיצאו
+$g \in V$
+עבורו
+$\trs{f,g} = f\prs{-1}$
+לכל
+$f \in V$.
 \end{exercise}
 
 \end{document}
