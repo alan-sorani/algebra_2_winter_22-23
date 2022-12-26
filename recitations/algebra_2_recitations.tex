@@ -5088,11 +5088,16 @@ $W$
 ועבור
 $W^\perp$.
 
-\item חשבו את המרחק של
+\item
+הראו כי
+$P_W\prs{A} = \frac{A + A^t}{2}$
+בשתי דרכים שונות.
+
+\item
+חשבו את המרחק של
 $A = \pmat{1 & 2 \\ 3 & 4}$
 מ־%
-$W$
-בשתי דרכים שונות.
+$W$.
 \end{enumerate}
 \end{exercise}
 
@@ -5127,7 +5132,7 @@ w_4 &= u_4 - \trs{u_4, v_3}v_3 - \trs{u_4, v_2}v_2 - \trs{u_4, v_1}v_1 \\&= E_{1
 v_4 &= \frac{w_4}{\norm{w_4}} = \frac{1}{\norm{E_{1,2} - E_{2,1}}} \prs{E_{1,2} - E_{2,1}} = \frac{1}{\sqrt{2}} \prs{E_{1,2} - E_{2,1}}
 \end{align*}
 ונקבל כי
-\[\prs{v_1, v_2, v_3} = \prs{E_{1,1}, \frac{1}{\sqrt{2}} \prs{E_{1,2} + e_{2,1}}, E_{2,2}}\]
+\[\prs{v_1, v_2, v_3} = \prs{E_{1,1}, \frac{1}{\sqrt{2}} \prs{E_{1,2} + E_{2,1}}, E_{2,2}}\]
 בסיס אורתונורמלי של
 $W$
 וכי
@@ -5137,6 +5142,46 @@ $W^\perp$.
 אז,
 $W^\perp$
 מרחב המטריצות האנטיסימטריות.
+
+\item
+בדרך אחת, זכור לנו מאלגברה א' כי
+\[A = \frac{A + A^t}{2} + \frac{A - A^t}{2}\]
+כאשר
+$\frac{A + A^t}{2}$
+סימטרית ו־%
+$\frac{A - A^t}{2}$
+אנטי־סימטרית.
+אז
+$\frac{A + A^t}{2} \in W$
+וכיוון ש־%
+$W^\perp$
+מרחב המטריצות האנטיסימטריות, נקבל גם
+$\frac{A - A^t}{2} \in W^\perp$.
+לכן
+$P_W\prs{A} = \frac{A + A^t}{2}$.
+
+אבל, במקרה הכללי, לא נדע מראש איך לכתוב וקטור
+$v \in V$
+בתור סכום של וקטור ב־%
+$W \leq V$
+ווקטור ב־%
+$W^\perp$.
+כדי לחשב את ההטלה
+$P_W\prs{A}$
+נוכל לקחת בסיס אורתונורמלי של
+$W$
+ולהשתמש בנוסחא עבור ההטלה האורתוגונלית לפי בסיס כזה.
+
+אכן,
+\begin{align*}
+P_W\prs{A} &= \sum_{i \in [3]} \trs{A, v_i} v_i \\&= \trs{A, E_{1,1}} E_{1,1} + \trs{A, \frac{1}{\sqrt{2}} \prs{E_{1,2} + E_{2,1}}} \cdot \frac{1}{\sqrt{2}} \prs{E_{1,2} + E_{2,1}} + \trs{A, E_{2,2}}, E_{2,2}
+\\&=
+a_{1,1} E_{1,1} + \frac{1}{2} \prs{a_{1,2} + a_{2,1}} \prs{E_{1,2} + E_{2,1}} + a_{2,2} E_{2,2}
+\\&=
+\pmat{a_{1,1} & \frac{a_{1,2} + a_{2,1}}{2} \\ \frac{a_{1,2} + a_{2,1}}{2} & a_{2,2}}
+\\ \text{.} \hphantom{P_W\prs{A}} &=
+\frac{A + A^t}{2}
+\end{align*}
 
 \item
 נכתוב את
@@ -5166,15 +5211,99 @@ $W$
 \end{align*}
 ולכן
 $d\prs{A, W} = \frac{1}{\sqrt{2}}$.
-
-ניתן 
-%TODO continue
 \end{enumerate}
 \end{solution}
 
-%\chapter{אופרטורים על מרחבי מכפלה פנימית}
+\chapter{אופרטורים על מרחבי מכפלה פנימית}
 
-%\chapter{משפטי פירוק }
+\section{המרחב הדואלי, ומשפט ההצגה של ריס}
+
+\begin{definition}[המרחב הדואלי]
+יהי
+$V$
+מרחב מכפלה פנימית מעל שדה
+$\mbb{F}$.
+\emph{המרחב הדואלי}
+של
+$V$
+הוא
+\[\text{.} V^* \coloneqq \hom_{\mbb{F}}\prs{V,\mbb{F}}\]
+איבריו נקראים
+\emph{פונקציונלים לינאריים}.
+\end{definition}
+
+\begin{theorem}[משפט ההצגה של ריס]
+יהי
+$V$
+מרחב מכפלה פנימית סוף־מימדי מעל שדה
+$\mbb{F}$,
+ויהי
+$\phi \in V^*$
+פונקציונל לינארי על
+$V$.
+קיים וקטור
+$w \in V$
+יחיד עבורו
+$\phi\prs{v} = \trs{v,w}$
+לכל
+$v \in V$.
+
+בנוסף, אם
+$B = \prs{v_1, \ldots, v_n}$
+בסיס אורתונורמלי של
+$V$,
+מתקיים
+\[\text{.} w = \sum_{i \in \brs{n}} \overline{\phi\prs{v_i}} v_i\]
+\end{theorem}
+
+%TODO add exercise
+
+\section{ההעתקה הצמודה}
+
+\begin{theorem}[ההעתקה הצמודה]
+יהיו
+$V,W$
+מרחבי מכפלה פנימית סוף־מימדיים ותהי
+$T \in \Hom_{\mbb{F}}\prs{V,W}$.
+קיימת העתקה יחידה
+$T^* \in \Hom_{\mbb{F}}\prs{W,V}$
+עבורה
+\begin{align*}
+\trs{T\prs{v}, w}_W = \trs{v, T^*\prs{w}}_V
+\end{align*}
+לכל
+$v \in V$
+ולכל
+$w \in W$.
+
+היא נקראת
+\emph{ההעתקה הצמודה}
+של
+$T$.
+\end{theorem}
+
+\begin{theorem}
+יהיו
+$\prs{V, \trs{\cdot, \cdot}_V}, \prs{W, \trs{\cdot, \cdot}_W}$
+מרחבי מכפלה פנימית סוף מימדיים עם בסיסים אורתונורמליים
+$B,C$
+בהתאמה, ותהי
+$T \in \Hom_{\mbb{F}}\prs{V,W}$.
+אז
+$\brs{T^*}^C_B = \prs{\brs{T}^B_C}^*$.
+\end{theorem}
+
+%TODO add exercises to calculate T^* in different ways
+
+\section{אופרטורים נורמליים וצמודים לעצמם, ומשפט הפירוק הספקטרלי}
+
+%TODO add content
+
+\section{אופרטורים אוניטריים ואורתוגונליים}
+
+%TODO add content
+
+%\section{פירוק לערכים סינגולריים}
 
 %\chapter{תבניות בילינאריות וריבועיות}
 
