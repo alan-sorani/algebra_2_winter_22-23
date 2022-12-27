@@ -6142,41 +6142,6 @@ $1$).
 
 \begin{exercisechap}
 יהי
-$T \in \End_{\mbb{C}}\prs{V}$
-הרמיטי ונניח שלכל ערך עצמי
-$\lambda \in \mbb{C}$
-מתקיים
-$\lambda \geq 0$.
-הראו כי קיים אופרטור יחיד
-$S \in \End_{\mbb{C}}\prs{V}$
-שכל הערכים העצמיים שלו ממשיים וכך שמתקיים
-$S^2 = T$.
-\end{exercisechap}
-
-\begin{solution}
-$T$
-הרמיטי ולכן נורמלי. ממשפט הפירוק הספקטרלי, קיים בסיס אורתונורמלי
-$B$
-עבורו
-$\brs{T}_B = \diag\prs{\lambda_1, \ldots, \lambda_n}$.
-מההנחה,
-$\lambda_i \geq 0$
-לכל
-$i \in \brs{n}$.
-אז קיים שורש חיובי
-$\sqrt{\lambda_i}$
-וניקח
-$S = \prs{\eta^B_B}^{-1} \prs{\diag\prs{\sqrt{\lambda_1}, \ldots, \sqrt{\lambda_n}}}$
-להיות האופרטור עבורו
-$\brs{S}_B = \prs{\diag\prs{\sqrt{\lambda_1}, \ldots, \sqrt{\lambda_n}}}$.
-אז
-$\brs{S^2}_B = \diag\prs{\lambda_1, \ldots, \lambda_n} = \brs{T}_B$
-ולכן
-$S^2 = T$.
-\end{solution}
-
-\begin{exercisechap}
-יהי
 $V$
 מרחב מכפלה פנימית ממימד סופי מעל
 $\mbb{C}$.
@@ -6216,6 +6181,7 @@ $\Phi$
 חד־חד ערכית וכי
 $\im\prs{\Phi} = \mcal{N}$.
 \end{enumerate}
+\end{exercisechap}
 
 \begin{solution}
 \begin{enumerate}
@@ -6363,7 +6329,40 @@ $\Phi, \Psi$
 \end{enumerate}
 \end{solution}
 
+\begin{exercisechap}
+יהי
+$T \in \End_{\mbb{C}}\prs{V}$
+הרמיטי ונניח שלכל ערך עצמי
+$\lambda \in \mbb{C}$
+מתקיים
+$\lambda \geq 0$.
+הראו כי קיים אופרטור יחיד
+$S \in \End_{\mbb{C}}\prs{V}$
+שכל הערכים העצמיים שלו אי־שליליים וכך שמתקיים
+$S^2 = T$.
 \end{exercisechap}
+
+\begin{solution}
+$T$
+הרמיטי ולכן נורמלי. ממשפט הפירוק הספקטרלי, קיים בסיס אורתונורמלי
+$B$
+עבורו
+$\brs{T}_B = \diag\prs{\lambda_1, \ldots, \lambda_n}$.
+מההנחה,
+$\lambda_i \geq 0$
+לכל
+$i \in \brs{n}$.
+אז קיים שורש חיובי
+$\sqrt{\lambda_i}$
+וניקח
+$S = \prs{\eta^B_B}^{-1} \prs{\diag\prs{\sqrt{\lambda_1}, \ldots, \sqrt{\lambda_n}}}$
+להיות האופרטור עבורו
+$\brs{S}_B = \prs{\diag\prs{\sqrt{\lambda_1}, \ldots, \sqrt{\lambda_n}}}$.
+אז
+$\brs{S^2}_B = \diag\prs{\lambda_1, \ldots, \lambda_n} = \brs{T}_B$
+ולכן
+$S^2 = T$.
+\end{solution}
 
 \begin{exercisechap}
 נראה בתרגיל זה כי כל אופרטור
