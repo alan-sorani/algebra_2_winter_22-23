@@ -319,13 +319,13 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{{טענה}{5.5.{2}}{}}{40}{theoremx.5.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{{תרגיל}{1}{}}{40}{exercise.1}%
+\contentsline {exercisechap}{{תרגיל}{5.{6}}{}}{40}{exercisechap.5.6}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{39}{}}{40}{solution.39}%
 \defcounter {refsection}{0}\relax 
 \contentsline {remark}{{הערה}{5.5.{3}}{}}{41}{theoremx.5.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{5.{6}}{}}{41}{exercisechap.5.6}%
+\contentsline {exercisechap}{{תרגיל}{5.{7}}{}}{41}{exercisechap.5.7}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{40}{}}{41}{solution.40}%
 \defcounter {refsection}{0}\relax 
@@ -335,7 +335,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {proposition}{{טענה}{5.5.{6}}{}}{41}{theoremx.5.5.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercisechap}{{תרגיל}{5.{7}}{}}{41}{exercisechap.5.7}%
+\contentsline {exercisechap}{{תרגיל}{5.{8}}{}}{41}{exercisechap.5.8}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{41}{}}{41}{solution.41}%
 \defcounter {refsection}{0}\relax 
@@ -345,7 +345,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremx}{{משפט}{5.5.{9}}{מרחק של וקטור מתת־מרחב}}{42}{theoremx.5.5.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {exercise}{{תרגיל}{2}{}}{42}{exercise.2}%
+\contentsline {exercisechap}{{תרגיל}{5.{9}}{}}{42}{exercisechap.5.9}%
 \defcounter {refsection}{0}\relax 
 \contentsline {solution}{{פתרון}{42}{}}{42}{solution.42}%
 \defcounter {refsection}{0}\relax 
@@ -353,6 +353,68 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {theoremx}{{משפט}{6.1.{2}}{משפט ההצגה של ריס}}{44}{theoremx.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{6.2.{1}}{ההעתקה הצמודה}}{44}{theoremx.6.2.1}%
+\contentsline {exercisechap}{{תרגיל}{6.{1}}{}}{44}{exercisechap.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {theoremx}{{משפט}{6.2.{2}}{}}{44}{theoremx.6.2.2}%
+\contentsline {solution}{{פתרון}{43}{}}{44}{solution.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{2}}{}}{44}{exercisechap.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{44}{}}{44}{solution.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.2.{1}}{ההעתקה הצמודה}}{46}{theoremx.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.2.{2}}{}}{46}{theoremx.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{3}}{}}{46}{exercisechap.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{45}{}}{46}{solution.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{4}}{}}{47}{exercisechap.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{46}{}}{47}{solution.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{6.3.{1}}{אופרטור אורתוגונלי (אוניטרי)}}{48}{theoremx.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{6.3.{2}}{מטריצה אורתונוגלית (אוניטרית)}}{48}{theoremx.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{5}}{}}{48}{exercisechap.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{47}{}}{48}{solution.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{{הערה}{6.3.{3}}{}}{48}{theoremx.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {proposition}{{טענה}{6.3.{4}}{}}{48}{theoremx.6.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{6}}{}}{48}{exercisechap.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{48}{}}{48}{solution.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{7}}{}}{48}{exercisechap.6.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{49}{}}{48}{solution.49}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{8}}{}}{49}{exercisechap.6.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{50}{}}{49}{solution.50}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.4.{1}}{משפט הפירוק הספקטרלי לאופרטורים צמודים לעצמם}}{49}{theoremx.6.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{6.4.{2}}{אופרטור נורמלי}}{49}{theoremx.6.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.4.{3}}{משפט הפירוק הספקטרלי לאופרטורים נורמליים}}{49}{theoremx.6.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {definitionx}{{הגדרה}{6.4.{4}}{}}{49}{theoremx.6.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {remark}{{הערה}{6.4.{5}}{}}{49}{theoremx.6.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.4.{6}}{משפט הפירוק הספקטרלי למטריצות }}{49}{theoremx.6.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{9}}{}}{49}{exercisechap.6.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{51}{}}{49}{solution.51}%
+\defcounter {refsection}{0}\relax 
+\contentsline {exercisechap}{{תרגיל}{6.{10}}{}}{50}{exercisechap.6.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {theoremx}{{משפט}{6.4.{7}}{אינטרפולציית לגרנג'}}{50}{theoremx.6.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {solution}{{פתרון}{52}{}}{50}{solution.52}%

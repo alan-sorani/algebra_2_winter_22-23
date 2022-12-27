@@ -50,8 +50,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.1}המרחב הדואלי, ומשפט ההצגה של ריס}{44}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}ההעתקה הצמודה}{44}{section.6.2}%
+\contentsline {section}{\numberline {6.2}ההעתקה הצמודה}{46}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}אופרטורים נורמליים וצמודים לעצמם, ומשפט הפירוק הספקטרלי}{44}{section.6.3}%
+\contentsline {section}{\numberline {6.3}אופרטורים אוניטריים ואורתוגונליים}{47}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}אופרטורים אוניטריים ואורתוגונליים}{44}{section.6.4}%
+\contentsline {section}{\numberline {6.4}אופרטורים נורמליים וצמודים לעצמם, ומשפט הפירוק הספקטרלי}{49}{section.6.4}%
