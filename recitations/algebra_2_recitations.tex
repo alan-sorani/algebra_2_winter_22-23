@@ -6985,6 +6985,51 @@ $\brs{R}_B = \tilde{R}$
 \end{enumerate}
 
 \begin{exercisechap}
+מיצאו את הפירוק הפולארי עבור האופרטור הבא.
+\begin{align*}
+T \colon \mbb{R}^3 &\to \mbb{R}^3 \\
+\pmat{x \\ y \\ z} &\mapsto \pmat{z \\ 2x \\ 3y}
+\end{align*}
+\end{exercisechap}
+
+\begin{solution}
+מתקיים
+\begin{align*}
+\brs{T}_E &= \pmat{0 & 0 & 1 \\ 2 & 0 & 0 \\ 0 & 3 & 0} \\
+\brs{T^*}_E &= \pmat{0 & 2 & 0 \\ 0 & 0 & 3 \\ 1 & 0 & 0} \\
+\brs{T^* T}_E &= \pmat{4 & 0 & 0 \\ 0 & 9 & 0 \\ 0 & 0 & 1}
+\end{align*}
+ולכן הערכים הסינגולריים של
+$T$
+הם
+$3,2,1$.
+
+יש לנו בסיס אורתונורמלי
+$B = \prs{e_2, e_1, e_3}$
+של וקטורים עצמיים.
+כדי לקבל את הבסיס השני, נפעיל את
+$T$
+על וקטורי
+$B$
+ונחלק בערכים הסינגולריים.
+נקבל בסיס אורתונורמלי
+\begin{align*}
+\text{.} C &= \pmat{\frac{1}{3} T\prs{e_2}, \frac{1}{2} T\prs{e_1}, T\prs{e_3}}
+= \prs{e_3, e_2, e_1}
+\end{align*}
+אז
+\begin{align*}
+\text{.} \brs{T}_E = W \Sigma V^*
+\end{align*}
+עבור
+\begin{align*}
+\Sigma &= \pmat{3&0&0\\0&2&0\\0&0&1} \\
+V &= M^B_E = \pmat{0&1&0\\1&0&0\\0&0&1}\\
+\text{.} W &= M^C_E = \pmat{0&0&1\\0&1&0\\1&0&0}
+\end{align*}
+\end{solution}
+
+\begin{exercisechap}
 תהי
 $A \in \Mat_n\prs{\mbb{F}}$.
 הראו כי יש
@@ -7009,7 +7054,13 @@ V &= M^B_E \\
 מטריצות בפירוק לערכים סינגולריים
 $A = W \Sigma V^*$.
 
-נראה כי
+כעת,
+$V \Sigma V^*$
+צמודה לעצמה (הרמיטית) כי
+$\prs{V \Sigma V^*}^* = V \Sigma V^* = V \Sigma V^*$,
+והערכים העצמיים שלה אי־שליליים כי היא דומה ל־%
+$\Sigma$.
+לכן היא מוגדרת אי־שלילית, ונותר להראות כי
 $\prs{V \Sigma V^*}^2 = A^* A$.
 כיוון ש־%
 $\Sigma$

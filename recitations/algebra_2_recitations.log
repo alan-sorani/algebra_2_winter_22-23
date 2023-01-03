@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  3 JAN 2023 19:53
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  4 JAN 2023 01:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2122,7 +2122,7 @@ lCLM(0)/m/it/10 הינו מוגדר חיובית, והערכים הסינגול�
 \OMS/cmsy/m/n/10 2 [][] []$[]
  []
 
-[53] [54] [55]
+[53] [54] [55] [56]
 \tf@thm=\write8
 \openout8 = `algebra_2_recitations.thm'.
 
@@ -2176,28 +2176,28 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
- [56]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7034.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 7034.
- (./algebra_2_recitations.aux Setting \if@calendar@hebrew
-Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7034.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7034.
+ [57]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 7085.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 7085.
+ (./algebra_2_recitations.aux
+Setting \if@calendar@hebrew Setting \if@calendar@hebrew)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 7085.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 7085.
 
 Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
 (rerunfilecheck)             Checksum: 23F9533242C5A03957F9220315F5C771;2499.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7034.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 7085.
  ) 
 Here is how much of TeX's memory you used:
  41718 strings out of 479819
  861067 string characters out of 5895846
- 1736200 words of memory out of 5000000
+ 1736199 words of memory out of 5000000
  58062 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,20n,86p,1293b,4193s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algebra_2_recitations.pdf (58 pages).
+Output written on algebra_2_recitations.pdf (59 pages).
