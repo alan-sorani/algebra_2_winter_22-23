@@ -55,3 +55,7 @@
 \contentsline {section}{\numberline {6.3}אופרטורים אוניטריים ואורתוגונליים}{47}{section.6.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6.4}אופרטורים נורמליים וצמודים לעצמם, ומשפט הפירוק הספקטרלי}{49}{section.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.5}פירוק לערכים סינגולריים ופירוק פולארי}{53}{section.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{מציאת פירוק פולארי}{56}{section*.2}%

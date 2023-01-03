@@ -1,0 +1,188 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}     
+            
+%BIBLIOGRAPHY
+\usepackage[
+backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{bibliography.bib} %Imports bibliography file
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' - גיליון תרגילי בית 5 \\
+אופרטורים על מרחבי מכפלה פנימית
+\\
+\vspace{1cm}
+\large{תאריך הגשה: 16.1.2023}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{exercise}
+יהי
+$V = \Mat_n\prs{\mbb{R}}$
+עם המכפלה הפנימית
+$\trs{X,Y} = \tr\prs{Y^t X}$,
+ותהי
+$B \in V$.
+נגדיר אופרטור
+\begin{align*}
+\Phi_B \colon V &\to V \\
+\text{.} \hphantom{lalala} A &\mapsto BA
+\end{align*}
+\begin{enumerate}
+\item
+חשבו את
+$\Phi_B^*$.
+\item
+עבור אילו מטריצות
+$B$
+האופרטור
+$\Phi_B$
+נורמלי?
+\item
+עבור אילו מטריצות
+$B$
+האופרטור
+$\Phi_B$
+צמוד לעצמו?
+\item
+עבור אילו מטריצות
+$B$
+האופרטור
+$\Phi_B$
+אורתוגונלי?
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V = \Mat_2\prs{\mbb{R}}$
+עם המכפלה הפנימית
+$\trs{X,Y} = \tr\prs{Y^t X}$,
+ויהי
+$T \in \End_{\mbb{R}}\prs{V}$
+המוגדר על ידי
+\[\text{.} T\pmat{a & b \\ c & d} = \pmat{16 a & 4b -6c \\ -6b + 13c & 16d}\]
+מיצאו בסיס אורתונורמלי
+$B$
+של
+$V$
+עבורו
+$\brs{T}_B$
+אלכסונית, ומיצאו אופרטור
+$S \in \End_{\mbb{R}}\prs{V}$
+צמוד לעצמו עבורו
+$S^2 = T$.
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב מכפלה פנימית מרוכב ממימד סופי, יהי
+$T \in \End_{\mbb{C}}\prs{V}$
+נורמלי, ונניח כי
+$3,4$
+ערכים עצמיים של
+$T$.
+הראו שיש
+$v \in V$
+עבורו
+$\norm{v} = 2$
+וגם
+$\norm{Tv} = 5$.
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב מכפלה פנימית מרוכב ממימד סופי, יהי
+$T \in \End_{\mbb{C}}\prs{V}$
+ויהי
+$a \in \mbb{C}$
+עבורו
+$\abs{a} \neq 1$.
+
+\begin{enumerate}
+\item הראו כי אם
+$T^* = aT$
+אז
+$T = 0$.
+
+\item נניח כי
+$T$
+נורמלי, ויהי
+$S = T - a T^*$.
+הוכיחו כי
+$\ker\prs{T} = \ker\prs{S}$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V$
+מרחב מכפלה פנימית מרוכב ממימד סופי, ויהי
+$T \in \End_{\mbb{C}}\prs{V}$
+נורמלי.
+יהיו $\lambda \in \mbb{C}$
+ו־%
+$\eps > 0$
+ונניח שעבור
+$v \in V$
+מתקיים
+$\norm{v} = 1$
+וגם
+\[\text{.} \norm{Tv - \lambda v} < \eps\]
+הראו כי יש ל־%
+$T$
+ערך עצמי
+$\lambda' \in \mbb{C}$
+עבורו
+$\abs{\lambda - \lambda'} < \eps$.
+\end{exercise}
+
+\begin{exercise}
+תהי
+\[\text{.} A = \pmat{1 & 1 & -1 \\ 0 &  1 & 0 \\ 0 & 1 & 0} \in \Mat_3\prs{\mbb{C}}\]
+\begin{enumerate}
+
+\item מיצאו מטריצות
+$U,V \in \Mat_3\prs{\mbb{C}}$
+אוניטריות, ומטריצה
+$\Sigma \in \Mat_3\prs{\mbb{C}}$
+אלכסונית, עבורן
+$A = U \Sigma V^*$.
+
+\item
+מיצאו את
+\begin{align*}
+\text{.} \max\set{\norm{Av}}{\substack{v \in \mbb{C}^3 \\ \norm{v} = 1}}
+\end{align*}
+\end{enumerate}
+\end{exercise}
+
+\end{document}
