@@ -1,0 +1,191 @@
+\documentclass[a4paper,10pt,twoside,openany]{article}
+
+\usepackage[lang=hebrew]{maths}
+\usepackage{hebrewdoc}
+\usepackage{stylish}
+\usepackage{lipsum}
+\let\bs\blacksquare
+
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%
+% Styling %
+%%%%%%%%%%%%
+
+\usepackage{enumitem}
+
+%%%%%%%%%%%%%
+% Counters  %
+%%%%%%%%%%%%%
+
+\setcounter{section}{1}     
+            
+%BIBLIOGRAPHY
+\usepackage[
+backend=biber,
+style=alphabetic,
+]{biblatex}
+\addbibresource{bibliography.bib} %Imports bibliography file
+
+%%%%%%%%%%
+% Title  %
+%%%%%%%%%%
+\title{
+אלגברה ב' - גיליון תרגילי בית 6 \\
+חוק האינרציה של סילבסטר, וקריטריון סילבסטר
+\\
+\vspace{1cm}
+\large{תאריך הגשה: 26.1.2023}
+}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{exercise}
+תהי
+$A \in \Mat_n\prs{\mbb{R}}$
+סימטרית ויהי
+$m$
+סכום הריבויים האלגבריים של הערכים העצמיים החיוביים של
+$A$.
+
+\begin{enumerate}
+\item הראו כי יש תת־מרחב
+$W \leq \mbb{R}^n$
+ממימד
+$m$
+עבורו
+$\trs{Aw, w} > 0$
+לכל
+$w \in W \setminus \set{0}$.
+
+\item יהי
+$W' \leq \mbb{R}^n$
+תת־מרחב נוסף עבורו מתקיים
+$\trs{Aw, w} > 0$
+לכל
+$w \in W' \setminus \set{0}$.
+הראו כי
+$\dim W' \leq m$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+יהי
+$V = \Mat_2\prs{\mbb{R}}$.
+
+\begin{enumerate}
+    \item מיצאו מכפלה פנימית
+    $f$
+    על
+    $V$
+    כך ש־%
+    \[B = \pmat{E_{1,1} + E_{1,2}, E_{1,2} + E_{2,1}, E_{2,1} + E_{2,2}, E_{2,2}}\]
+    הוא בסיס אורתונורמלי לפי
+    $f$.
+    
+    \item
+    תהי
+    \[g\prs{A,B} = \tr\prs{AB}\]
+    תבנית בילינארית סימטרית על
+    $V$.
+    מיצאו בסיס
+    $C$
+    של
+    $V$
+    ומטריצה
+    $S = \diag\prs{I_{n_+}, I_{n_-}, 0_{n_0}}$
+    עבורם
+    $\brs{g}_C = S$.
+    
+    \item
+    מיצאו בסיס
+    $D$
+    של
+    $V$
+    עבורו
+    $\brs{f}_D, \brs{g}_D$
+    מטריצות אלכסוניות.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+קיבעו אילו מהמטריצות הממשיות הבאות מוגדרות חיובית לחלוטין ואילו מוגדרות שלילית לחלוטין.
+
+\begin{align*}
+    A &= \pmat{1 & 2 & 0 \\ 2 & 3 & 1 \\ 0 & 1 & 3} \\
+    B &= \pmat{1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 0 \\ 1 & 1 & 3 & 1 \\ 1 & 0 & 1 & 3} \\
+    C &= \pmat{-1 & 0 & 1 & 1 \\ 0 & -1 & 1 & 1 \\ 1 & 1 & -3 & -1 \\ 1 & 1 & -1 & -4} \\
+    D &= \pmat{1 & 0 & 1 & 1 \\ 0 & 1 & 1 & 0 \\ 1 & 1 & 0 & 1 \\ 1 & 0 & 1 & -1}
+\end{align*}
+\end{exercise}
+
+\begin{exercise}[רשות]
+יהי
+$V = \Hom_{\mbb{R}}\prs{\mbb{R}^4, \mbb{R}}$
+ועבור כל
+$a \in \mbb{R}$
+תהי
+\begin{align*}
+    g_a\prs{\phi} &= \phi\prs{e_1}^2 + a\phi\prs{e_1}\phi\prs{e_2} + 2\phi\prs{e_1}\phi\prs{e_3} + 2\phi\prs{e_2}^2 + 2 \phi\prs{e_2}\phi\prs{e_3} + \phi\prs{e_3}^2 + 2 \phi\prs{e_3} \phi\prs{e_4} 
+\end{align*}
+תבנית ריבועית על
+$V$.
+
+\begin{enumerate}
+    \item 
+    לכל
+    $a \in \mbb{R}$,
+    מיצאו תבנית ריבועית
+    $f_a$
+    על
+    $V$
+    עבורה
+    $g_a\prs{\phi} = f_a\prs{\phi, \phi}$.
+    
+    \item מיצאו את כל ערכי
+    $a \in \mbb{R}$
+    עבורם
+    $g_a$
+    מוגדרת חיובית לחלוטין.
+    
+    \item
+    נניח כעת כי
+    $a = 2$.
+    מיצאו בסיס
+    $B$
+    של
+    $V$
+    עבורו
+    $\brs{g}_B$
+    מטריצה מהצורה
+    $\pmat{I_{n_+} & 0 & 0 \\ 0 & - I_{n_-} & 0 \\ 0 & 0 & 0_{n_0}}$.
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}[רשות]
+תהי
+\[A = \pmat{-1&1&1\\1&-1&1\\1&1&-1} \in M_3\prs{\mbb{R}}\]
+ותהי
+\[g_A\prs{v} = v^t A v\]
+תבנית ריבועית על
+$\mbb{R}^3$.
+
+\begin{enumerate}
+    \item מיצאו את הסימן של התבנית
+    $g_A$.
+    
+    \item מיצאו וקטורים
+    $v_1, v_2 \in \mbb{R}^3$
+    מנורמה
+    $1$
+    עבורם
+    $g_A\prs{v_1}$
+    מינימלי ו־%
+    $g_A\prs{v_2}$
+    מקסימלי.
+\end{enumerate}
+\end{exercise}
+
+\end{document}
