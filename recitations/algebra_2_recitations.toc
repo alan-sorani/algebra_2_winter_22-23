@@ -79,3 +79,7 @@
 \contentsline {section}{\numberline {7.4}תבניות ריבועיות}{66}{section.7.4}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {7.4.1}תרגילים}{66}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}השלמה לריבוע}{70}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}תרגילים ממבחנים}{73}{chapter.8}%

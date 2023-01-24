@@ -7853,7 +7853,7 @@ $k \in [n]$.
 
 \begin{exercisechap}
 תהי
-\[\text{.} A = \pmat{1 & 0 & 1 & 0 & 1 \\ 0 & 2 & 3 & 1 & 1 \\ 1 & 3 & -7 & 1 & 2 \\ 0 & 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 2 & 1 & 1} \in \Mat_5\prs{\mbb{R}}\]
+\[\text{.} A = \pmat{1 & 0 & 1 & 0 & 1 \\ 0 & 2 & 3 & 1 & 1 \\ 1 & 3 & -7 & 1 & 2 \\ 0 & 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 2 & 1} \in \Mat_5\prs{\mbb{R}}\]
 מיצאו את הסימן של
 $A$.
 \end{exercisechap}
@@ -7919,20 +7919,30 @@ $A \in \Mat_n\prs{\mbb{F}}$
 $q\prs{v} = v^t A v$.
 להיפך, נוכל בהינתן תבנית ריבועית על
 $\mbb{F}^n$
-להסתכל על המייצגת שלה לפי הבסיס הסטנדרטי. עבור
+להסתכל על המייצגת שלה לפי הבסיס הסטנדרטי.
+
+כאשר אנו מעל שדה עם מציין שונה מ־%
+$2$,
+נוכל לקשר תבניות ריבועיות גם לתבניות בילינאריות סימטריות. אם
+$f$
+תבנית בילינארית סימטרית על מרחב וקטורי
+$V$,
+התבנית
+$q\prs{v} \coloneqq f\prs{v,v}$
+הינה תבנית ריבועית. להיפך, אם
 $q$
-הנ"ל מתקיים
-$q\prs{v} = f\prs{v,v}$
-עבור
-$f\prs{u,v} = u^t A v$.
+תבנית ריבועית על
+$V$,
+קיימת תבנית בילינארית
+$g$
+עבורה
+$q\prs{v} = g\prs{v,v}$.
 אז
-$\brs{q}_E = \brs{f}_E = A$
-כי
-$\brs{f}_E$
-המטריצה היחידה עבורה
-$f\prs{u,v} = u^t \brs{f}_E v$
+$f_q\prs{u,v} = \frac{1}{2} \prs{g\prs{u,v} + g\prs{v,u}}$
+היא התבנית הבילינארית הסימטרית היחידה עבורה
+$q\prs{v} = f_q\prs{v,v}$
 לכל
-$u,v \in \mbb{F}^n$.
+$v \in V$.
 \end{remark}
 
 \begin{notation}
@@ -8217,6 +8227,551 @@ $P^t = P^B_E$
 ונקבל
 \[\text{.} I_3 = P A P^t = \prs{P^B_E}^t \brs{g}_E P^B_E = \brs{g}_B\]
 \end{enumerate}
+\end{solution}
+
+\subsection{השלמה לריבוע}
+
+מעל
+$\mbb{R}$,
+נוכל למצוא את צורת סילבסטר של תבנית ריבועית בלי לעבור דרך התבנית הבליניארית הסימטרית שמתאימה לה, באמצעות השלמה לריבוע.
+נציג זאת מעל
+$\mbb{R}^n$,
+והמקרה הכללי מתקבל על ידי בחירת בסיס.
+תהי
+$q$
+תבנית ריבועית על
+$\mbb{R}^n$
+עבורה
+\[q\pmat{x_1 \\ \vdots \\ x_n} = \sum_{i \leq j} \alpha_{i,j} x_i x_j\]
+ונחפש החלפת משתנים לינארית
+$\pmat{y_1 \\ \vdots \\ y_n} \coloneqq T{\pmat{x_1 \\ \vdots \\ x_n}}$
+עבורה ניתן לכתוב
+\[\text{.} q\pmat{x_1 \\ \vdots \\ x_n} = \sum_{i \in I} y_i^2 - \sum_{j \in J} y_j^2\]
+אז
+\[\text{.} f_q\pmat{u,v} = \sum_{i \in I} T\prs{u}_i T\prs{v}_i - \sum_{j \in J} T\prs{u}_j T\prs{v}_j\]
+אם
+$B = \prs{v_1, \ldots, v_n}$
+בסיס עבורו
+$\brs{v}_B = T\prs{v}$,
+נקבל כי
+\begin{align*}
+f_q\prs{v_i, v_j} &= \sum_{k \in I} \prs{\brs{v_i}_{B}}_k \prs{\brs{v_j}_B}_k - \sum_{\ell \in J} \prs{\brs{v_i}_B}_\ell \prs{\brs{v_j}_B}_\ell
+\\&=
+\sum_{k \in I} \delta_{i=j=k} - \sum_{\ell \in J} \delta_{i=j=\ell}
+\\&=
+\fcases{1 & i=j \in I \\ -1 & i=j \in J \\ 0 & \text{otherwise}}
+\end{align*}
+ולכן עד כדי שינוי סדר הוקטורים ב־%
+$B$
+נקבל כי
+$\brs{f_q}_B$
+בצורת סילבסטר.
+
+כדי למצוא את
+$T$,
+נגדיר החלפת משתנים לינארית אינדוקטיבית על
+$i \in \brs{n}$
+באופן הבא.
+
+\begin{enumerate}
+\item
+אם מופיע המונום
+$x_i^2$,
+נעשה השלמה לריבוע של המונומים שבהם מופיע
+$x_i$
+באמצעות
+\[\text{.} x_k^{\mrm{new}} \coloneqq \fcases{\sqrt{\abs{\alpha_{i,i}}} x_i + \frac{1}{2} \sum_{i < j} \frac{\alpha_{i,j}}{\sqrt{\abs{\alpha_{i,i}}}} x_j & k = i \\ x_k & x \neq i}\] 
+
+\item
+אם לא מופיע המונום
+$x_i^2$
+אבל מופיע המונום
+$x_j^2$
+עבור
+$j > i$,
+נחליף ביניהם על ידי החלפת
+$x_i, x_j$.
+
+\item
+אם לא מופיע אף מונום מהצורה
+$x_i^2$
+אבל קיים מונום מהצורה
+$x_i x_j$
+עבור
+$i \neq j$,
+נגדיר
+\[\text{.} x_k^{\mrm{new}} \coloneqq \fcases{x_j - x_i & k = j > i \\ x_k & k = i}\]
+\end{enumerate}
+
+\begin{example}
+נסתכל על
+\[\text{.} q \pmat{x_1 \\ x_2 \\ x_3} = x_1 x_2 + x_2 x_3\]
+
+לא מופיעים גורמים מהצורה
+$x_i^2$
+לכן נגדיר
+$x_2^{\mrm{new}} = x_2 - x_1$
+כמו במקרה השלישי.
+נקבל
+\[\text{.} q\pmat{x_1 \\ x_2 \\ x_3} = x_1^2 + x_1 \prs{x_2 - x_1} + x_1 x_3 + \prs{x_2 - x_1} x_3\]
+לפי המקרה הראשון, ניקח
+$x_1^{\mrm{new}} = x_1 + \frac{1}{2}\prs{\prs{x_2 - x_1} + x_3}$,
+ונקבל
+\[\text{.} q \pmat{x_1 \\ x_2 \\ x_3} = \prs{x_1 + \frac{1}{2} \prs{x_2 - x_1} + \frac{1}{2} x_3}^2 - \frac{1}{4} \prs{x_2 - x_1}^2 - \frac{1}{2} \prs{x_2 - x_1} x_3 - \frac{1}{4} x_3^2\]
+כעת לפי המקרה הראשון ניקח
+$x_2^{\mrm{new}} \coloneqq \frac{1}{2} \prs{x_2 - x_1} - \frac{1}{2} x_3$,
+ואז
+\begin{align*}
+q\pmat{x_1 \\ x_2 \\ x_3} &= \prs{x_1 + \frac{1}{2} \prs{x_2 - x_1} + \frac{1}{2} x_3}^2 - \prs{\frac{1}{2} \prs{x_2 - x_1} - \frac{1}{2} x_3}^2 + \frac{1}{4} x_3^2 - \frac{1}{4} x_3^2
+\\\text{.} \hphantom{q\pmat{x_1 \\ x_2 \\ x_3}}&=
+\prs{x_1 + \frac{1}{2} \prs{x_2 - x_1} + \frac{1}{2} x_3}^2 - \prs{\frac{1}{2} \prs{x_2 - x_1} - \frac{1}{2} x_3}^2 + 0 x_3^2
+\end{align*}
+נגדיר
+\begin{align*}
+y_1 &= x_1 + \frac{1}{2} \prs{x_2 - x_1} + \frac{1}{2} x_3 = \frac{1}{2} \prs{x_1 + x_2 + x_3} \\
+y_2 &= \frac{1}{2} \prs{x_2 - x_1} - \frac{1}{2} x_3 = \frac{1}{2}\prs{-x_1 + x_2 - x_3} \\
+y_3 &= x_3
+\end{align*}
+ונקבל כי
+\[\text{.} q \pmat{x_1 \\ x_2 \\ x_3} = y_1^2 - y_2^2 + 0 y_3^2\]
+
+אם ניקח
+\begin{align*}
+T\prs{x_i} = y_i
+\end{align*}
+ונחפש בסיס
+ $B = \prs{v_1, v_2, v_3}$
+ עבורו
+ $\brs{v}_B = T\prs{v}$,
+ צריך להתקיים
+ $\brs{T}_E = M^E_B$
+ כלומר
+ \[M^E_B = \frac{1}{2} \pmat{1 & 1 & 1 \\ -1 & 1 & -1 \\ 0 & 0 & 2}\]
+ ולכן הבסיס
+ $B$
+שמורכב מעמודות המטריצה
+ \[M^B_E = \prs{M^E_B}^{-1} = \pmat{1 & -1 & -1 \\ 1 & 1 & 0 \\ 0 & 0 & 1}\]
+ יקיים
+ $\brs{q}_B = \diag\prs{1,-1,0}$.
+\end{example}
+
+\chapter{תרגילים ממבחנים}
+
+\begin{exercisechap}%2
+יהי
+$V$
+מרחב מכפלה פנימית מרוכב סוף־מימדי.
+
+\begin{enumerate}
+\item
+
+תהי
+$T \in \endo_{\mbb{C}}\prs{V}$.
+הראו ש־%
+$T$
+נורמלית אם ורק אם יש פולינום
+$p \in \mbb{C}\brs{x}$
+עבורו
+$T^* = p\prs{T}$.
+
+היעזרו בעובדה הבאה.
+
+\begin{theorem}[אינטרפולציית לגרנג']
+תהיינה
+$x_1, \ldots, x_k, y_1, \ldots, y_k \in \mbb{C}$.
+קיים פולינום
+$p \in \mbb{C}\brs{x}$
+ממעלה
+$k+1$
+המקיים
+$p\prs{x_i} = y_i$
+לכל
+$i \in \brs{k}$.
+\end{theorem}
+
+\item
+
+הוכיחו כי
+$T_1, T_2$
+מתחלפות אם ורק אם
+$T_1^*, T_2$
+מתחלפות.
+\end{enumerate}
+\end{exercisechap}
+
+\begin{solution}
+\begin{enumerate}
+\item אם יש
+$p \in \mbb{C}\brs{x}$
+עבורו
+$T^* = p\prs{T}$
+אז
+$T$
+נורמלית כי העתקה מתחלפת עם פולינום בה.
+
+בכיוון השני, נניח כי
+$T$
+נורמלית.
+אז יש בסיס
+$B$
+אורתונורמלי עבורו
+\[\brs{T}_B = \mrm{diag}\prs{\lambda_1, \ldots, \lambda_n}\]
+עבור ערכים
+$\lambda_i \in \mbb{C}$.
+כיוון ש־%
+$B$
+אורתונורמלי מתקיים
+\[\text{.}\brs{T^*}_B = \brs{T}_B^* = \mrm{diag}\prs{\bar{\lambda}_1, \ldots, \bar{\lambda}_n}\]
+מאינטרפולציית לגרנג', קיים פולינום
+$p \in \mbb{C}\brs{x}$
+עבורו
+$p\prs{\lambda_i} = \bar{\lambda}_i$
+אז
+\[\brs{T^*}_B = p\prs{\brs{T}_B} = \brs{p\prs{T}}_B\]
+ולכן
+$T^* = p\prs{T}$,
+כנדרש.
+
+\item נניח כי
+$T_1 T_2 = T_2 T_1$
+ונראה כי
+$T_1^* T_2 = T_2 T_1^*$.
+הכיוון השני ינבע על ידי שימוש באותה תכונה עם
+$T_1^*$
+במקום
+$T_1$.
+
+$T_1$
+נורמלית ולכן
+$T_1 = p\prs{T_1}$
+עבור \emph{איזשהו}
+$p \in \mbb{C}\brs{x}$.
+נכתוב
+$p\prs{x} = \sum_{i \in [d]} a_i x^i$
+ואז
+\begin{align*}
+T_1^* T_2 &= p\prs{T_1} T_2
+\\&= \sum_{i \in [d]} a_i T_1^i T_2
+\\&= \sum_{i \in [d]} a_i T_2 T_1^i
+\\&= T_2 \sum_{i \in [d]} a_i T_1^i
+\\&= T_2 p\prs{T_1}
+\\&= T_2 T_1^*
+\end{align*}
+כנדרש.
+\end{enumerate}
+\end{solution}
+
+\begin{exercisechap}%3
+יהי
+$V$
+מרחב מכפלה פנימית מרוכב ממימד סופי ותהיינה
+$S,T \in \endo_{\mbb{C}}\prs{V}$
+אוניטריות.
+הוכיחו או מצאו דוגמא נגדית עבור כל אחד מהסעיפים הבאים.
+
+\begin{enumerate}
+\item $S+T$
+נורמלית.
+\item $S \circ T$
+נורמלית.
+\item אם
+$S,T$
+מתחלפות אז
+$S+T$
+נורמלית.
+\end{enumerate}
+\end{exercisechap}
+
+\begin{solution}
+\begin{enumerate}
+\item מתקיים
+\begin{align*}
+\prs{S+T}^* \circ \prs{S+T} &= \prs{S^* + T^*} \circ \prs{S+T}
+\\&=
+S^* \circ S + S^* \circ T + T^* \circ S + T^* \circ T
+\\&=
+2 \id_V + S^* \circ T + T^* \circ S
+\end{align*}
+וגם
+\begin{align*}
+\prs{S+T} \circ \prs{S+T}^* &= \prs{S + T} \circ \prs{S^* + T^*}
+\\&= S \circ S^* + S \circ T^* + T \circ S^* + T \circ T^*
+\\ \hphantom{\prs{S+T} \circ \prs{S+T}^*} &= 2\id_V + S \circ T^* + T \circ S^*
+\end{align*}
+לכן נרצה לדעת האם בהכרח
+\[\text{.} S^* \circ T + T^* \circ S = S \circ T^* + T \circ S^*\]
+
+כדי למצוא דוגמא נגדית, נצטרך שלפחות אחת מבין
+$S,T$
+לא תהיה צמודה לעצמה.
+ניקח
+\begin{align*}
+S \colon \mbb{C}^2 &\to \mbb{C}^2 \\
+\pmat{x \\ y} &\mapsto \pmat{y \\ x}
+\end{align*}
+וכן
+\begin{align*}
+T \colon \mbb{C}^2 &\to \mbb{C}^2 \\
+\text{.} \pmat{x \\ y} &\mapsto \pmat{\frac{x-y}{\sqrt{2}} \\ \frac{x+y}{\sqrt{2}}}
+\end{align*}
+$E$
+בסיס אורתונורמלי ולכן
+\begin{align*}
+\brs{S^*}_E &= \brs{S}_E^t = \pmat{0 & 1 \\ 1 & 0}^t = \pmat{0 & 1 \\ 1 & 0} = \brs{S}_E
+\end{align*}
+וגם
+\begin{align*}
+\text{.} \brs{T^*}_E &= \brs{T}_E^t = \pmat{1/\sqrt{2} & -1/\sqrt{2} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}^t = \pmat{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} \neq \brs{T}_E
+\end{align*}
+כעת
+\begin{align*}
+\brs{S^* \circ T + T^* \circ S}_E &=
+\brs{S^*}_E \brs{T}_E + \brs{T^*}_E \brs{S}_E
+\\&=
+\pmat{0 & 1 \\ 1 & 0} \pmat{\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} + \pmat{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} \pmat{0 & 1 \\ 1 & 0}
+\\&=
+\pmat{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & - \frac{1}{\sqrt{2}}} + \pmat{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & - \frac{1}{\sqrt{2}}}
+\\&= \pmat{\sqrt{2} & \sqrt{2} \\ \sqrt{2} & - \sqrt{2}}
+\end{align*}
+אבל
+\begin{align*}
+\pmat{S \circ T^* + T \circ S^*}_E &= \brs{S}_E \brs{T^*}_E + \brs{T}_E \brs{S^*}_E
+\\&= \pmat{0 & 1 \\ 1 & 0} \pmat{\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ -\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} + \pmat{\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} \pmat{0 & 1 \\ 1 & 0}
+\\&=
+\pmat{-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}} + \pmat{-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\ \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}}
+\\&= \pmat{-\sqrt{2} & \sqrt{2} \\ \sqrt{2} & \sqrt{2}}
+\end{align*}
+ואלו מטריצות שונות.
+
+\item מתקיים
+\begin{align*}
+\prs{S \circ T}^* \circ \prs{S \circ T} &= T^* \circ S^* \circ S \circ T
+\\&=
+T^* \circ S \circ S^* \circ T
+\\&=
+T ^* \circ T
+\\&=
+\id_V
+\end{align*}
+לכן
+$S \circ T$
+אוניטרית ובפרט נורמלית.
+
+\begin{remark}
+ראיתם בתרגול שהרכבה של העתקות אוניטריות היא אוניטרית, ולכן אין צורך בפירוט מעבר לכך כפי שהתרגיל מנוסח.
+\end{remark}
+
+\item 
+כמו מקודם,
+מתקיים
+\begin{align*}
+\prs{S+T}^* \circ \prs{S+T} &= \prs{S^* + T^*} \circ \prs{S+T}
+\\&=
+S^* \circ S + S^* \circ T + T^* \circ S + T^* \circ T
+\\&=
+2 \id_V + S^* \circ T + T^* \circ S
+\end{align*}
+וגם
+\begin{align*}
+\prs{S+T} \circ \prs{S+T}^* &= \prs{S + T} \circ \prs{S^* + T^*}
+\\&= S \circ S^* + S \circ T^* + T \circ S^* + T \circ T^*
+\\ \hphantom{\prs{S+T} \circ \prs{S+T}^*} &= 2\id_V + S \circ T^* + T \circ S^*
+\end{align*}
+כעת,
+$S,T$
+מתחלפות, לכן גם
+$S^*, T$
+מתחלפות וגם
+$S, T^*$
+מתחלפות, ונקבל שוויון.
+\end{enumerate}
+\end{solution}
+
+\begin{exercisechap}
+יהיו
+$v_1, \ldots, v_n \in \mbb{R}^n$.
+הראו כי
+$B \ceq \prs{v_1, \ldots, v_n}$
+בסיס של
+$\mbb{R}^n$
+אם ורק אם למטריצת
+\textenglish{Gram}
+של
+$B$
+\[\mrm{Gr}\prs{B} \ceq \pmat{\trs{v_1, v_1} & \cdots & \trs{v_1, v_n} \\ \vdots & \ddots & \vdots \\ \trs{v_n, v_1} & \cdots & \trs{v_n, v_n}} = \prs{\trs{v_i, v_j}}_{i,j \in \brs{n}}\]
+יש דטרמיננטה חיובית.
+\end{exercisechap}
+
+\begin{solution}
+נניח כי
+$B$
+בסיס.
+אז
+$\mrm{Gr}\prs{B}$
+המטריצה המייצגת של המכפלה הפנימית הסטנדרטית לפי
+$B$.
+לכן קיים
+$a \in \mbb{R}$
+עבורו
+\[\det\prs{\mrm{Gr}\prs{B}} = a^2 \det\prs{I_n} = a^2\]
+(כי
+$\mrm{Gr}\prs{B} = P^t I_n P$
+וכי הדטרמיננטה כפלית).
+כיוון ש־%
+$\mrm{Gr}\prs{B}$
+הפיכה, לא יתכן
+$a = 0$
+ולכן
+$\det\prs{\mrm{Gr}\prs{B}} = a^2 > 0$.
+
+בכיוון השני, נניח ש־%
+$B$
+אינו בסיס. אז יש סקלרים
+$\alpha_1, \ldots, \alpha_{n-1} \in \mbb{R}$
+עבורם
+\[\text{.} v_n = \sum_{i \in [n-1]} \alpha_i v_i\]
+נקבל
+\begin{align*}
+\text{.} \prs{\mrm{Gr}\prs{B}} &= \pmat{\trs{v_1, v_1} & \cdots & \trs{v_1, \sum_{i \in [n-1]} \alpha_i v_i} \\ \vdots & \ddots & \vdots \\ \trs{v_n, v_1} & \cdots & \trs{v_i, \sum_{i \in [n-1]} \alpha_i v_i}}
+=
+\pmat{\trs{v_1, v_1} & \cdots & \sum_{i \in [n-1]} \alpha_i \trs{v_1, v_i} \\ \vdots & \ddots & \vdots \\ \trs{v_n, v_1} & \cdots & \sum_{i \in [n-1]} \alpha_i \trs{v_i, v_i}}
+\end{align*}
+לכן, העמודה הימנית של
+$\mrm{Gr}\prs{B}$
+היא צירוף לינארי של שאר העמודות, ולכן
+$\det\prs{\mrm{Gr}\prs{B}} = 0$.
+\end{solution}
+
+\begin{exercisechap}
+יהי
+$V$
+מרחב וקטורי סוף־מימדי מעל
+$\mbb{R}$.
+תהי
+$g$
+מכפלה פנימית על
+$V$
+ותהי
+$h$
+תבנית בילינארית סימטרית על
+$V$.
+הוכיחו שקיים בסיס
+$B$
+של
+$V$
+עבורו
+$\brs{h}_B, \brs{g}_B$
+שתיהן אלכסוניות.
+\end{exercisechap}
+
+\begin{solution}
+נסמן
+$n \ceq \dim_{\mbb{R}}\prs{V}$.
+יהי
+$E$
+בסיס אורתונורמלי של
+$V$
+ביחס ל־%
+$g$.
+אז
+$\brs{g}_E = I_n$.
+כעת,
+$\brs{h}_E$
+סימטרית כי
+$h$
+סימטרית, ולכן יש מטריצה
+$Q \in \Mat_n\prs{\mbb{R}}$
+אורתוגונלית עבורה
+$Q^t \brs{h}_E Q$
+אלכסונית.
+נרצה
+$Q = P^B_E$
+ולכן נגדיר
+$B \ceq \prs{Q^{-1} v_1, \ldots, Q^{-1} v_n}$
+עבור
+$E \ceq \prs{v_1, \ldots, v_n}$.
+אז
+\begin{align*}
+\brs{g}_B &= \prs{P^B_E}^t \brs{g}_E P^B_E = Q^t \brs{g}_E Q = Q^t I_n Q = Q^t Q = I_n \\
+\brs{h}_B &= \prs{P^B_E}^t \brs{h}_E P^B_E = Q^t \brs{h}_E Q
+\end{align*}
+שתיהן אלכסוניות, כנדרש.
+\end{solution}
+
+\begin{exercisechap}
+יהי
+$V$
+מרחב מכפלה פנימית ממימד
+$n \in \mbb{N}$
+מעל
+$\mbb{R}$.
+יהיו
+$U,W \leq V$
+עבורם
+$V = U \oplus W$.
+עבור
+$v = u + w$
+כאשר
+$u \in U, w \in W$
+נגדיר
+$T\prs{v} = u - w$.
+הניחו כי
+$T$
+לינארית והראו כי
+$T$
+צמודה לעצמה אם ורק אם
+$U \perp W$.
+\end{exercisechap}
+
+\begin{solution}
+נניח כי
+$U \perp W$.
+יהי
+$B$
+בסיס אורתונורמלי ל־%
+$U$
+ויהי
+$C$
+בסיס אורתונורמלי ל־%
+$W$.
+אז
+$D \ceq B * C$
+בסיס אורתונורמלי ל־%
+$V$.
+נקבל כי בבסיס זה
+\[\brs{T}_D = \pmat{\brs{\rest{T}{U}}_B & 0 \\ 0 & \brs{\rest{T}{W}}_C} = \pmat{I_k & 0 \\ 0 & - I_\ell}\]
+עבור
+$k \ceq \dim U, \ell \ceq \dim W$.
+כיוון ש־%
+$D$
+אורתונורמלי, מתקיים
+\begin{align*}
+\text{.} \brs{T^*}_D &= \brs{T}_D^t = \pmat{I_k & 0 \\ 0 & - I_{\ell}}^t = \pmat{I_k & 0 \\ 0 & - I_{\ell}} = \brs{T}_D
+\end{align*}
+לכן,
+$T^* = T$,
+כנדרש.
+
+נניח כעת כי
+$T^* = T$
+ויהיו
+$u \in U$
+ו־%
+$w \in W$.
+מתקיים
+\begin{align*}
+\trs{u,w} &= \trs{Tu, w}
+\\&= \trs{u, T^*  w}
+\\&= \trs{u, T w}
+\\&= \trs{u, -w}
+\\&= -\trs{u,w}
+\end{align*}
+לכן
+$\trs{u,w} = 0$
+ולכן
+$u \perp w$.
+נקבל כי
+$U \perp W$.
 \end{solution}
 
 \end{document}

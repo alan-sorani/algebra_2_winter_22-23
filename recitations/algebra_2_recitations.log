@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  17 JAN 2023 09:38
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2022.3.30)  24 JAN 2023 14:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2162,10 +2162,19 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [69]
-Overfull \hbox (77.047pt too wide) detected at line 8206
+Overfull \hbox (77.047pt too wide) detected at line 8216
 \OML/cmm/m/it/10 P \OT1/cmr/m/n/10 = [] [] [] [] [] = []
  []
 
+[70] [71] [72]
+פרק 8.
+[73
+
+] [74]
+LaTeX Info: Redefining \rmfamily on input line 8598.
+LaTeX Info: Redefining \sffamily on input line 8598.
+LaTeX Info: Redefining \ttfamily on input line 8598.
+ [75]
 \tf@thm=\write8
 \openout8 = `algebra_2_recitations.thm'.
 
@@ -2219,28 +2228,28 @@ braces):
 >  {english/babelname}  =>  {american}
 >  {english/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {english/Localnumeral}  =>  {polyglossia@C@localnumeral}.
-[70]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8222.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8222.
+ [76]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8777.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8777.
  (./algebra_2_recitations.aux Setting \if@calendar@hebrew
 Setting \if@calendar@hebrew)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8222.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8222.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 8777.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8777.
 
 Package rerunfilecheck Info: File `algebra_2_recitations.out' has not changed.
-(rerunfilecheck)             Checksum: 97555DA79509A77CA6A89949DDC26124;3245.
+(rerunfilecheck)             Checksum: 7071FC0C21054CFD723115F2E4F73D1A;3393.
 Package logreq Info: Writing requests to 'algebra_2_recitations.run.xml'.
 \openout1 = `algebra_2_recitations.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8222.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 8777.
  ) 
 Here is how much of TeX's memory you used:
  41725 strings out of 479819
  861143 string characters out of 5895846
- 1745956 words of memory out of 5000000
+ 1746102 words of memory out of 5000000
  58069 multiletter control sequences out of 15000+600000
  540335 words of font info for 95 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,20n,86p,1293b,4203s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on algebra_2_recitations.pdf (72 pages).
+Output written on algebra_2_recitations.pdf (78 pages).
